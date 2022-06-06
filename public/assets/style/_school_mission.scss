@@ -1,0 +1,56 @@
+.mission__school {
+  background-color: #fff;
+  padding: 100px 0;
+  &__section {
+    &__image {
+      img {
+        width: 100%;
+      }
+    }
+
+    &__content {
+      padding-left: 50px;
+      .title {
+        font-weight: 600;
+        font-size: 44px;
+        line-height: 66px;
+      }
+      p {
+        margin-top: 20px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 32px;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .mission__school {
+    background-color: #fff;
+    padding: 100px 0;
+    &__section {
+      &__image {
+        img {
+          width: 100%;
+        }
+      }
+
+      &__content {
+        padding-left: 0px;
+        margin-top: 20px;
+        .title {
+          font-weight: 600;
+          font-size: 24px;
+          line-height: 36px;
+        }
+        p {
+          margin: 10px 0;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 30px;
+        }
+      }
+    }
+  }
+}

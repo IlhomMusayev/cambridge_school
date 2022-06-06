@@ -1,0 +1,258 @@
+.students-government {
+  padding: 100px 0;
+  &__title {
+    h2 {
+      text-align: center;
+      font-weight: 600;
+      font-size: 44px;
+      line-height: 66px;
+    }
+  }
+
+  &__list {
+    &__item {
+      margin: 100px 0;
+      position: relative;
+      &__image {
+        margin-right: -130px;
+        z-index: 99;
+      }
+      &__content {
+        padding: 150px 200px;
+        background-color: #fafafa;
+        border-radius: 15px;
+        width: 70%;
+
+        .title {
+          font-weight: 500;
+          font-size: 40px;
+          line-height: 50px;
+        }
+        ul {
+          margin-left: 20px;
+          li {
+            list-style: disc;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 50px;
+          }
+        }
+        p {
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 30px;
+        }
+        button {
+          border: none;
+          background: none;
+          span {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 30px;
+            color: #000000;
+            opacity: 0.4;
+          }
+        }
+      }
+      .logo {
+        position: absolute;
+        right: 0%;
+        top: -10%;
+      }
+    }
+    &__item__second {
+      position: relative;
+      &__image {
+        margin-left: -150px;
+        z-index: 99;
+      }
+      &__content {
+        padding: 150px 250px 150px 100px;
+        background-color: #fafafa;
+        border-radius: 15px;
+        width: 70%;
+
+        .title {
+          font-weight: 500;
+          font-size: 40px;
+          line-height: 50px;
+        }
+        ul {
+          margin-left: 20px;
+          li {
+            list-style: disc;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 50px;
+          }
+        }
+        p {
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 30px;
+        }
+        button {
+          border: none;
+          background: none;
+          span {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 30px;
+            color: #000000;
+            opacity: 0.4;
+          }
+        }
+      }
+      .logo {
+        position: absolute;
+        left: 0%;
+        top: -10%;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .students-government {
+    padding: 0px 0;
+    padding-bottom: 50px;
+    &__title {
+      h2 {
+        text-align: center;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 36px;
+      }
+    }
+
+    &__list {
+      &__item {
+        margin: 50px 0;
+        position: relative;
+        &__image {
+          position: absolute;
+          top: -5%;
+          left: 5%;
+          margin-right: 0;
+          z-index: 99;
+          img {
+            border-radius: 30px;
+            width: 120px;
+          }
+        }
+        &__content {
+          padding: 20px;
+          background-color: #fafafa;
+          border-radius: 15px;
+          width: 100%;
+
+          .title {
+            margin-left: 40%;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 36px;
+          }
+          ul {
+            margin-left: 45%;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            li {
+              list-style: disc;
+              font-weight: 500;
+              font-size: 15px;
+              line-height: 22px;
+            }
+          }
+          p {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 30px;
+          }
+          button {
+            border: none;
+            background: none;
+            span {
+              font-weight: 500;
+              font-size: 16px;
+              line-height: 30px;
+              color: #000000;
+              opacity: 0.4;
+            }
+          }
+        }
+        .logo {
+          position: absolute;
+          right: 0%;
+          top: -10%;
+          img {
+            width: 80px;
+          }
+        }
+      }
+      &__item__second {
+        position: relative;
+        &__image {
+          position: absolute;
+          top: -5%;
+          right: 5%;
+          margin-left: 0;
+          z-index: 99;
+          img {
+            border-radius: 30px;
+            width: 120px;
+          }
+        }
+        &__content {
+          padding: 20px;
+          background-color: #fafafa;
+          border-radius: 15px;
+          width: 100%;
+
+          .title {
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 36px;
+            width: 60%;
+          }
+          ul {
+            margin-left: 0px;
+            width: 60%;
+            margin: 10px 0;
+            li {
+              list-style: disc;
+              font-weight: 500;
+              font-size: 15px;
+              line-height: 22px;
+            }
+          }
+          p {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 30px;
+          }
+          button {
+            border: none;
+            background: none;
+            span {
+              font-weight: 500;
+              font-size: 16px;
+              line-height: 30px;
+              color: #000000;
+              opacity: 0.4;
+            }
+          }
+        }
+        .logo {
+          position: absolute;
+          left: 0%;
+          top: -13%;
+          z-index: 0;
+          img {
+            width: 80px;
+          }
+        }
+      }
+    }
+  }
+}

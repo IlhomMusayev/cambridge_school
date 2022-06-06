@@ -1,0 +1,82 @@
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
+
+.alert {
+  width: 300px;
+  position: fixed;
+  top: 10%;
+  right: 2%;
+  margin: 10px 0px;
+  padding: 12px;
+  border-radius: 5px;
+  z-index: 9999;
+
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.alert:hover {
+  cursor: pointer;
+}
+
+.alert:before {
+  padding-right: 12px;
+}
+
+.alert:after {
+  content: "\f00d";
+  font-family: "FontAwesome";
+  float: right;
+  padding: 3px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.alert-info {
+  color: #00529b;
+  background-color: #bde5f8;
+  border: 1px solid darken(#bde5f8, 15%);
+}
+
+.alert-info:before {
+  content: "\f05a";
+  font-family: "FontAwesome";
+}
+
+.alert-warn {
+  display: none;
+  color: #9f6000;
+  background-color: #feefb3;
+  border: 1px solid darken(#feefb3, 15%);
+}
+
+.alert-warn:before {
+  content: "\f071";
+  font-family: "FontAwesome";
+}
+
+.alert-error {
+  display: none;
+  color: #d8000c;
+  background-color: #ffbaba;
+  border: 1px solid darken(#ffbaba, 15%);
+}
+
+.alert-error:before {
+  content: "\f057";
+  font-family: "FontAwesome";
+}
+
+.alert-success {
+  display: none;
+  color: #4f8a10;
+  background-color: #e2eecf;
+  border: 1px solid darken(#dff2bf, 15%);
+}
+
+.alert-success:before {
+  content: "\f058";
+  font-family: "FontAwesome";
+}

@@ -1,0 +1,215 @@
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
+.color {
+  /* The container of each option */
+  /* The container of all options */
+  /* Hide the browser's default radio button */
+  /* Create a custom radio button */
+  /* Style the indicator (dot/circle) when checked */
+  /* Style the indicator (dot/circle) */
+}
+
+.color .color-option {
+  display: inline;
+  position: relative;
+  margin: 5px 15px 5px 0px;
+  margin-right: 30px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.color .color-picker {
+  margin: 10px 0px 10px 0px;
+}
+
+.color .color-option input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.color .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+.color .color-option input:checked ~ .checkmark {
+  margin-right: 5px;
+  -webkit-box-shadow: 0 0 0px 2px #000;
+          box-shadow: 0 0 0px 2px #000;
+  padding: 3px 0px 3px 3px;
+  border: 2px solid 0px #000;
+}
+
+.color .color-option .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.alert {
+  width: 100%;
+}
+
+.alert__danger {
+  display: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px solid red;
+  background-color: rgba(255, 0, 0, 0.5);
+  color: #fff;
+}
+
+.alert__success {
+  display: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px solid green;
+  background-color: rgba(0, 128, 0, 0.5);
+  color: #fff;
+}
+
+.order-data__list__item {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #000;
+}
+
+.order-data__list__item .order__item__data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+}
+
+.order-data__list__item .order__item__data .order-data__list__item__label {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+}
+
+.order-data__list__item .order__item__data .order-data__list__item__value {
+  font-size: 14px;
+  font-weight: bold;
+  color: #000;
+}
+
+.product_data__list__item {
+  margin-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 15px;
+}
+
+.product_data__list__item__label {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.product_data__list__item__value {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.alert {
+  width: 300px;
+  position: fixed;
+  top: 10%;
+  right: 2%;
+  margin: 10px 0px;
+  padding: 12px;
+  border-radius: 5px;
+  z-index: 9999;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.alert:hover {
+  cursor: pointer;
+}
+
+.alert:before {
+  padding-right: 12px;
+}
+
+.alert:after {
+  content: "\f00d";
+  font-family: "FontAwesome";
+  float: right;
+  padding: 3px;
+}
+
+.alert:after:hover {
+  cursor: pointer;
+}
+
+.alert-info {
+  color: #00529b;
+  background-color: #bde5f8;
+  border: 1px solid #78caf1;
+}
+
+.alert-info:before {
+  content: "\f05a";
+  font-family: "FontAwesome";
+}
+
+.alert-warn {
+  display: none;
+  color: #9f6000;
+  background-color: #feefb3;
+  border: 1px solid #fddf67;
+}
+
+.alert-warn:before {
+  content: "\f071";
+  font-family: "FontAwesome";
+}
+
+.alert-error {
+  display: none;
+  color: #d8000c;
+  background-color: #ffbaba;
+  border: 1px solid #ff6e6e;
+}
+
+.alert-error:before {
+  content: "\f057";
+  font-family: "FontAwesome";
+}
+
+.alert-success {
+  display: none;
+  color: #4f8a10;
+  background-color: #e2eecf;
+  border: 1px solid #bfe57f;
+}
+
+.alert-success:before {
+  content: "\f058";
+  font-family: "FontAwesome";
+}
+/*# sourceMappingURL=styles.css.map */

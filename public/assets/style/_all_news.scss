@@ -1,0 +1,195 @@
+.all_news {
+  padding: 100px 0;
+  &__title {
+    font-weight: 500;
+    font-size: 44px;
+    line-height: 66px;
+  }
+
+  &__list {
+    margin-top: 50px;
+    width: 100%;
+    &__item {
+      margin-bottom: 50px;
+      &__date {
+        text-align: end;
+        align-items: center;
+        padding-right: 0px;
+        .time {
+          width: 150px;
+          h3 {
+            font-weight: 500;
+            font-size: 68px;
+            line-height: 70px;
+          }
+          span {
+            font-weight: 500;
+            font-size: 29px;
+            line-height: 44px;
+          }
+        }
+      }
+      &__image {
+        border-radius: 15px;
+        padding: 0 20px;
+        img {
+          border-radius: 15px;
+          width: 250px;
+          height: 160px;
+          object-fit: cover;
+        }
+      }
+      &__content {
+        &__text {
+          h2 {
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 36px;
+          }
+          p {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 26px;
+            margin: 10px 0;
+          }
+          .read_more {
+            display: flex;
+            align-items: center;
+            background: none;
+            border: none;
+            span {
+              font-weight: 600;
+              font-size: 16px;
+              line-height: 24px;
+              color: rgba($color: #000, $alpha: 0.5);
+            }
+            svg {
+              width: 20px;
+              transform: rotate(-45deg);
+              transition: transform 0.3s ease-in-out;
+              margin-left: 10px;
+              path {
+                fill: rgba($color: #000, $alpha: 0.5);
+              }
+            }
+            &:hover {
+              span {
+                color: #0053d4;
+              }
+              svg {
+                transform: rotate(0deg);
+                transition: transform 0.3s ease-in-out;
+                path {
+                  fill: #0053d4;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .all_news {
+    padding: 0px 0 50px 0;
+    &__title {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 36px;
+    }
+
+    &__list {
+      margin-top: 50px;
+      width: 100%;
+      &__item {
+        margin-bottom: 50px;
+        &__date {
+          width: 100%;
+          align-items: center;
+          justify-content: center;
+          padding-right: 0px;
+          .time {
+            width: 100%;
+            text-align: end;
+            border-right: 1px solid #000;
+            padding-right: 20px;
+            h3 {
+              font-weight: 500;
+              font-size: 40px;
+              line-height: 60px;
+            }
+            span {
+              font-weight: 500;
+              font-size: 20px;
+              line-height: 30px;
+              white-space: nowrap;
+            }
+          }
+        }
+        &__image {
+          border-radius: 15px;
+          padding: 0 0 0 20px;
+          img {
+            border-radius: 15px;
+            width: 200px;
+            height: 130px;
+            object-fit: cover;
+          }
+        }
+        &__content {
+          margin-top: 20px;
+          width: 100%;
+          &__text {
+            width: 100%;
+            h2 {
+              font-weight: 600;
+              font-size: 24px;
+              line-height: 36px;
+            }
+            p {
+              font-weight: 500;
+              font-size: 16px;
+              line-height: 26px;
+              margin: 10px 0;
+            }
+            .read_more {
+              display: flex;
+              align-items: center;
+              background: none;
+              border: none;
+              span {
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 24px;
+                color: rgba($color: #000, $alpha: 0.5);
+              }
+              svg {
+                width: 20px;
+                transform: rotate(-45deg);
+                transition: transform 0.3s ease-in-out;
+                margin-left: 10px;
+                path {
+                  fill: rgba($color: #000, $alpha: 0.5);
+                }
+              }
+              &:hover {
+                span {
+                  color: #0053d4;
+                }
+                svg {
+                  transform: rotate(0deg);
+                  transition: transform 0.3s ease-in-out;
+                  path {
+                    fill: #0053d4;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

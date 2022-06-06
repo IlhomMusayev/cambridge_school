@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cambridge School</title>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/style/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="./assets/style/main.css" />
+
+</head>
+
+<body>
+    <div class="loader_wrapper">
+        <div class="loading2">
+        </div>
+        <img src="./assets/images/logo_body.png" alt="logo" class="logo">
+    </div>
+
+    <nav class="">
+        <div class="navbar container d-flex justify-content-between align-items-center">
+          <div class="logo">
+            <img src="./assets/images/logo-dark.png" alt="logo" />
+          </div>
+          <ul class="navbar__list d-flex align-items-center justify-content-between">
+            <li class="navbar__list__item mx-3">
+              <a href="/">
+                <%= locationLanguage.navbar.navbar__list.navbar__list__item1[lan] %>
+              </a>
+            </li>
+            <li class="navbar__list__item mx-3">
+              <a href="/about">
+                <%= locationLanguage.navbar.navbar__list.navbar__list__item2[lan] %>
+              </a>
+            </li>
+            <li class="navbar__list__item mx-3">
+              <a href="/life">
+                <%= locationLanguage.navbar.navbar__list.navbar__list__item3[lan] %>
+              </a>
+            </li>
+            <li class="navbar__list__item mx-3">
+              <a href="/admission">
+                <%= locationLanguage.navbar.navbar__list.navbar__list__item4[lan] %>
+              </a>
+            </li>
+            <li class="navbar__list__item mx-3 active">
+              <a href="/locations">
+                <%= locationLanguage.navbar.navbar__list.navbar__list__item5[lan] %>
+              </a>
+            </li>
+    
+          </ul>
+          <ul class="navbar__right d-flex align-items-center">
+    
+            <li class="navbar__right__item">
+              <img src="/assets/images/icons/phone_icon.svg" alt="phone_icon">
+            </li>
+            <li class="navbar__right__item">
+              <select name="lan" id="lan">
+                <option value="eng" <% if(lan === "eng") { %> selected <% } %>>Eng</option>
+                <option value="uz" <% if(lan === "uz") { %> selected <% } %>>Uz</option>
+                <option value="ru" <% if(lan === "ru") { %> selected <% } %>>Ru</option>
+              </select>
+            </li>
+            <li class="navbar__right__item">
+              <button class="menu_btn">
+                <div class="wrapper-menu">
+                  <div class="line-menu half start"></div>
+                  <div class="line-menu"></div>
+                  <div class="line-menu half end"></div>
+                </div>
+              </button>
+            </li>
+          </ul>
+        </div>
+    
+        <div class="menu__section row justify-content-between">
+          <ul class="menu__section__list col-lg-3">
+            <li class="menu__section__list__item">
+              <a href="/" class="d-flex justify-content-start align-items-center ">
+                <span>
+                  <%= locationLanguage.navbar.navbar__list.navbar__list__item1[lan] %>
+                </span>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M0.292893 14.2038C-0.0976311 14.5943 -0.0976311 15.2275 0.292893 15.618C0.683418 16.0085 1.31658 16.0085 1.70711 15.618L0.292893 14.2038ZM15.911 0.999927C15.911 0.447642 15.4632 -7.31964e-05 14.911 -7.34493e-05L5.91096 -7.33228e-05C5.35868 -7.29856e-05 4.91096 0.447642 4.91096 0.999927C4.91096 1.55221 5.35868 1.99993 5.91096 1.99993L13.911 1.99993L13.911 9.99993C13.911 10.5522 14.3587 10.9999 14.911 10.9999C15.4632 10.9999 15.911 10.5522 15.911 9.99993L15.911 0.999927ZM1.70711 15.618L15.6181 1.70703L14.2039 0.29282L0.292893 14.2038L1.70711 15.618Z"
+                    fill="white" />
+                </svg>
+              </a>
+            </li>
+            <li class="menu__section__list__item">
+              <a href="about" class="d-flex justify-content-start align-items-center ">
+                <span>
+                  <%= locationLanguage.navbar.navbar__list.navbar__list__item2[lan] %>
+                </span>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M0.292893 14.2038C-0.0976311 14.5943 -0.0976311 15.2275 0.292893 15.618C0.683418 16.0085 1.31658 16.0085 1.70711 15.618L0.292893 14.2038ZM15.911 0.999927C15.911 0.447642 15.4632 -7.31964e-05 14.911 -7.34493e-05L5.91096 -7.33228e-05C5.35868 -7.29856e-05 4.91096 0.447642 4.91096 0.999927C4.91096 1.55221 5.35868 1.99993 5.91096 1.99993L13.911 1.99993L13.911 9.99993C13.911 10.5522 14.3587 10.9999 14.911 10.9999C15.4632 10.9999 15.911 10.5522 15.911 9.99993L15.911 0.999927ZM1.70711 15.618L15.6181 1.70703L14.2039 0.29282L0.292893 14.2038L1.70711 15.618Z"
+                    fill="white" />
+                </svg>
+              </a>
+            </li>
+            <li class="menu__section__list__item">
+              <a href="/admission" class="d-flex justify-content-start align-items-center ">
+    
+                <span>
+                  <%= locationLanguage.navbar.navbar__list.navbar__list__item4[lan] %>
+                </span>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M0.292893 14.2038C-0.0976311 14.5943 -0.0976311 15.2275 0.292893 15.618C0.683418 16.0085 1.31658 16.0085 1.70711 15.618L0.292893 14.2038ZM15.911 0.999927C15.911 0.447642 15.4632 -7.31964e-05 14.911 -7.34493e-05L5.91096 -7.33228e-05C5.35868 -7.29856e-05 4.91096 0.447642 4.91096 0.999927C4.91096 1.55221 5.35868 1.99993 5.91096 1.99993L13.911 1.99993L13.911 9.99993C13.911 10.5522 14.3587 10.9999 14.911 10.9999C15.4632 10.9999 15.911 10.5522 15.911 9.99993L15.911 0.999927ZM1.70711 15.618L15.6181 1.70703L14.2039 0.29282L0.292893 14.2038L1.70711 15.618Z"
+                    fill="white" />
+                </svg>
+              </a>
+            </li>
+            <li class="menu__section__list__item ">
+              <a href="life" class="d-flex justify-content-start align-items-center ">
+    
+                <span>
+                  <%= locationLanguage.navbar.navbar__list.navbar__list__item3[lan] %>
+                </span>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M0.292893 14.2038C-0.0976311 14.5943 -0.0976311 15.2275 0.292893 15.618C0.683418 16.0085 1.31658 16.0085 1.70711 15.618L0.292893 14.2038ZM15.911 0.999927C15.911 0.447642 15.4632 -7.31964e-05 14.911 -7.34493e-05L5.91096 -7.33228e-05C5.35868 -7.29856e-05 4.91096 0.447642 4.91096 0.999927C4.91096 1.55221 5.35868 1.99993 5.91096 1.99993L13.911 1.99993L13.911 9.99993C13.911 10.5522 14.3587 10.9999 14.911 10.9999C15.4632 10.9999 15.911 10.5522 15.911 9.99993L15.911 0.999927ZM1.70711 15.618L15.6181 1.70703L14.2039 0.29282L0.292893 14.2038L1.70711 15.618Z"
+                    fill="white" />
+                </svg>
+              </a>
+            </li>
+            <li class="menu__section__list__item active d-flex justify-content-start align-items-center">
+              <a href="locations" class="d-flex justify-content-start align-items-center ">
+    
+                <span>
+                  <%= locationLanguage.navbar.navbar__list.navbar__list__item5[lan] %>
+                </span>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M0.292893 14.2038C-0.0976311 14.5943 -0.0976311 15.2275 0.292893 15.618C0.683418 16.0085 1.31658 16.0085 1.70711 15.618L0.292893 14.2038ZM15.911 0.999927C15.911 0.447642 15.4632 -7.31964e-05 14.911 -7.34493e-05L5.91096 -7.33228e-05C5.35868 -7.29856e-05 4.91096 0.447642 4.91096 0.999927C4.91096 1.55221 5.35868 1.99993 5.91096 1.99993L13.911 1.99993L13.911 9.99993C13.911 10.5522 14.3587 10.9999 14.911 10.9999C15.4632 10.9999 15.911 10.5522 15.911 9.99993L15.911 0.999927ZM1.70711 15.618L15.6181 1.70703L14.2039 0.29282L0.292893 14.2038L1.70711 15.618Z"
+                    fill="white" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <div class="contacts col-lg-3">
+            <div class="admission__section">
+              <h3 class="admission__section__title">
+                <%= locationLanguage.admission.admission_title[lan] %>
+              </h3>
+              <button class="btn">
+                <img src="./assets/images/icons/apply_icon.svg" alt="icon">
+                <span>
+                  <%= locationLanguage.admission.apply_btn[lan] %>
+                </span>
+              </button>
+            </div>
+            <h3>Contact Us</h3>
+            <ul class="contacts__list">
+              <li class="contacts__list__item d-flex justify-content-left align-items-center">
+                <img src="./assets/images/icons/email_icon.svg" alt="message icon">
+                <span>info@cambridge.uz</span>
+              </li>
+              <li class="contacts__list__item d-flex justify-content-left align-items-center">
+                <img src="./assets/images/icons/phone_icon.svg" alt="phoone icon">
+                <span>+998 71 200 0308 || 99 462 40 04</span>
+              </li>
+              <li class="contacts__list__item d-flex justify-content-left align-items-center">
+                <img src="./assets/images/icons/location_icon.svg" alt="location_icon">
+                <span>Kh. Rakhmatullaev st. 3,
+                  Shayhontohur, Tashkent</span>
+              </li>
+              <li class="contacts__list__item d-flex justify-content-left align-items-center">
+                <img src="./assets/images/icons/location_icon.svg" alt="location_icon">
+                <span>Navai Street. 16,
+                  Yunusobod, Tashkent</span>
+              </li>
+              <li class="contacts__list__item d-flex justify-content-left align-items-center">
+                <img src="./assets/images/icons/location_icon.svg" alt="location_icon">
+                <span>Samarkand region,
+                  Shakhrisabz, Samarkand, 15</span>
+              </li>
+            </ul>
+          </div>
+          <div class="socials__list col-lg-1">
+            <h3>Contact with us</h3>
+            <ul class="d-lg-block d-flex">
+              <li>
+                <a href="https://www.facebook.com/cicschooluz/">
+                  <img src="./assets/images/icons/facebook.svg" alt="icon">
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/cic_school/?igshid=YmMyMTA2M2Y=">
+                  <img src="./assets/images/icons/instagram.svg" alt="icon">
+                </a>
+              </li>
+              <li>
+                <a href="https://t.me/cic_school">
+                  <img src="./assets/images/icons/telegram.svg" alt="icon">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <% var branchsList = branchsList || []; %>
+    <aside class="sidebar">
+        <ul class="sidebar__list">
+            <% branchsList.forEach(function(branch) { %>
+            <li class="sidebar__list__item active">
+                <a href="/locations?branch_name=<%=branch.branch_slug%>" class="sidebar__list__item__link">
+                    <%= branch.branch_name.split(',')[branch.branch_name.split(',').length - 1] %>
+                    <%= branch.branch_name.split(',')[branch.branch_name.split(',').length - 2] %>
+                </a>
+            </li>
+            <% }) %> 
+        </ul>
+    </aside>
+    <section class="location_header">
+        <div class="swiper lifeSwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <video autoplay muted loop id="myVideo">
+                        <source src="./assets/videos/ciu video.mp4" type="video/mp4">
+                    </video>
+                    <div class="location_header__data container">
+                        <div class="row d-flex align-items-start">
+                            <div class="location_header__data__contact col-lg-6">
+                                <h3>Contact Us</h3>
+                                <ul class="contacts__list">
+                                    <li class="contacts__list__item d-flex justify-content-left align-items-center">
+                                        <img src="./assets/images/icons/email_icon.svg" alt="message icon">
+                                        <span>
+                                            cicschool@cambridge.uz
+                                        </span>
+                                    </li>
+                                    <li class="contacts__list__item d-flex justify-content-left align-items-center">
+                                        <img src="./assets/images/icons/phone_icon.svg" alt="phoone icon">
+                                        <span>
+                                            <%= branch.branch_phone %>
+                                        </span>
+                                    </li>
+                                    <li class="contacts__list__item d-flex justify-content-left align-items-center">
+                                        <img src="./assets/images/icons/location_icon.svg" alt="location_icon">
+                                        <span>
+                                            <%= branch.branch_name %>
+                                        </span>
+                                    </li>
+                                    <li class="contacts__list__item d-flex justify-content-left align-items-center">
+                                        <a href="<%= branch.branch_location_link %>">
+                                            <img src="./assets/images/icons/viewmap.svg" alt="location_icon">
+                                            <span>
+                                                View On The Map
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="location_header__data__adminssion col-lg-6">
+                                <h3>                
+                                    <%= locationLanguage.admission.admission_title[lan] %>
+                                </h3>
+                                <button class="btn">
+                                    <img src="./assets/images/icons/apply_icon.svg" alt="icon">
+                                    <span>
+                                        <%= locationLanguage.admission.apply_btn[lan] %>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                        <button class="full_btn">
+                            <img src="/assets/images/icons/full_icon.svg" alt="full icon">
+                        </button>
+                    </div>
+                    <div class="close__header__btn">
+                        <img src="./assets/images/icons/close-line (3) 1.svg" alt="close icon">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <video autoplay muted loop id="myVideo">
+                        <source src="./assets/videos/video_2022-06-02_23-44-36.mp4" type="video/mp4">
+                    </video>
+
+                    <div class="location_header__data container">
+                        <div class="row d-flex align-items-start">
+                            <div class="location_header__data__contact col-lg-6">
+                                <h3>Contact Us</h3>
+                                <ul class="contacts__list">
+                                    <li class="contacts__list__item d-flex justify-content-left align-items-center">
+                                        <img src="./assets/images/icons/email_icon.svg" alt="message icon">
+                                        <span>
+                                            cicschool@cambridge.uz
+                                        </span>
+                                    </li>
+                                    <li class="contacts__list__item d-flex justify-content-left align-items-center">
+                                        <img src="./assets/images/icons/phone_icon.svg" alt="phoone icon">
+                                        <span>
+                                            +998 71 200 0308
+                                        </span>
+                                    </li>
+                                    <li class="contacts__list__item d-flex justify-content-left align-items-center">
+                                        <img src="./assets/images/icons/location_icon.svg" alt="location_icon">
+                                        <span>
+                                            Kh. Rakhmatullaev st. 3,
+                                            Shayhontohur, Tashkent
+                                        </span>
+                                    </li>
+                                    <li class="contacts__list__item d-flex justify-content-left align-items-center">
+                                        <a href="">
+                                            <img src="./assets/images/icons/viewmap.svg" alt="location_icon">
+                                            <span>
+                                                View On The Map
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="location_header__data__adminssion col-lg-6">
+                                <h3>
+                                    <%= locationLanguage.admission.admission_title[lan] %>
+                                </h3>
+                                <button class="btn">
+                                    <img src="./assets/images/icons/apply_icon.svg" alt="icon">
+                                    <span>                  
+                                        <%= locationLanguage.admission.apply_btn[lan] %></span>
+                                </button>
+                            </div>
+                        </div>
+                        <button class="full_btn">
+                            <img src="/assets/images/icons/full_icon.svg" alt="full icon">
+                        </button>
+                    </div>
+                    <div class="close__header__btn">
+                        <img src="./assets/images/icons/close-line (3) 1.svg" alt="close icon">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <video autoplay muted loop id="myVideo">
+                        <source src="./assets/videos/video_2022-06-02_23-44-13.mp4" type="video/mp4">
+                    </video>
+
+                    <div class="location_header__data container">
+                        <div class="row d-flex align-items-start">
+                            <div class="location_header__data__contact col-lg-6">
+                                <h3>Contact Us</h3>
+                                <ul class="contacts__list">
+                                    <li class="contacts__list__item d-flex justify-content-left align-items-center">
+                                        <img src="./assets/images/icons/email_icon.svg" alt="message icon">
+                                        <span>
+                                            cicschool@cambridge.uz
+                                        </span>
+                                    </li>
+                                    <li class="contacts__list__item d-flex justify-content-left align-items-center">
+                                        <img src="./assets/images/icons/phone_icon.svg" alt="phoone icon">
+                                        <span>
+                                            +998 71 200 0308
+                                        </span>
+                                    </li>
+                                    <li class="contacts__list__item d-flex justify-content-left align-items-center">
+                                        <img src="./assets/images/icons/location_icon.svg" alt="location_icon">
+                                        <span>
+                                            Kh. Rakhmatullaev st. 3,
+                                            Shayhontohur, Tashkent
+                                        </span>
+                                    </li>
+                                    <li class="contacts__list__item d-flex justify-content-left align-items-center">
+                                        <a href="">
+                                            <img src="./assets/images/icons/viewmap.svg" alt="location_icon">
+                                            <span>
+                                                View On The Map
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="location_header__data__adminssion col-lg-6">
+                                <h3>
+                                    <%= locationLanguage.admission.admission_title[lan] %>
+                                </h3>
+                                <button class="btn">
+                                    <img src="./assets/images/icons/apply_icon.svg" alt="icon">
+                                    <span>
+                                        <%= locationLanguage.admission.apply_btn[lan] %>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                        <button class="full_btn">
+                            <img src="/assets/images/icons/full_icon.svg" alt="full icon">
+                        </button>
+                    </div>
+                    <div class="close__header__btn">
+                        <img src="./assets/images/icons/close-line (3) 1.svg" alt="close icon">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img class="slide_img" src="./assets/images/DSC01784.jpg" />
+
+
+                    <div class="location_header__data container">
+                        <div class="row d-flex align-items-start">
+                            <div class="location_header__data__contact col-lg-6">
+                                <h3>Contact Us</h3>
+                                <ul class="contacts__list">
+                                    <li class="contacts__list__item d-flex justify-content-left align-items-center">
+                                        <img src="./assets/images/icons/email_icon.svg" alt="message icon">
+                                        <span>
+                                            cicschool@cambridge.uz
+                                        </span>
+                                    </li>
+                                    <li class="contacts__list__item d-flex justify-content-left align-items-center">
+                                        <img src="./assets/images/icons/phone_icon.svg" alt="phoone icon">
+                                        <span>
+                                            +998 71 200 0308
+                                        </span>
+                                    </li>
+                                    <li class="contacts__list__item d-flex justify-content-left align-items-center">
+                                        <img src="./assets/images/icons/location_icon.svg" alt="location_icon">
+                                        <span>
+                                            Kh. Rakhmatullaev st. 3,
+                                            Shayhontohur, Tashkent
+                                        </span>
+                                    </li>
+                                    <li class="contacts__list__item d-flex justify-content-left align-items-center">
+                                        <a href="">
+                                            <img src="./assets/images/icons/viewmap.svg" alt="location_icon">
+                                            <span>
+                                                View On The Map
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="location_header__data__adminssion col-lg-6">
+                                <h3>
+                                    <%= locationLanguage.admission.admission_title[lan] %>
+                                </h3>
+                                <button class="btn">
+                                    <img src="./assets/images/icons/apply_icon.svg" alt="icon">
+                                    <span>                  <%= locationLanguage.admission.apply_btn[lan] %></span>
+                                </button>
+                            </div>
+                        </div>
+                        <button class="full_btn">
+                            <img src="/assets/images/icons/full_icon.svg" alt="full icon">
+                        </button>
+                    </div>
+
+
+                    <div class="close__header__btn">
+                        <img src="./assets/images/icons/close-line (3) 1.svg" alt="close icon">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img class="slide_img" src="./assets/images/DSC01809212.JPG" />
+                    <div class="location_header__data container">
+
+                        <button class="full_btn">
+                            <img src="/assets/images/icons/full_icon.svg" alt="full icon">
+                        </button>
+                    </div>
+
+
+                    <div class="close__header__btn">
+                        <img src="./assets/images/icons/close-line (3) 1.svg" alt="close icon">
+                    </div>
+                </div>
+            </div>
+            <div class="pagination__btns">
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <div thumbsSlider="" class="swiper thumbsSwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <video muted loop id="myVideo">
+                        <source src="./assets/videos/ciu video.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="swiper-slide">
+                    <video muted loop id="myVideo">
+                        <source src="./assets/videos/video_2022-06-02_23-44-36.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="swiper-slide">
+                    <video muted loop id="myVideo">
+                        <source src="./assets/videos/video_2022-06-02_23-44-13.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="swiper-slide">
+                    <img class="slide_img" src="./assets/images/DSC01784.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img class="slide_img" src="./assets/images/DSC01809212.JPG" />
+                </div>
+         
+            </div>
+        </div>
+    </section>
+
+    <div class="main row d-lg-flex justify-content-between">
+        <div class="main__sidebar col-lg-4 col-12"></div>
+        <div class="main__content col-lg-7 col-12">
+            <section class="programm container">
+                <div class="programm__section row d-flex justify-content-between">
+        
+                    <div class="programm__section__content col-lg-8">
+                        <div class="title">
+                            <h2>
+                                <%= locationLanguage.program.title[lan] %>
+                            </h2>
+                        </div>
+                        <ul>
+                            <li>
+                                <%= locationLanguage.program.item1[lan] %>
+                            </li>
+                            <li>
+                                <%= locationLanguage.program.item2[lan] %>
+                            </li>
+                            <li>
+                                <%= locationLanguage.program.item3[lan] %>
+                            </li>
+                            <li>
+                                <%= locationLanguage.program.item4[lan] %>
+                            </li>
+                        </ul>
+        
+                    </div>
+                </div>
+            </section>
+        
+            <section class="all_news container">
+                <h2 class="all_news__title">
+                    <%= locationLanguage.event_title[lan] %>
+                </h2>
+                <% var events = events || [] %> 
+                <ul class="all_news__list ">
+                    <% events.forEach(event => { %>
+                    <li class="all_news__list__item d-lg-flex align-items-center">
+                        <div class="all_news__list__item__date d-flex">
+                            <div class="time">
+                                <h3><%= moment( event.createdAt).format('d'); %></h3>
+                                <span> <%= moment( event.createdAt).format('MMM YYYY'); %> </span>
+                            </div>
+                            <div class="all_news__list__item__image">
+                                <img src="./assets/images/photo_2022-05-26_22-39-29.jpg" alt="news image">
+                            </div>
+                        </div>
+                        <div class="all_news__list__item__content d-flex align-items-center">
+                            <div class="all_news__list__item__content__text">
+                                <h2>
+                                    <% if(lan === "uz") {%>
+                                        <%= event.event_title_uz %>
+                                        <% } if(lan === "ru") { %>
+                                        <%= event.event_title_ru %>
+                                        <% } else {%>
+                                        <%= event.event_title_eng %>
+                                    <% } %>
+                                </h2>
+                                <p>
+                                    <% if(lan === "uz") {%>
+                                        <%= event.event_subtitle_uz %>
+                                        <% } if(lan === "ru") { %>
+                                        <%= event.event_subtitle_ru %>
+                                        <% } else {%>
+                                        <%= event.event_subtitle_eng %>
+                                    <% } %>
+                                </p>
+                                <a href="/news/<%= event.event_slug %>" class="read_more d-flex align-content-center">
+                                    <span>
+                                        Read More
+                                    </span>
+                                    <svg width="20" height="16" viewBox="0 0 20 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M2 6.98581C1.43988 6.98581 0.985815 7.43988 0.985815 8C0.985815 8.56012 1.43988 9.01419 2 9.01419V6.98581ZM18.7171 8.71714C19.1132 8.32107 19.1132 7.67893 18.7171 7.28286L12.2629 0.828629C11.8668 0.432565 11.2247 0.432565 10.8286 0.828629C10.4326 1.22469 10.4326 1.86684 10.8286 2.2629L16.5657 8L10.8286 13.7371C10.4326 14.1332 10.4326 14.7753 10.8286 15.1714C11.2247 15.5674 11.8668 15.5674 12.2629 15.1714L18.7171 8.71714ZM2 9.01419H18V6.98581H2V9.01419Z"
+                                            fill="#3B80EA" />
+                                    </svg>
+        
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <% }) %> 
+                </ul>
+            </section>
+        </div>
+    </div>
+    <footer>
+        <div class="footer container">
+            <div class="footer__logo">
+                <img src="/assets/images/logo-dark.png" alt="logo">
+            </div>
+            <ul class="footer__menus row d-flex justify-content-between align-items-start">
+                <li class="footer__menus__item col-lg-3">
+                    <p>Education is the most powerful weapon which
+                        you can use to change the world</p>
+                    <h3>Contact Us</h3>
+                    <ul class="contacts__list">
+                        <li class="contacts__list__item d-flex justify-content-left align-items-center">
+                            <img src="./assets/images/icons/email_icon.svg" alt="message icon">
+                            <span>cicschool@cambridge.uz</span>
+                        </li>
+                        <li class="contacts__list__item d-flex justify-content-left align-items-center">
+                            <img src="./assets/images/icons/phone_icon.svg" alt="phoone icon">
+                            <span>+998 71 200 0308</span>
+                        </li>
+                        <li class="contacts__list__item d-flex justify-content-left align-items-center">
+                            <img src="./assets/images/icons/location_icon.svg" alt="location_icon">
+                            <span>Kh. Rakhmatullaev st. 3,
+                                Shayhontohur, Tashkent</span>
+                        </li>
+                        <li class="contacts__list__item d-flex justify-content-left align-items-center">
+                            <img src="./assets/images/icons/location_icon.svg" alt="location_icon">
+                            <span>Navai Street. 16,
+                                Yunusobod, Tashkent</span>
+                        </li>
+                        <li class="contacts__list__item d-flex justify-content-left align-items-center">
+                            <img src="./assets/images/icons/location_icon.svg" alt="location_icon">
+                            <span>Samarkand region,
+                                Shakhrisabz, Samarkand, 15</span>
+                        </li>
+                    </ul>
+                </li>
+                <li class="footer__menus__item col-lg-3">
+                    <h3>Home</h3>
+                    <ul class="contacts__list">
+                        <li class="contacts__list__item">
+                            <a href="#">
+                                News
+                            </a>
+                        </li>
+                        <li class="contacts__list__item">
+                            <a href="#">
+                                Statistics
+                            </a>
+                        </li>
+                        <li class="contacts__list__item">
+                            <a href="#">
+                                Our Facilities
+                            </a>
+                        </li>
+                        <li class="contacts__list__item">
+                            <a href="#">
+                                Campus Life
+                            </a>
+                        </li>
+                        <li class="contacts__list__item">
+                            <a href="#">
+                                Admission
+                            </a>
+                        </li>
+                        <li class="contacts__list__item">
+                            <a href="#">
+                                Studens Portfolio
+                            </a>
+                        </li>
+                        <li class="contacts__list__item">
+                            <a href="#">
+                                Why CIC School?
+                            </a>
+                        </li>
+                        <li class="contacts__list__item">
+                            <a href="#">
+                                Our Partners
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="footer__menus__item col-lg-3">
+                    <h3>Pages</h3>
+                    <ul class="contacts__list">
+                        <li class="contacts__list__item">
+                            <a href="#">
+                                Home
+                            </a>
+                        </li>
+                        <li class="contacts__list__item">
+                            <a href="#">
+                                About Us
+                            </a>
+                        </li>
+                        <li class="contacts__list__item">
+                            <a href="#">
+                                Admissions
+                            </a>
+                        </li>
+                        <li class="contacts__list__item">
+                            <a href="#">
+                                Life at CIC
+                            </a>
+                        </li>
+                        <li class="contacts__list__item">
+                            <a href="#">
+                                All News
+                            </a>
+                        </li>
+                        <li class="contacts__list__item">
+                            <a href="#">
+                                Students’ Government
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="footer__menus__item col-lg-3">
+                    <h3>Folloow Us</h3>
+                    <ul class="socily__list d-flex justify-content-between">
+                        <li class="socily__list__item">
+                            <a href="https://instagram.com/cic_school?igshid=YmMyMTA2M2Y=">
+                                <img src="./assets/images/icons/instagram.svg" alt="instagram">
+                            </a>
+                        </li>
+                        <li class="socily__list__item">
+                            <a href="https://t.me/cic_school">
+                                <img src="./assets/images/icons/telegram.svg" alt="telegram">
+                            </a>
+                        </li>
+                        <li class="socily__list__item">
+                            <a href="https://www.facebook.com/cicschooluz/">
+                                <img src="./assets/images/icons/facebook.svg" alt="facebook">
+                            </a>
+                        </li>
+                    </ul>
+                    <h3>Have Any Questions?</h3>
+                    <ul class="quesion__form">
+                        <input class="input" type="text" placeholder="Name">
+                        <input class="input" type="text" placeholder="Mail address">
+                        <input class="input" type="text" placeholder="Type something..">
+                        <button class="btn">
+                            <img src="./assets/images/icons/send_icon.svg" alt="send icon">
+                            <span>Send</span>
+                        </button>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="./assets/javascript/swipperSettings.js"></script>
+<script src="./assets/javascript/locationHeader.js"></script>
+<script src="./assets/javascript/locationsidebar.js"></script>
+<script src="./assets/javascript/menu.js"></script>
+
+
+</script>
+
+</html>

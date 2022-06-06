@@ -1,0 +1,67 @@
+{
+  "navbar": {
+    "navbar__list": {
+      "navbar__list__item1": {
+        "uz": "Bosh sahifa",
+        "ru": "Главная",
+        "eng": "Home"
+      },
+      "navbar__list__item2": {
+        "uz": "Biz haqimizda",
+        "ru": "О нас",
+        "eng": "About Us"
+      },
+      "navbar__list__item3": {
+        "uz": "CICdagi hayot",
+        "ru": "Жизнь в CIC",
+        "eng": "Life at CIC"
+      },
+      "navbar__list__item4": {
+        "uz": "Qabul",
+        "ru": "Допуск",
+        "eng": "Admission"
+      },
+      "navbar__list__item5": {
+        "uz": "Joylar",
+        "ru": "Места",
+        "eng": "Locations"
+      }
+    }
+  },
+  "admission": {
+    "admission_title": {
+      "uz": "Qabul hozir ochiq",
+      "ru": "Прием открыт сейчас",
+      "eng": "Admission is Open Now"
+    },
+    "admission_subtitle": {
+      "uz": "Hozirda 1-11 sinflar uchun qabul ochiq",
+      "ru": "Набор открыт для 1-11 классов.",
+      "eng": "Admission is open for grades 1-11 now"
+    },
+    "apply_btn": {
+      "uz": "Hoziroq murojaat qiling",
+      "ru": "Применить сейчас",
+      "eng": "Apply Now"
+    }
+  },
+  "last_news": {
+    "news_title": {
+      "uz": "So'ngi yangiliklar",
+      "ru": "Последние новости",
+      "eng": "Latest News"
+    }
+  },
+  "all_news": {
+    "news_title": {
+      "uz": "Barcha yangiliklar",
+      "ru": "Все новости",
+      "eng": "All News"
+    }
+  },
+  "reed_more": {
+    "eng": "Reed more",
+    "uz": "Ko'proq",
+    "ru": "Читать далее"
+  }
+}

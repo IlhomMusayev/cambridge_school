@@ -1,0 +1,363 @@
+.facilities {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  #myVideo {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    right: 0;
+    top: 0;
+    filter: brightness(20%);
+  }
+  &__accardion__section {
+    height: 100%;
+    .accardion__data {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+
+      .accardion {
+        position: relative;
+
+        button.course-accordion {
+          width: 50%;
+          background-color: transparent;
+          color: #fff;
+          cursor: pointer;
+          border: none;
+          text-align: left;
+          outline: none;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 30px;
+          line-height: 45px;
+          transition: 0.4s;
+          text-transform: none;
+          letter-spacing: 0px;
+          padding: 7px 0;
+          border-bottom: 1px solid #ffffff;
+          margin: 10px 0;
+          transition: all 0.3s ease;
+          position: relative;
+          .circle {
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            position: absolute;
+            top: 40%;
+            left: -5%;
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background-color: #fff;
+          }
+        }
+
+        /*When the button is active or mouse hovers*/
+        button.course-accordion.active {
+          padding: 7px 0;
+          border-bottom: none;
+          transition: all 0.3s ease;
+          .circle {
+            opacity: 1;
+            transition: opacity 0.3s ease;
+          }
+        }
+
+        /*button not active*/
+        button.course-accordion:after {
+          content: "\002B";
+          color: #fff;
+          font-weight: bold;
+          float: right;
+          margin-left: 5px;
+          font-size: 20px;
+          transition: all 0.3s ease;
+        }
+
+        /* minus button */
+        button.course-accordion.active:after {
+          content: "";
+          transition: all 0.3s ease;
+        }
+
+        div.course-panel {
+          background-color: transparent;
+          max-height: 0;
+          overflow: hidden;
+          transition: max-height 0.2s ease-out;
+          width: 106%;
+          font-weight: 500;
+          font-size: 17px;
+          line-height: 30px;
+          color: #fff;
+          p {
+            width: 45%;
+          }
+          #video {
+            position: relative;
+            .logo {
+              position: absolute;
+              top: 5%;
+              left: 5%;
+              z-index: 999;
+            }
+          }
+        }
+      }
+      z-index: 99;
+    }
+    .accardion__video {
+      z-index: 100;
+    }
+  }
+}
+
+@media (max-width: 1250px) {
+  .facilities {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    #myVideo {
+      width: 100%;
+      height: 100vh;
+      object-fit: cover;
+      position: absolute;
+      right: 0;
+      top: 0;
+      filter: brightness(20%);
+    }
+    &__accardion__section {
+      height: 100%;
+      .accardion__data {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+
+        .accardion {
+          position: relative;
+
+          button.course-accordion {
+            width: 50%;
+            background-color: transparent;
+            color: #fff;
+            cursor: pointer;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 30px;
+            line-height: 45px;
+            transition: 0.4s;
+            text-transform: none;
+            letter-spacing: 0px;
+            padding: 7px 0;
+            border-bottom: 1px solid #ffffff;
+            margin: 10px 0;
+            transition: all 0.3s ease;
+            position: relative;
+            .circle {
+              opacity: 0;
+              transition: opacity 0.3s ease;
+              position: absolute;
+              top: 40%;
+              left: -5%;
+              width: 14px;
+              height: 14px;
+              border-radius: 50%;
+              background-color: #fff;
+            }
+          }
+
+          /*When the button is active or mouse hovers*/
+          button.course-accordion.active {
+            padding: 7px 0;
+            border-bottom: none;
+            transition: all 0.3s ease;
+            .circle {
+              opacity: 1;
+              transition: opacity 0.3s ease;
+            }
+          }
+
+          /*button not active*/
+          button.course-accordion:after {
+            content: "\002B";
+            color: #fff;
+            font-weight: bold;
+            float: right;
+            margin-left: 5px;
+            font-size: 20px;
+            transition: all 0.3s ease;
+          }
+
+          /* minus button */
+          button.course-accordion.active:after {
+            content: "";
+            transition: all 0.3s ease;
+          }
+
+          div.course-panel {
+            background-color: transparent;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            width: 106%;
+            font-weight: 500;
+            font-size: 17px;
+            line-height: 30px;
+            color: #fff;
+            p {
+              width: 45%;
+            }
+            #video {
+              width: 100%;
+              position: relative;
+              video {
+                width: 90%;
+              }
+              .logo {
+                position: absolute;
+                top: 5%;
+                left: 5%;
+                z-index: 999;
+              }
+            }
+          }
+        }
+        z-index: 99;
+      }
+      .accardion__video {
+        z-index: 100;
+      }
+    }
+  }
+}
+@media (max-width: 600px) {
+  .facilities {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    #myVideo {
+      width: 100%;
+      height: 100vh;
+      object-fit: cover;
+      position: absolute;
+      right: 0;
+      top: 0;
+      filter: brightness(20%);
+    }
+    &__accardion__section {
+      height: 100%;
+      .accardion__data {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+
+        .accardion {
+          position: relative;
+
+          button.course-accordion {
+            width: 100%;
+            background-color: transparent;
+            color: #fff;
+            cursor: pointer;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 33px;
+            transition: 0.4s;
+            text-transform: none;
+            letter-spacing: 0px;
+            padding: 7px 0;
+            border-bottom: 1px solid #ffffff;
+            margin: 10px 0;
+            transition: all 0.3s ease;
+            position: relative;
+            .circle {
+              opacity: 0;
+              transition: opacity 0.3s ease;
+              position: absolute;
+              top: 40%;
+              left: -5%;
+              width: 14px;
+              height: 14px;
+              border-radius: 50%;
+              background-color: #fff;
+            }
+          }
+
+          /*When the button is active or mouse hovers*/
+          button.course-accordion.active {
+            padding: 7px 0;
+            border-bottom: none;
+            transition: all 0.3s ease;
+            .circle {
+              display: none;
+              opacity: 1;
+              transition: opacity 0.3s ease;
+            }
+          }
+
+          /*button not active*/
+          button.course-accordion:after {
+            content: "\002B";
+            color: #fff;
+            font-weight: bold;
+            float: right;
+            margin-left: 5px;
+            font-size: 20px;
+            transition: all 0.3s ease;
+          }
+
+          /* minus button */
+          button.course-accordion.active:after {
+            content: "";
+            transition: all 0.3s ease;
+          }
+
+          div.course-panel {
+            background-color: transparent;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            width: 106%;
+            ffont-weight: 500;
+            font-size: 14px;
+            line-height: 30px;
+            color: #fff;
+            p {
+              width: 100%;
+            }
+            #video {
+              margin-top: 20px;
+              width: 100%;
+              position: relative;
+              video {
+                width: 100%;
+              }
+              .logo {
+                position: absolute;
+                top: 5%;
+                left: 5%;
+                z-index: 999;
+              }
+            }
+          }
+        }
+        z-index: 99;
+      }
+      .accardion__video {
+        z-index: 100;
+      }
+    }
+  }
+}

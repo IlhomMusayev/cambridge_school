@@ -1,0 +1,373 @@
+.school__accardion {
+  &__title {
+    h2 {
+      font-weight: 600;
+      font-size: 40px;
+      line-height: 60px;
+    }
+  }
+  &__data {
+    position: relative;
+    margin-top: 50px;
+    padding-left: 50px;
+    button.course-accordion {
+      font-family: "Poppins";
+      width: 100%;
+      background-color: transparent;
+      color: #000;
+      cursor: pointer;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-weight: 500;
+      font-size: 26px;
+      line-height: 39px;
+      transition: 0.4s;
+      text-transform: none;
+      letter-spacing: 0px;
+      padding: 7px 0;
+      border-bottom: 1px solid #000;
+      margin: 10px 0;
+      transition: all 0.3s ease;
+      position: relative;
+    }
+
+    /*When the button is active or mouse hovers*/
+    button.course-accordion.active {
+      padding: 7px 0;
+      border-bottom: none;
+      transition: all 0.3s ease;
+    }
+
+    /*button not active*/
+    button.course-accordion:after {
+      content: "\002B";
+      color: #000;
+      font-weight: bold;
+      float: right;
+      margin-left: 5px;
+      font-size: 20px;
+      transition: all 0.3s ease;
+    }
+
+    /* minus button */
+    button.course-accordion.active:after {
+      content: "\2212";
+      transition: all 0.3s ease;
+    }
+
+    div.course-panel {
+      background-color: transparent;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+      width: 100%;
+      font-weight: 500;
+      font-size: 17px;
+      line-height: 30px;
+      color: #000;
+      p {
+        width: 100%;
+      }
+    }
+  }
+
+  &__admission {
+    position: relative;
+    text-align: center;
+    height: 100%;
+    margin: auto 0;
+    &__title {
+      font-weight: 500;
+      font-size: 34px;
+      line-height: 51px;
+    }
+    &__subtitle {
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 22px;
+      margin: 10px 0;
+    }
+    .arrow__bottom {
+      margin-top: 50px;
+      margin-bottom: 20px;
+    }
+    .apply__btn {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #ff9838;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 10px 25px;
+      border: none;
+      cursor: pointer;
+      img {
+        width: 20px;
+      }
+      span {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #fff;
+        margin-left: 10px;
+      }
+    }
+  }
+}
+.school__accardion {
+  &__title {
+    h2 {
+      font-weight: 600;
+      font-size: 40px;
+      line-height: 60px;
+    }
+  }
+  &__data {
+    position: relative;
+    margin-top: 50px;
+    padding-left: 50px;
+    button.course-accordion {
+      width: 100%;
+      background-color: transparent;
+      color: #000;
+      cursor: pointer;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-weight: 500;
+      font-size: 26px;
+      line-height: 39px;
+      transition: 0.4s;
+      text-transform: none;
+      letter-spacing: 0px;
+      padding: 7px 0;
+      border-bottom: 1px solid #000;
+      margin: 10px 0;
+      transition: all 0.3s ease;
+      position: relative;
+    }
+
+    /*When the button is active or mouse hovers*/
+    button.course-accordion.active {
+      padding: 7px 0;
+      border-bottom: none;
+      transition: all 0.3s ease;
+    }
+
+    /*button not active*/
+    button.course-accordion:after {
+      content: "\002B";
+      color: #000;
+      font-weight: bold;
+      float: right;
+      margin-left: 5px;
+      font-size: 20px;
+      transition: all 0.3s ease;
+    }
+
+    /* minus button */
+    button.course-accordion.active:after {
+      content: "\2212";
+      transition: all 0.3s ease;
+    }
+
+    div.course-panel {
+      background-color: transparent;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+      width: 100%;
+      font-weight: 500;
+      font-size: 17px;
+      line-height: 30px;
+      color: #000;
+      p {
+        width: 100%;
+      }
+    }
+  }
+
+  &__admission {
+    position: relative;
+    text-align: center;
+    height: 100%;
+    margin: auto 0;
+    padding-bottom: 20px;
+    &__title {
+      font-weight: 500;
+      font-size: 34px;
+      line-height: 51px;
+    }
+    &__subtitle {
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 22px;
+      margin: 10px 0;
+    }
+    .arrow__bottom {
+      margin-top: 30px;
+      margin-bottom: 20px;
+    }
+    .apply__btn {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #ff9838;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 10px 25px;
+      border: none;
+      cursor: pointer;
+      img {
+        width: 20px;
+      }
+      span {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #fff;
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .school__accardion {
+    position: relative;
+    display: block;
+    height: 100vh;
+    background-color: #fff;
+    &__title {
+      h2 {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 36px;
+      }
+    }
+    &__data {
+      position: relative;
+      margin-top: 50px;
+      padding-left: 10px;
+      button.course-accordion {
+        font-family: "Poppins";
+        width: 100%;
+        background-color: transparent;
+        color: #000;
+        cursor: pointer;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 36px;
+        transition: 0.4s;
+        text-transform: none;
+        letter-spacing: 0px;
+        padding: 7px 0;
+        border-bottom: 1px solid #000;
+        margin: 10px 0;
+        transition: all 0.3s ease;
+        position: relative;
+      }
+
+      /*When the button is active or mouse hovers*/
+      button.course-accordion.active {
+        padding: 7px 0;
+        border-bottom: none;
+        transition: all 0.3s ease;
+      }
+
+      /*button not active*/
+      button.course-accordion:after {
+        content: "\002B";
+        color: #000;
+        font-weight: bold;
+        float: right;
+        margin-left: 5px;
+        font-size: 20px;
+        transition: all 0.3s ease;
+      }
+
+      /* minus button */
+      button.course-accordion.active:after {
+        content: "\2212";
+        transition: all 0.3s ease;
+      }
+
+      div.course-panel {
+        background-color: transparent;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+        width: 100%;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 30px;
+        color: #000;
+        p {
+          width: 100%;
+        }
+      }
+    }
+
+    &__admission {
+      position: relative;
+      text-align: center;
+      height: 100vh;
+      margin: 50px 0;
+      &__title {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 36px;
+      }
+      &__subtitle {
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 22px;
+        margin: 10px 0;
+      }
+      .arrow__bottom {
+        margin-top: 50px;
+        margin-bottom: 20px;
+        img {
+          width: 15px;
+        }
+      }
+      .apply__btn {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        background: #ff9838;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 10px 25px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        border: none;
+        cursor: pointer;
+        img {
+          width: 20px;
+        }
+        span {
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 24px;
+          color: #fff;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}

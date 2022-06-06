@@ -1,0 +1,200 @@
+{
+  "navbar": {
+    "navbar__list": {
+      "navbar__list__item1": {
+        "uz": "Bosh sahifa",
+        "ru": "Главная",
+        "eng": "Home"
+      },
+      "navbar__list__item2": {
+        "uz": "Biz haqimizda",
+        "ru": "О нас",
+        "eng": "About Us"
+      },
+      "navbar__list__item3": {
+        "uz": "CICdagi hayot",
+        "ru": "Жизнь в CIC",
+        "eng": "Life at CIC"
+      },
+      "navbar__list__item4": {
+        "uz": "Qabul",
+        "ru": "Допуск",
+        "eng": "Admission"
+      },
+      "navbar__list__item5": {
+        "uz": "Joylar",
+        "ru": "Места",
+        "eng": "Locations"
+      },
+      "navbar__list__item6": {
+        "uz": "Kontaktlar",
+        "ru": "Свяжитесь с нами",
+        "eng": "Contact Us"
+      }
+    }
+  },
+  "header": {
+    "title": {
+      "eng": "About Us",
+      "ru": "О нас",
+      "uz": "Biz haqimizda"
+    },
+    "subtitle": {
+      "eng": "Introduction to our Millat Umidi International School",
+      "ru": "Познакомьтесь с нашей международной школой Millat Umidi",
+      "uz": "Millat Umidi xalqaro maktabimiz bilan tanishing"
+    },
+    "play_btn": {
+      "eng": "About Our School",
+      "ru": "О нашей школе",
+      "uz": "Maktabimiz haqida"
+    },
+    "close": {
+      "eng": "Close",
+      "ru": "Закрыть",
+      "uz": "Yopish"
+    }
+  },
+  "mission": {
+    "title": {
+      "eng": "Mission and Vision Of Our School",
+      "ru": "Миссия и видение нашей школы",
+      "uz": "Maktabimizning missiyasi va qadriyatlari"
+    },
+    "content1": {
+      "eng": "Millat Umidi International School - a private high school where students can get not only the basic school knowledge, but also be prepared for AP and IELTS exams – fundamental requirements to enter top international universities abroad.",
+      "ru": "Millat Umidi International School — частная средняя школа, где ученики могут получить не только базовые школьные знания, но и подготовиться к экзаменам AP и IELTS — основное требование для поступления в топовые международные университеты за рубежом.",
+      "uz": "Millat Umidi xalqaro maktabi - xususiy o'rta maktab bo'lib, unda o'quvchilar nafaqat tayanch maktab bilimlarini olishlari, balki AT va IELTS imtihonlariga ham tayyorlanishlari mumkin – xorijdagi yetakchi xalqaro universitetlarga kirish uchun asosiy talablar."
+    },
+    "content2": {
+      "eng": "Easily accessible location and most advanced technologies make Millat Umidi International School unlike other schools, and allow young students to study in interactive learning atmosphere. We offer 11 year education with in-depth of English learning environment.",
+      "ru": " Удобное расположение и самые передовые технологии делают международную школу Millat Umidi непохожей на другие школы и позволяют юным ученикам учиться в интерактивной учебной атмосфере. Мы предлагаем 11-летнее обучение с углубленным изучением английского языка.",
+      "uz": "Qulay joylashuv va eng ilg‘or texnologiyalar Millat Umidi xalqaro maktabini boshqa maktablardan ajratib turadi va yosh o‘quvchilarga interaktiv ta’lim muhitida bilim olish imkonini beradi. Biz ingliz tilini chuqur o'rganish bilan 11 yillik o'qishni taklif qilamiz."
+    }
+  },
+  "school_program": {
+    "title": {
+      "eng": "School Program",
+      "ru": "Школьная программа",
+      "uz": "Maktab dasturi"
+    },
+    "content": {
+      "eng": "Students at Millat Umidi International School will have a learning program designed to enhance student's academic skills in STEM fields in addition to local educational programs.",
+      "ru": "Студенты Международной школы Millat Umidi будут иметь программу обучения, предназначенную для улучшения академических навыков учащихся в областях STEM в дополнение к государственным образовательным программам.",
+      "uz": "Millat Umidi xalqaro maktabi talabalari davlat ta'lim dasturlariga qo'shimcha ravishda STEM sohalarida talabalarning akademik ko'nikmalarini oshirishga qaratilgan o'quv dasturiga ega bo'lishadi."
+    }
+  },
+  "admission": {
+    "admission_title": {
+      "uz": "Qabul hozir ochiq",
+      "ru": "Прием открыт сейчас",
+      "eng": "Admission is Open Now"
+    },
+    "admission_subtitle": {
+      "uz": "Hozirda 1-11 sinflar uchun qabul ochiq",
+      "ru": "Набор открыт для 1-11 классов.",
+      "eng": "Admission is open for grades 1-11 now"
+    },
+    "apply_btn": {
+      "uz": "Hoziroq murojaat qiling",
+      "ru": "Применить сейчас",
+      "eng": "Apply Now"
+    }
+  },
+  "convenience": {
+    "title": {
+      "uz": "Ta'lim eshigini oching",
+      "ru": "Откройте дверь образования",
+      "eng": "Unlock the Door of Education"
+    },
+    "content": {
+      "eng": "Education is the most powerful weapon which you can use to change the world.",
+      "ru": "Образование — это самое мощное оружие, которое вы можете использовать, чтобы изменить мир. ",
+      "uz": "Ta'lim - bu dunyoni o'zgartirish uchun ishlatishingiz mumkin bo'lgan eng kuchli qurol."
+    },
+    "convenience_list": {
+      "item1": {
+        "title": {
+          "uz": "O'qituvchini qo'llab-quvvatlash",
+          "ru": "Поддержка учителя",
+          "eng": "Teacher’s Support"
+        },
+        "content": {
+          "uz": "Yordamchi o'qituvchilar va o'qituvchilarni qo'llab-quvvatlash markazi har doim sizga yordam berishi va qo'llashi mumkin.",
+          "ru": "Центр поддержки учеников всегда готов помочь и поддержать вас.",
+          "eng": "Teacher’s support hub from assistant teachers and academic coordinator"
+        }
+      },
+      "item2": {
+        "title": {
+          "uz": "Imkoniyatlar",
+          "ru": "Возможности",
+          "eng": "Opportunities"
+        },
+        "content": {
+          "uz": "SAT va IELTS dan yuqori ballarini olgandan keyin TOP  universitetlarida bakalavriatda oʻqishni davom ettirish imkoniyati",
+          "ru": "Возможность продолжить обучение в университетах-членах lvy после получения высоких баллов SAT и IELTS.",
+          "eng": "Opportunity to continue undergraduate studies at lvy Member Universities after obtaining a high IELTS score and AP"
+        }
+      },
+      "item3": {
+        "title": {
+          "uz": "Intensiv kurs",
+          "ru": "Интенсивный курс",
+          "eng": "Intensive Course"
+        },
+        "content": {
+          "eng": "We prepare our students well by engaging them to compulsory intensive courses of AP and IELTS, including mock tests",
+          "ru": "Мы готовим наших студентов, привлекая их к обязательным интенсивным курсам SAT и IELTS, включая пробные тесты.",
+          "uz": "Biz talabalarimizni SAT va IELTSning majburiy intensiv kurslariga, jumladan, imtihonlarga jalb qilish orqali yaxshi tayyorlaymiz."
+        }
+      },
+      "item4": {
+        "title": {
+          "uz": "Chet elda bepul ta'lim xizmatlari",
+          "ru": "Бесплатное обучение за границей",
+          "eng": "Free study abroad Services"
+        },
+        "content": {
+          "uz": "Chet elga ariza topshirish va o'qishni davom ettirish uchun bepul yordam",
+          "ru": "Центр поддержки учеников всегда готов помочь и поддержать вас",
+          "eng": "Free assistance to apply and continue studies abroad"
+        }
+      }
+    }
+  },
+  "statistics": {
+    "title": {
+      "uz": "Millat Umidi xalqaro maktabimiz statistikasi",
+      "ru": "Статистика нашей Международной школы Millat Umidi Школа",
+      "eng": "Statistics of Our Millat Umidi International School School"
+    },
+    "title1": {
+      "uz": "Ochildi",
+      "ru": "Открыть",
+      "eng": "Open in"
+    },
+    "title2": {
+      "uz": "O'qituvchilar",
+      "ru": "Учителя",
+      "eng": "Teachers"
+    },
+    "title3": {
+      "uz": "Talabalar",
+      "ru": "Ученики",
+      "eng": "Students"
+    }
+  },
+  "partners": {
+    "title": {
+      "eng": "Our Partners",
+      "ru": "Наши партнеры",
+      "uz": "Bizning hamkorlarimiz"
+    },
+    "subtitle": {
+      "eng": "Our best parnerships download and distribute with our compliments",
+      "ru": "Наши лучшие партнерские отношения загружайте и распространяйте с нашей благодарностью",
+      "uz": "Bizning hamkorlarimiz"
+    }
+  }
+}

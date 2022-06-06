@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400&display=swap");
+
+@import "color";
+@import "navbar";
+@import "header";
+@import "news";
+@import "statistics";
+@import "facilities";
+@import "future-here";
+@import "compus";
+@import "student-portfolio";
+@import "scool-accardion";
+@import "partners";
+@import "footer";
+@import "admission";
+@import "about";
+@import "school_mission";
+@import "school_program";
+@import "school_admission";
+@import "school_convenience";
+@import "school_statistics";
+@import "life_header";
+@import "student_government";
+@import "news_header";
+@import "all_news";
+@import "admission_form";
+@import "location_header";
+@import "sidebar_locations";
+@import "programm_section";
+@import "alert";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+ul,
+li,
+a {
+  list-style: none;
+  text-decoration: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.container {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+.loader_wrapper {
+  background: #fafafa;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 9999999;
+  .loading2 {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border-top: 4px solid;
+    border-color: #d29d01 transparent;
+    animation: spin 0.6s linear infinite;
+    z-index: 9999999;
+  }
+  .logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(359deg);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 95%;
+  }
+}

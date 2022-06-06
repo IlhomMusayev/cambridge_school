@@ -1,0 +1,80 @@
+{
+  "navbar": {
+    "navbar__list": {
+      "navbar__list__item1": {
+        "uz": "Bosh sahifa",
+        "ru": "Главная",
+        "eng": "Home"
+      },
+      "navbar__list__item2": {
+        "uz": "Biz haqimizda",
+        "ru": "О нас",
+        "eng": "About Us"
+      },
+      "navbar__list__item3": {
+        "uz": "CICdagi hayot",
+        "ru": "Жизнь в CIC",
+        "eng": "Life at CIC"
+      },
+      "navbar__list__item4": {
+        "uz": "Qabul",
+        "ru": "Допуск",
+        "eng": "Admission"
+      },
+      "navbar__list__item5": {
+        "uz": "Joylar",
+        "ru": "Места",
+        "eng": "Locations"
+      }
+    }
+  },
+  "admission": {
+    "admission_title": {
+      "uz": "Qabul hozir ochiq",
+      "ru": "Прием открыт сейчас",
+      "eng": "Admission is Open Now"
+    },
+    "admission_subtitle": {
+      "uz": "Hozirda 1-11 sinflar uchun qabul ochiq",
+      "ru": "Набор открыт для 1-11 классов.",
+      "eng": "Admission is open for grades 1-11 now"
+    },
+    "apply_btn": {
+      "uz": "Hoziroq murojaat qiling",
+      "ru": "Применить сейчас",
+      "eng": "Apply Now"
+    }
+  },
+  "program": {
+    "title": {
+      "eng": "Programs Of Millat Umidi school Tashkent",
+      "uz": "Millat Umidi maktabi Dasturlari Toshkent",
+      "ru": "Программы школы Миллат Умиди Ташкент"
+    },
+    "item1": {
+      "eng": "School transcript (grades) or certificate",
+      "uz": "Maktab transkripti (baholar) yoki sertifikat",
+      "ru": "Талон об образовании (баллы) или сертификат"
+    },
+    "item2": {
+      "eng": "Passport or metric",
+      "ru": "Паспорт или метрика",
+      "uz": "Pasport yoki metrik."
+    },
+    "item3": {
+      "eng": "A copy of the parent's passport",
+      "ru": "Копия паспорта родителей",
+      "uz": "Ota-onaning pasporti nusxasi."
+    },
+    "item4": {
+      "eng": "Must pass an internal exam in English and math",
+      "ru": "Должен сдать внутренний экзамен по английскому языку и математике.",
+      "uz": "Ingliz tili va matematikadan ichki imtihondan o'tishi kerak."
+    }
+  },
+  "event_title": {
+    "eng": "All Events",
+    "ru": "Все события",
+    "uz": "Barcha voqealar"
+  }
+}

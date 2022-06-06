@@ -1,0 +1,307 @@
+{
+  "navbar": {
+    "navbar__list": {
+      "navbar__list__item1": {
+        "uz": "Bosh sahifa",
+        "ru": "Главная",
+        "eng": "Home"
+      },
+      "navbar__list__item2": {
+        "uz": "Biz haqimizda",
+        "ru": "О нас",
+        "eng": "About Us"
+      },
+      "navbar__list__item3": {
+        "uz": "CICdagi hayot",
+        "ru": "Жизнь в CIC",
+        "eng": "Life at CIC"
+      },
+      "navbar__list__item4": {
+        "uz": "Qabul",
+        "ru": "Допуск",
+        "eng": "Admission"
+      },
+      "navbar__list__item5": {
+        "uz": "Joylar",
+        "ru": "Места",
+        "eng": "Locations"
+      }
+    }
+  },
+  "admission": {
+    "admission_title": {
+      "uz": "Qabul hozir ochiq",
+      "ru": "Прием открыт сейчас",
+      "eng": "Admission is Open Now"
+    },
+    "admission_subtitle": {
+      "uz": "Hozirda 1-11 sinflar uchun qabul ochiq",
+      "ru": "Набор открыт для 1-11 классов.",
+      "eng": "Admission is open for grades 1-11 now"
+    },
+    "apply_btn": {
+      "uz": "Hoziroq murojaat qiling",
+      "ru": "Применить сейчас",
+      "eng": "Apply Now"
+    }
+  },
+  "sidebar": {
+    "item1": {
+      "eng": "Scholarships",
+      "ru": "Стипендии",
+      "uz": "Grantlar"
+    },
+    "item2": {
+      "eng": "Tuition Fee",
+      "ru": "Плата за обучение",
+      "uz": "O'qish to'lovi"
+    },
+    "item3": {
+      "eng": "Requriments",
+      "ru": "Требования",
+      "uz": "Talablar"
+    },
+    "item4": {
+      "eng": "How To Apply",
+      "ru": "Как применить",
+      "uz": "Qanday murojaat qilish kerak"
+    }
+  },
+  "scholarships": {
+    "title": {
+      "eng": "CIC School GRANT TERMS for the 2022-2023 academic year:",
+      "ru": "УСЛОВИЯ ГРАНТА школы Миллат Умиди на 2022-2023 учебный год:",
+      "uz": "Millat Umidi maktabi 2022-2023 o'quv yili uchun GRANT SHARTLARI:"
+    },
+    "item1": {
+      "eng": "CIC School has special grant places according to which a student can receive 40%, 60% and 100% of the grant.",
+      "ru": "В школе Миллат Умиди есть специальные грантовые места, по которым студент может получить 40%, 60% и 100% гранта",
+      "uz": "Millat Umidi maktabida maxsus grant o‘rinlari mavjud bo‘lib, unga ko‘ra talaba 40%, 60% va 100% grant olishi mumkin."
+    },
+    "item2": {
+      "eng": "The student will be interviewed after scoring high on the entrance exams. After that, when the learning process begins, that is, in September and October. The student will be able to receive one of the percent of the grant in November, based on the results they show, their active participation in classes and school social life.",
+      "ru": "Студент проходит собеседование после того, как наберет высокие баллы на вступительных экзаменах. После этого, когда начнется процесс обучения, то есть в сентябре и октябре. Учащийся сможет получить один из процентов стипендии в ноябре, исходя из результатов, которые он показывает, активного участия в занятиях и общественной жизни школы.",
+      "uz": "Talaba kirish imtihonlarida yuqori ball to‘plaganidan so‘ng suhbatdan o‘tkaziladi. Shundan so'ng, o'quv jarayoni boshlanganda, ya'ni sentyabr va oktyabr oylarida. Talaba ko‘rsatgan natijalari, darslarda va maktab ijtimoiy hayotidagi faol ishtirokidan kelib chiqib, noyabr oyida grantning bir foizini olishi mumkin bo‘ladi."
+    },
+    "item3": {
+      "eng": "If a student has IELTS 7+, SAT 1300+ and passes our internal interview, he / she will be automatically admitted on a grant basis from September",
+      "ru": "Если студент имеет IELTS 7+, SAT 1300+ и проходит наше внутреннее собеседование, он/она будет автоматически принят на грантовой основе с сентября. ",
+      "uz": "Agar talaba IELTS 7+, SAT 1300+ boʻlsa va ichki suhbatimizdan muvaffaqiyatli oʻtgan boʻlsa, u sentyabr oyidan boshlab avtomatik ravishda grant asosida oʻqishga qabul qilinadi."
+    },
+    "item4": {
+      "eng": "If a student has an IELTS 7+ and has not taken the SAT or has a SAT of 1300+ and does not have an IELTS 7+, then the student has no results in a particular subject (mathematics or English) will have to score high",
+      "ru": "Если студент имеет IELTS 7+ и не сдавал SAT или имеет SAT 1300+ и не имеет IELTS 7+, то у студента нет результатов по определенному предмету (математике или английскому языку) и он должен будет получить высокий балл.",
+      "uz": "Agar talaba IELTS 7+ boʻlsa va SAT ni topshirmagan boʻlsa yoki SAT 1300+ boʻlsa va IELTS 7+ boʻlmasa, talaba maʼlum bir fandan (matematika yoki ingliz tili) natijaga ega boʻlmasa, yuqori ball toʻplashi kerak boʻladi. "
+    },
+    "item5": {
+      "eng": "If a student studying on a grant does not follow the internal rules and misses a lot of classes without a reason, his / her study process can be continued on a contract basis.",
+      "ru": "Если студент, обучающийся по гранту, не соблюдает правила внутреннего распорядка и пропускает много занятий без уважительной причины, его учебный процесс может быть продолжен на контрактной основе.",
+      "uz": "Grant bo‘yicha tahsil olayotgan talaba ichki tartib qoidalariga rioya qilmasa va sababsiz ko‘p dars qoldirsa, uning o‘qish jarayoni shartnoma asosida davom ettirilishi mumkin."
+    }
+  },
+  "tuition_fee": {
+    "title": {
+      "eng": "Academic year program",
+      "ru": "Программа учебного года",
+      "uz": "O'quv yili dasturi"
+    },
+    "table": {
+      "th1": {
+        "eng": "Program",
+        "ru": "Программа",
+        "uz": "Dastur"
+      },
+      "th2": {
+        "eng": "A month",
+        "ru": "Месяц",
+        "uz": "Bir oy"
+      },
+      "th3": {
+        "eng": "Total Fee",
+        "ru": "Общая комиссия",
+        "uz": "Jami to'lov"
+      }
+    },
+    "item1": {
+      "eng": "",
+      "ru": "",
+      "uz": ""
+    }
+  },
+  "requriments": {
+    "title": {
+      "eng": "Apply Requrimens",
+      "ru": "Применить требования",
+      "uz": "Talablarni qo'llash"
+    },
+    "item1": {
+      "eng": "School transcript (grades) or certificate.",
+      "ru": "Школьная справка (оценки) или сертификат.",
+      "uz": "Maktab transkripti (baholar) yoki sertifikat"
+    },
+    "item2": {
+      "eng": "Passport or metric.",
+      "ru": "Паспорт или метрика.",
+      "uz": "Pasport yoki metrika."
+    },
+    "item3": {
+      "eng": "A copy of the parent's passport.",
+      "ru": "Копия паспорта родителя.",
+      "uz": "Ota-onaning pasporti nusxasi."
+    },
+    "item4": {
+      "eng": "We accept all students through an exam. The exam will be in English and Mathematics.",
+      "ru": "Мы принимаем всех студентов через экзамен. Экзамен будет по английскому языку и математике.",
+      "uz": "Biz barcha talabalarni imtihon orqali qabul qilamiz. Imtihon ingliz va matematika fanlaridan bo'ladi."
+    },
+    "item5": {
+      "eng": "It is also possible to be exempted from the exam, if the student has IELTS 6+ and SAT 1200+.",
+      "ru": "Также возможно освобождение от экзамена при наличии у студента IELTS 6+ и SAT 1200+.",
+      "uz": "Agar talaba IELTS 6+ va SAT 1200+ boʻlsa, imtihondan ozod boʻlish ham mumkin.."
+    }
+  },
+  "instruction": {
+    "title": {
+      "eng": "Apply Instruction",
+      "ru": "Применить инструкцию",
+      "uz": "Yo'riqnomani qo'llash"
+    },
+    "item1": {
+      "eng": "You must pass an exam in English and Mathematics.",
+      "ru": "Вы должны сдать экзамен по английскому языку и математике.",
+      "uz": "Ingliz tili va matematikadan imtihon topshirishingiz kerak."
+    },
+    "item2": {
+      "eng": "We provide scholarships for 10% of our students, who got score 7+ from IELTS and 1350+ from SAT.",
+      "ru": "Мы предоставляем стипендии 10% наших студентов, набравших 7+ баллов по IELTS и 1350+ по SAT.",
+      "uz": "Biz IELTS dan 7+ va SAT dan 1350+ ball olgan talabalarimizning 10 foiziga stipendiya ajratamiz."
+    }
+  },
+  "admission_form": {
+    "title": {
+      "eng": "Admission Form",
+      "ru": "Форма заявки",
+      "uz": "Kirish formasi"
+    },
+    "subtitle": {
+      "eng": "CIC School Application ENG",
+      "ru": "CIC School Application ENG",
+      "uz": "CIC School Application ENG"
+    },
+    "form": {
+      "branch": {
+        "eng": "Select branch",
+        "ru": "Выберите филиал",
+        "uz": "Filialni tanlang"
+      },
+      "full_name": {
+        "eng": "Full name",
+        "ru": "Фамилия имя отчество",
+        "uz": "To'liq ismi sharif"
+      },
+      "mobil": {
+        "eng": "Mobile",
+        "ru": "Мобильный телефон",
+        "uz": "Mobil telefon"
+      },
+      "email": {
+        "eng": "Email",
+        "ru": "Электронная почта",
+        "uz": "Elektron pochta"
+      },
+      "birthdate": {
+        "eng": "Date of birth",
+        "ru": "Дата рождения",
+        "uz": "Tug'ilgan kuni"
+      },
+      "grade": {
+        "eng": "Applying School Grade",
+        "ru": "Применение школьной оценки",
+        "uz": "Sinf"
+      },
+      "english_level": {
+        "eng": "English level",
+        "ru": "Уровень английского",
+        "uz": "Ingliz tili darajasi"
+      },
+      "region": {
+        "eng": "Region",
+        "ru": "Регион",
+        "uz": "Viloyat"
+      },
+      "address": {
+        "eng": "Address",
+        "ru": "Адрес",
+        "uz": "Manzil"
+      },
+      "parents_fullname": {
+        "eng": "Parents Full Name",
+        "ru": "Фамилия имя отчество родителей",
+        "uz": "Ota-onaning to'liq ismi sharif"
+      },
+      "parents_mobile": {
+        "eng": "Parents Mobile",
+        "ru": "Мобильный телефон родителей",
+        "uz": "Ota-onaning mobil telefoni"
+      },
+      "files_title": {
+        "eng": "Upload the requriments documents:",
+        "ru": "Загрузите документы с требованиями:",
+        "uz": "Talab hujjatlarini yuklang:"
+      },
+      "grades_certificate": {
+        "label": {
+          "eng": "School transcript (grades) or certificate",
+          "ru": "Школьная справка (оценки) или сертификат",
+          "uz": "Maktab transkripti (baholar) yoki sertifikat"
+        },
+        "content": {
+          "eng": "From school verification certificate including.",
+          "ru": "Свидетельство о проверке школы, включая.",
+          "uz": "Maktabni tekshirish sertifikatidan, shu jumladan."
+        }
+      },
+      "passport": {
+        "label": {
+          "eng": "Passport or metric",
+          "ru": "Паспорт или метрика",
+          "uz": "Pasport yoki ko'rsatkich"
+        },
+        "content": {
+          "eng": "With the residence permit.",
+          "ru": "С видом на жительство.",
+          "uz": "Yashash uchun ruxsatnoma bilan."
+        }
+      },
+      "parents_passport": {
+        "label": {
+          "eng": "A copy of the parent's passport.",
+          "ru": "Копия паспорта родителей.",
+          "uz": "Ota-onaning pasporti nusxasi."
+        },
+        "content": {
+          "eng": "With the residence permit.",
+          "ru": "С видом на жительство.",
+          "uz": "Yashash uchun ruxsatnoma bilan."
+        }
+      }
+    },
+    "submit": {
+      "eng": "Submit",
+      "ru": "Отправить",
+      "uz": "Yuborish"
+    }
+  },
+  "apply_alert": {
+    "title": {
+      "eng": "Don’t miss the opportunity",
+      "ru": "Imkoniyatni boy bermang",
+      "uz": "Imkoniyatni boy bermang"
+    },
+    "btn": {
+      "eng": "Apply now",
+      "ru": "Применить сейчас",
+      "uz": "Hoziroq murojaat qiling"
+    }
+  }
+}

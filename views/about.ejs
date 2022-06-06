@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Millat Umidi</title>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/style/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="./assets/style/main.css" />
+
+</head>
+
+<body>
+    <div class="loader_wrapper">
+        <div class="loading2">
+        </div>
+        <img src="./assets/images/logo_body.png" alt="logo" class="logo">
+    </div>
+
+   
+    <nav class="">
+        <div class="navbar container d-flex justify-content-between align-items-center">
+            <div class="logo">
+                <img src="./assets/images/logo-dark.png" alt="logo" />
+            </div>
+            <ul class="navbar__list d-flex align-items-center justify-content-between">
+                <li class="navbar__list__item mx-3">
+                    <a href="/">
+                        <%= AboutLanguage.navbar.navbar__list.navbar__list__item1[lan] %>
+                    </a>
+                </li>
+                <li class="navbar__list__item mx-3 active">
+                    <a href="/about">
+                        <%= AboutLanguage.navbar.navbar__list.navbar__list__item2[lan] %>
+                    </a>
+                </li>
+                <li class="navbar__list__item mx-3">
+                    <a href="/life">
+                        <%= AboutLanguage.navbar.navbar__list.navbar__list__item3[lan] %>
+                    </a>
+                </li>
+                <li class="navbar__list__item mx-3">
+                    <a href="/admission">
+                        <%= AboutLanguage.navbar.navbar__list.navbar__list__item4[lan] %>
+                    </a>
+                </li>
+                <li class="navbar__list__item mx-3">
+                    <a href="/locations">
+                        <%= AboutLanguage.navbar.navbar__list.navbar__list__item5[lan] %>
+                    </a>
+                </li>
+            </ul>
+            <ul class="navbar__right d-flex align-items-center">
+         
+                <li class="navbar__right__item">
+                    <img src="/assets/images/icons/phone_icon.svg" alt="phone_icon">
+                </li>
+                <li class="navbar__right__item">
+                    <select name="lan" id="lan">
+                        <option value="eng"  <% if(lan === "eng") { %> selected <% } %>>Eng</option>
+                        <option value="uz" <% if(lan === "uz") { %> selected <% } %>>Uz</option>
+                        <option value="ru" <% if(lan === "ru") { %> selected <% } %>>Ru</option>
+                    </select>
+                </li>
+                <li class="navbar__right__item">
+                    <button class="menu_btn">
+                        <div class="wrapper-menu">
+                            <div class="line-menu half start"></div>
+                            <div class="line-menu"></div>
+                            <div class="line-menu half end"></div>
+                        </div>
+                    </button>
+                </li>
+            </ul>
+        </div>
+
+        <div class="menu__section row justify-content-between">
+            <ul class="menu__section__list col-lg-3">
+                <li class="menu__section__list__item active">
+                    <a href="/" class="d-flex justify-content-start align-items-center ">
+                        <span>
+                            <%= AboutLanguage.navbar.navbar__list.navbar__list__item1[lan] %>
+                        </span>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M0.292893 14.2038C-0.0976311 14.5943 -0.0976311 15.2275 0.292893 15.618C0.683418 16.0085 1.31658 16.0085 1.70711 15.618L0.292893 14.2038ZM15.911 0.999927C15.911 0.447642 15.4632 -7.31964e-05 14.911 -7.34493e-05L5.91096 -7.33228e-05C5.35868 -7.29856e-05 4.91096 0.447642 4.91096 0.999927C4.91096 1.55221 5.35868 1.99993 5.91096 1.99993L13.911 1.99993L13.911 9.99993C13.911 10.5522 14.3587 10.9999 14.911 10.9999C15.4632 10.9999 15.911 10.5522 15.911 9.99993L15.911 0.999927ZM1.70711 15.618L15.6181 1.70703L14.2039 0.29282L0.292893 14.2038L1.70711 15.618Z"
+                            fill="white" />
+                    </svg>
+                    </a>
+                </li>
+                <li class="menu__section__list__item">
+                    <a href="/about" class="d-flex justify-content-start align-items-center ">
+                    <span>
+                        <%= AboutLanguage.navbar.navbar__list.navbar__list__item2[lan] %>
+                    </span>
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M0.292893 14.2038C-0.0976311 14.5943 -0.0976311 15.2275 0.292893 15.618C0.683418 16.0085 1.31658 16.0085 1.70711 15.618L0.292893 14.2038ZM15.911 0.999927C15.911 0.447642 15.4632 -7.31964e-05 14.911 -7.34493e-05L5.91096 -7.33228e-05C5.35868 -7.29856e-05 4.91096 0.447642 4.91096 0.999927C4.91096 1.55221 5.35868 1.99993 5.91096 1.99993L13.911 1.99993L13.911 9.99993C13.911 10.5522 14.3587 10.9999 14.911 10.9999C15.4632 10.9999 15.911 10.5522 15.911 9.99993L15.911 0.999927ZM1.70711 15.618L15.6181 1.70703L14.2039 0.29282L0.292893 14.2038L1.70711 15.618Z"
+                            fill="white" />
+                    </svg>
+                    </a>
+                </li>
+                <li class="menu__section__list__item">
+                    <a href="/admission" class="d-flex justify-content-start align-items-center ">
+
+                    <span>
+                        <%= AboutLanguage.navbar.navbar__list.navbar__list__item4[lan] %>
+                    </span>
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M0.292893 14.2038C-0.0976311 14.5943 -0.0976311 15.2275 0.292893 15.618C0.683418 16.0085 1.31658 16.0085 1.70711 15.618L0.292893 14.2038ZM15.911 0.999927C15.911 0.447642 15.4632 -7.31964e-05 14.911 -7.34493e-05L5.91096 -7.33228e-05C5.35868 -7.29856e-05 4.91096 0.447642 4.91096 0.999927C4.91096 1.55221 5.35868 1.99993 5.91096 1.99993L13.911 1.99993L13.911 9.99993C13.911 10.5522 14.3587 10.9999 14.911 10.9999C15.4632 10.9999 15.911 10.5522 15.911 9.99993L15.911 0.999927ZM1.70711 15.618L15.6181 1.70703L14.2039 0.29282L0.292893 14.2038L1.70711 15.618Z"
+                            fill="white" />
+                    </svg>
+                    </a>
+                </li>
+                <li class="menu__section__list__item">
+                    <a href="life" class="d-flex justify-content-start align-items-center ">
+
+                    <span>
+                        <%= AboutLanguage.navbar.navbar__list.navbar__list__item3[lan] %>
+                    </span>
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M0.292893 14.2038C-0.0976311 14.5943 -0.0976311 15.2275 0.292893 15.618C0.683418 16.0085 1.31658 16.0085 1.70711 15.618L0.292893 14.2038ZM15.911 0.999927C15.911 0.447642 15.4632 -7.31964e-05 14.911 -7.34493e-05L5.91096 -7.33228e-05C5.35868 -7.29856e-05 4.91096 0.447642 4.91096 0.999927C4.91096 1.55221 5.35868 1.99993 5.91096 1.99993L13.911 1.99993L13.911 9.99993C13.911 10.5522 14.3587 10.9999 14.911 10.9999C15.4632 10.9999 15.911 10.5522 15.911 9.99993L15.911 0.999927ZM1.70711 15.618L15.6181 1.70703L14.2039 0.29282L0.292893 14.2038L1.70711 15.618Z"
+                            fill="white" />
+                    </svg>
+                    </a>
+                </li>
+                <li class="menu__section__list__item d-flex justify-content-start align-items-center">
+                    <a href="locations" class="d-flex justify-content-start align-items-center ">
+
+                    <span>
+                        <%= AboutLanguage.navbar.navbar__list.navbar__list__item5[lan] %>
+                    </span>
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M0.292893 14.2038C-0.0976311 14.5943 -0.0976311 15.2275 0.292893 15.618C0.683418 16.0085 1.31658 16.0085 1.70711 15.618L0.292893 14.2038ZM15.911 0.999927C15.911 0.447642 15.4632 -7.31964e-05 14.911 -7.34493e-05L5.91096 -7.33228e-05C5.35868 -7.29856e-05 4.91096 0.447642 4.91096 0.999927C4.91096 1.55221 5.35868 1.99993 5.91096 1.99993L13.911 1.99993L13.911 9.99993C13.911 10.5522 14.3587 10.9999 14.911 10.9999C15.4632 10.9999 15.911 10.5522 15.911 9.99993L15.911 0.999927ZM1.70711 15.618L15.6181 1.70703L14.2039 0.29282L0.292893 14.2038L1.70711 15.618Z"
+                            fill="white" />
+                    </svg>
+                    </a>
+                </li>
+
+            </ul>
+            <div class="contacts col-lg-3">
+                <div class="admission__section">
+                    <h3 class="admission__section__title">
+                        <%= AboutLanguage.admission.admission_title[lan] %>
+                    </h3>
+                    <button class="btn">
+                        <img src="./assets/images/icons/apply_icon.svg" alt="icon">
+                        <span>
+                            <%= AboutLanguage.admission.apply_btn[lan] %>
+                        </span>
+                    </button>
+                </div>
+                <h3>Contact Us</h3>
+                <ul class="contacts__list">
+                    <li class="contacts__list__item d-flex justify-content-left align-items-center">
+                        <img src="./assets/images/icons/email_icon.svg" alt="message icon">
+                        <span>info@cambridge.uz</span>
+                    </li>
+                    <li class="contacts__list__item d-flex justify-content-left align-items-center">
+                        <img src="./assets/images/icons/phone_icon.svg" alt="phoone icon">
+                        <span>+998 71 200 0308 || 99 462 40 04</span>
+                    </li>
+                    <li class="contacts__list__item d-flex justify-content-left align-items-center">
+                        <img src="./assets/images/icons/location_icon.svg" alt="location_icon">
+                        <span>Kh. Rakhmatullaev st. 3,
+                            Shayhontohur, Tashkent</span>
+                    </li>
+                    <li class="contacts__list__item d-flex justify-content-left align-items-center">
+                        <img src="./assets/images/icons/location_icon.svg" alt="location_icon">
+                        <span>Navai Street. 16,
+                            Yunusobod, Tashkent</span>
+                    </li>
+                    <li class="contacts__list__item d-flex justify-content-left align-items-center">
+                        <img src="./assets/images/icons/location_icon.svg" alt="location_icon">
+                        <span>Samarkand region,
+                            Shakhrisabz, Samarkand, 15</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="socials__list col-lg-1">
+                <h3>Contact with us</h3>
+                <ul class="d-lg-block d-flex">
+                    <li>
+                        <a href="https://www.facebook.com/cicschooluz/">
+                            <img src="./assets/images/icons/facebook.svg" alt="icon">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/cic_school/?igshid=YmMyMTA2M2Y=">
+                            <img src="./assets/images/icons/instagram.svg" alt="icon">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://t.me/cic_school">
+                            <img src="./assets/images/icons/telegram.svg" alt="icon">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    
+
+    <section class="about container">
+        <video autoplay muted loop id="myVideo">
+            <source src="./assets/videos/header2.mp4" type="video/mp4">
+        </video>
+        <div class="about-header">
+            <div class="about-header__content">
+                <h2 class="title">
+                    <%= AboutLanguage.header.title[lan] %>
+                </h2>
+                <div class="about-header__content__bottom ">
+                    <h2 class="sub__title">
+                        <%= AboutLanguage.header.subtitle[lan] %>
+
+                    </h2>
+                        <button class="about-header__content__bottom__btn d-lg-flex align-items-center">
+                            <img src="./assets/images/icons/play__icon.svg" alt="play">
+                            <span>
+                                <%= AboutLanguage.header.play_btn[lan] %>
+                            </span>
+                        </button>
+                </div>
+            </div>
+        </div>
+        <button class="close__video__btn">
+            <img src="./assets/images/icons/close-line (3) 1.svg" alt="close icon">
+            <span>
+                <%= AboutLanguage.header.close[lan] %>
+            </span>
+        </button>
+    </section>
+
+    <section class="mission__school">
+        <div class="mission__school__section row container align-items-center">
+            <div class="mission__school__section__image col-lg-6">
+                <img src="./assets/images/about_one.png" alt="img">
+            </div>
+            <div class="mission__school__section__content col-lg-6">
+                <h2 class="title">
+                    <%= AboutLanguage.mission.title[lan] %>
+                </h2>
+                <p>
+                    <%= AboutLanguage.mission.content1[lan] %>
+                     <br><br>
+                     <%= AboutLanguage.mission.content2[lan] %>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="school__programm">
+        <div class="school__programm__section row container align-items-center">
+            <div class="school__programm__section__content col-lg-5">
+                <h2 class="title">
+                    <%= AboutLanguage.school_program.title[lan] %>
+                </h2>
+                <p>
+                    <%= AboutLanguage.school_program.content[lan] %>
+                </p>
+            </div>
+            <div class="school__programm__section__image col-lg-7">
+                <img src="./assets/images/about_header1.jpg" alt="image">
+            </div>
+        </div>
+    </section>
+
+    <section class="school__admission">
+        <div class="school__admission__section container row justify-content-between align-items-center">
+            <div class="school__admission__section__image col-lg-7">
+                <img src="./assets/images/about_header2.jpg" alt="image">
+            </div>
+            <div class="school__admission__section__content col-lg-5">
+                <h2 class="school__admission__section__content__title">
+                    <%= AboutLanguage.admission.admission_title[lan] %>
+                </h2>
+                <p>
+                    <%= AboutLanguage.admission.admission_subtitle[lan] %>
+                </p>
+                <a href="" class="apply__btn">
+                    <img src="/assets/images/icons/apply_icon.svg" alt="apply__btn">
+                    <span>
+                        <%= AboutLanguage.admission.apply_btn[lan] %>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <div class="convenience">
+        <div class="container__section container">
+            <div class="convenience__section__title">
+                <h2>
+                    <%= AboutLanguage.convenience.title[lan] %>
+                </h2>
+                <p>
+                    <%= AboutLanguage.convenience.content[lan] %>
+                </p>
+            </div>
+            <ul class="convenience__section__list d-flex justify-content-between align-items-center">
+                <li class="convenience__section__list__item">
+                    <div class="icon">
+                        <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.43754 15.6258C7.16837 15.6258 6.89921 15.5267 6.68671 15.3142L3.14504 11.7725C2.73421 11.3617 2.73421 10.6817 3.14504 10.2708C3.55587 9.86 4.23587 9.86 4.64671 10.2708L7.43754 13.0617L14.4784 6.035C14.8892 5.62417 15.5692 5.62417 15.98 6.035C16.3909 6.44583 16.3909 7.12583 15.98 7.53667L8.18837 15.3142C7.97587 15.5125 7.70671 15.6258 7.43754 15.6258Z" fill="white"/>
+                            <path d="M7.43754 28.2908C7.16837 28.2908 6.89921 28.1917 6.68671 27.9792L3.14504 24.4375C2.73421 24.0267 2.73421 23.3467 3.14504 22.9358C3.55587 22.525 4.23587 22.525 4.64671 22.9358L7.43754 25.7267L14.4784 18.7C14.8892 18.2892 15.5692 18.2892 15.98 18.7C16.3909 19.1108 16.3909 19.7908 15.98 20.2017L8.18837 27.9792C7.97587 28.1775 7.70671 28.2908 7.43754 28.2908Z" fill="white"/>
+                            <path d="M30.1035 12.3958H19.4785C18.8977 12.3958 18.416 11.9142 18.416 11.3333C18.416 10.7525 18.8977 10.2708 19.4785 10.2708H30.1035C30.6843 10.2708 31.166 10.7525 31.166 11.3333C31.166 11.9142 30.6843 12.3958 30.1035 12.3958Z" fill="white"/>
+                            <path d="M30.1035 25.1458H19.4785C18.8977 25.1458 18.416 24.6642 18.416 24.0833C18.416 23.5025 18.8977 23.0208 19.4785 23.0208H30.1035C30.6843 23.0208 31.166 23.5025 31.166 24.0833C31.166 24.6642 30.6843 25.1458 30.1035 25.1458Z" fill="white"/>
+                        </svg>    
+                    </div>
+                    <h3 class="title">
+                        <%= AboutLanguage.convenience.convenience_list.item1.title[lan] %>
+                    </h3>
+                    <p>
+                        <%= AboutLanguage.convenience.convenience_list.item1.content[lan] %>
+                    </p>
+                </li>
+                <img src="./assets/images/icons/dot_icons.svg" alt="">
+
+                <li class="convenience__section__list__item">
+                    <div class="icon">
+                        <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24.5934 29.75C24.4234 29.75 24.2534 29.7075 24.0975 29.6225L17 25.8967L9.90253 29.6225C9.54836 29.8067 9.1092 29.7783 8.78336 29.5375C8.45753 29.2967 8.28753 28.9 8.35836 28.5033L9.71836 20.5983L3.9667 15.0025C3.68336 14.7192 3.57003 14.2942 3.69753 13.9117C3.82503 13.5292 4.15086 13.2458 4.5617 13.1892L12.495 12.0417L16.0509 4.845C16.405 4.1225 17.595 4.1225 17.9634 4.845L21.5192 12.0417L29.4525 13.1892C29.8492 13.2458 30.1892 13.5292 30.3167 13.9117C30.4442 14.2942 30.3309 14.7192 30.0475 15.0025L24.2959 20.5983L25.6559 28.5033C25.7267 28.9 25.5567 29.3108 25.2309 29.5375C25.0325 29.6792 24.82 29.75 24.5934 29.75ZM17 23.63C17.17 23.63 17.34 23.6725 17.4959 23.7575L23.1909 26.7467L22.1 20.4142C22.0434 20.0742 22.1567 19.72 22.4117 19.4792L27.0159 14.9883L20.655 14.0675C20.3009 14.0108 20.0034 13.7983 19.8475 13.4867L17 7.70667L14.1525 13.4725C13.9967 13.7842 13.6992 14.0108 13.3592 14.0533L6.99836 14.9742L11.6025 19.465C11.8575 19.7058 11.9709 20.06 11.9142 20.4L10.8234 26.7325L16.5184 23.7433C16.66 23.6725 16.83 23.63 17 23.63Z" fill="white"/>
+                        </svg>
+                    </div>
+                    <h3 class="title">
+                        <%= AboutLanguage.convenience.convenience_list.item2.title[lan] %>
+
+                    </h3>
+                    <p>
+                        <%= AboutLanguage.convenience.convenience_list.item2.content[lan] %>
+                    </p>
+                </li>
+                <img src="./assets/images/icons/dot_icons.svg" alt="">
+
+                <li class="convenience__section__list__item">
+                    <div class="icon">
+                        <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M25.8545 31.1666H8.14616C6.78616 31.1666 5.66699 30.0475 5.66699 28.6875V5.31248C5.66699 3.95248 6.78616 2.83331 8.14616 2.83331H25.8545C27.2145 2.83331 28.3337 3.95248 28.3337 5.31248V28.6875C28.3337 30.0475 27.2145 31.1666 25.8545 31.1666ZM8.14616 4.95831C7.94783 4.95831 7.79199 5.11415 7.79199 5.31248V28.6875C7.79199 28.8858 7.94783 29.0416 8.14616 29.0416H25.8545C26.0528 29.0416 26.2087 28.8858 26.2087 28.6875V5.31248C26.2087 5.11415 26.0528 4.95831 25.8545 4.95831H8.14616Z" fill="white"/>
+                            <path d="M16.6603 14.8891H10.9795C10.3987 14.8891 9.91699 14.4075 9.91699 13.8266V8.14581C9.91699 7.56498 10.3987 7.08331 10.9795 7.08331H16.6603C17.2412 7.08331 17.7228 7.56498 17.7228 8.14581V13.8266C17.7228 14.4075 17.2412 14.8891 16.6603 14.8891ZM12.042 12.7641H15.5978V9.20831H12.042V12.7641Z" fill="white"/>
+                            <path d="M23.0212 19.125H10.9795C10.3987 19.125 9.91699 18.6433 9.91699 18.0625C9.91699 17.4816 10.3987 17 10.9795 17H23.0212C23.602 17 24.0837 17.4816 24.0837 18.0625C24.0837 18.6433 23.602 19.125 23.0212 19.125Z" fill="white"/>
+                            <path d="M23.0212 23.035H10.9795C10.3987 23.035 9.91699 22.5533 9.91699 21.9725C9.91699 21.3916 10.3987 20.91 10.9795 20.91H23.0212C23.602 20.91 24.0837 21.3916 24.0837 21.9725C24.0837 22.5533 23.602 23.035 23.0212 23.035Z" fill="white"/>
+                            <path d="M16.6462 26.9166H10.9795C10.3987 26.9166 9.91699 26.435 9.91699 25.8541C9.91699 25.2733 10.3987 24.7916 10.9795 24.7916H16.6462C17.227 24.7916 17.7087 25.2733 17.7087 25.8541C17.7087 26.435 17.227 26.9166 16.6462 26.9166Z" fill="white"/>
+                            </svg>
+                            
+                    </div>
+                    <h3 class="title">
+                        <%= AboutLanguage.convenience.convenience_list.item3.title[lan] %>
+
+                    </h3>
+                    <p>
+                        <%= AboutLanguage.convenience.convenience_list.item3.content[lan] %>
+                    </p>
+                </li>
+                <img src="./assets/images/icons/dot_icons.svg" alt="">
+                <li class="convenience__section__list__item">
+                    <div class="icon">
+                        <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M31.3505 19.6492C31.2938 19.5925 31.2372 19.5359 31.1663 19.5075V12.75C31.1663 12.5375 31.0955 12.325 30.9822 12.155C30.9255 12.0842 30.8688 12.0134 30.798 11.9567C30.7413 11.9 30.6847 11.8575 30.6138 11.8292C30.5855 11.8009 30.543 11.7867 30.5147 11.7725L17.4388 5.76585C17.1555 5.63835 16.8438 5.63835 16.5605 5.76585L3.45634 11.7867C3.07384 11.9567 2.83301 12.3392 2.83301 12.75C2.83301 13.1609 3.07384 13.5434 3.45634 13.7134L7.79134 15.7109V24.4375C7.79134 24.6359 7.81967 24.8484 7.86217 24.9475C8.45717 27.285 12.8772 28.3334 16.9997 28.3334C21.1222 28.3334 25.5422 27.285 26.1088 25.0325C26.1797 24.8484 26.208 24.6359 26.208 24.4375V15.7109L29.0413 14.4075V19.4934C28.9705 19.5359 28.8997 19.5925 28.8572 19.6492C28.5172 19.975 28.333 20.4284 28.333 20.8959C28.333 21.3634 28.5172 21.8167 28.8572 22.1425C29.013 22.3125 29.2113 22.44 29.4238 22.525C29.6363 22.6242 29.863 22.6667 30.1038 22.6667C30.5713 22.6667 31.0247 22.4825 31.3505 22.1425C31.6905 21.8167 31.8747 21.3775 31.8747 20.8959C31.8747 20.4284 31.6905 19.975 31.3505 19.6492ZM24.0688 24.4375C23.9555 24.9192 21.5897 26.2084 16.9997 26.2084C12.4097 26.2084 10.0438 24.9192 9.91634 24.4375V16.6884L16.5605 19.7342C16.7022 19.805 16.8438 19.8334 16.9997 19.8334C17.1555 19.8334 17.2972 19.805 17.4388 19.7342L24.083 16.6884L24.0688 24.4375ZM16.9997 17.595L6.44551 12.75L16.9997 7.90502L27.5538 12.75L16.9997 17.595Z" fill="white"/>
+                            </svg>
+                                                </div>
+                    <h3 class="title">
+                        <%= AboutLanguage.convenience.convenience_list.item4.title[lan] %>
+
+                    </h3>
+                    <p>
+                        <%= AboutLanguage.convenience.convenience_list.item4.content[lan] %>
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="school__statistics">
+        <div class="school__statistics__section container row justify-content-between align-items-center">
+            <div class="school__statistics__section__content col-lg-7">
+                <div class="title">
+                    <h2>
+                        <%= AboutLanguage.statistics.title[lan] %>
+                    </h2>
+                    
+                </div>
+
+                <ul class="school__statistics__section__content__list">
+                    <li class="school__statistics__section__content__list__item">
+                        <div class="title">
+                            <hr>
+                            <span>
+                                <%= AboutLanguage.statistics.title3[lan] %>
+                            </span>
+                        </div>
+                        <h2 class="me-5">275</h2>
+                    </li>
+                    <li class="school__statistics__section__content__list__item">
+                        <div class="title">
+                            <hr>
+                            <span>
+                                <%= AboutLanguage.statistics.title2[lan] %>
+                            </span>
+                        </div>
+                        <h2>28</h2>
+                    </li>
+                    <li class="school__statistics__section__content__list__item">
+                        <div class="title">
+                            <hr>
+                            <span>
+                                <%= AboutLanguage.statistics.title1[lan] %>
+                            </span>
+                        </div>
+                        <h2>2021</h2>
+                    </li>
+                </ul>
+            </div>
+            <div class="school__statistics__section__image col-lg-5">
+                <img src="./assets/images/statustics header.jpg" alt="statistic">
+            </div>
+        </div>
+    </div>
+
+    <section class="partners">
+        <div class="container">
+            <div class="partners__title">
+                <h2>
+                    <%= AboutLanguage.partners.title[lan] %>
+                </h2>
+                <p>Our best parnerships download and distribute with our compliments</p>
+            </div>
+            <div class="partners__list">
+                <div class="swiper mySwiperPartners">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                          <img src="./assets/images/partners/CIU_logo.png" alt="university logo">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./assets/images/partners/TEAM.png" alt="university logo">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./assets/images/partners/AKFA.png" alt="university logo">
+                      </div>
+                      <div class="swiper-slide">                          
+                          <img src="./assets/images/partners/PEARSON.png" alt="university logo">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./assets/images/partners/TPU.png" alt="university logo">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./assets/images/partners/CIU_logo.png" alt="university logo">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./assets/images/partners/TEAM.png" alt="university logo">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./assets/images/partners/AKFA.png" alt="university logo">
+                    </div>
+                    <div class="swiper-slide">                          
+                        <img src="./assets/images/partners/PEARSON.png" alt="university logo">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./assets/images/partners/TPU.png" alt="university logo">
+                    </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                  </div>
+            </div>
+        </div>
+    </section>  
+    
+    <footer>
+        <div class="footer container">
+            <div class="footer__logo">
+                <img src="/assets/images/logo-dark.png" alt="logo">
+            </div>
+            <ul class="footer__menus row d-flex justify-content-between align-items-start">
+                <li class="footer__menus__item col-lg-3 mb-lg-0 mb-5">
+                    <p>Education is the most powerful weapon which 
+                        you can use to change the world</p>
+                    <h3>Contact Us</h3>
+                    <ul class="contacts__list">
+                        <li class="contacts__list__item d-flex justify-content-left align-items-center">
+                            <img src="./assets/images/icons/email_icon.svg" alt="message icon">
+                            <span>Millat Umidi International Schoolschool@cambridge.uz</span>
+                        </li>
+                        <li class="contacts__list__item d-flex justify-content-left align-items-center">
+                            <img src="./assets/images/icons/phone_icon.svg" alt="phoone icon">
+                            <span>+998 71 200 0308 || 99 462 40 04</span>
+                        </li>
+                        <li class="contacts__list__item d-flex justify-content-left align-items-center">
+                            <img src="./assets/images/icons/location_icon.svg" alt="location_icon">
+                            <span>Kh. Rakhmatullaev st. 3, 
+                                Shayhontohur, Tashkent</span>
+                        </li>
+                        <li class="contacts__list__item d-flex justify-content-left align-items-center">
+                            <img src="./assets/images/icons/location_icon.svg" alt="location_icon">
+                            <span>Navai Street. 16, 
+                                Yunusobod, Tashkent</span>
+                        </li>
+                        <li class="contacts__list__item d-flex justify-content-left align-items-center">
+                            <img src="./assets/images/icons/location_icon.svg" alt="location_icon">
+                            <span>Samarkand region, 
+                                Shakhrisabz, Samarkand, 15</span>
+                        </li>
+                    </ul>
+                </li>
+                <li class="footer__menus__item col-lg-3 col-6">
+                    <h3>Home</h3>
+                    <ul class="contacts__list">
+                        <li class="contacts__list__item">
+                           <a href="#">
+                                News
+                           </a>
+                        </li>
+                        <li class="contacts__list__item">
+                            <a href="#">
+                                Statistics
+                           </a>
+                        </li>
+                        <li class="contacts__list__item">
+                            <a href="#">
+                                Our Facilities
+                           </a>
+                        </li>
+                        <li class="contacts__list__item">
+                            <a href="#">
+                                Campus Life
+                           </a>
+                        </li>
+                        <li class="contacts__list__item">
+                            <a href="#">
+                                Admission
+                           </a>
+                        </li>
+                        <li class="contacts__list__item">
+                            <a href="#">
+                                Studens Portfolio
+                           </a>
+                        </li>
+                        <li class="contacts__list__item">
+                            <a href="#">
+                                Why Millat Umidi International School School?
+                           </a>
+                        </li>
+                        <li class="contacts__list__item">
+                            <a href="#">
+                                Our Partners
+                           </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="footer__menus__item col-lg-3 col-6">
+                    <h3>Pages</h3>
+                    <ul class="contacts__list">
+                        <li class="contacts__list__item">
+                           <a href="#">
+                            Home
+                           </a>
+                        </li>
+                        <li class="contacts__list__item">
+                            <a href="#">
+                                About Us
+                           </a>
+                        </li>
+                        <li class="contacts__list__item">
+                            <a href="#">
+                                Admissions
+                           </a>
+                        </li>
+                        <li class="contacts__list__item">
+                            <a href="#">
+                                Life at Millat Umidi International School
+                           </a>
+                        </li>
+                        <li class="contacts__list__item">
+                            <a href="#">
+                                All News
+                           </a>
+                        </li>
+                        <li class="contacts__list__item">
+                            <a href="#">
+                                Students’ Government
+                           </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="footer__menus__item col-lg-3 mt-lg-0 mt-5">
+                    <h3>Folloow Us</h3>
+                    <ul class="socily__list d-flex justify-content-between">
+                        <li class="socily__list__item">
+                            <a href="https://instagram.com/cic_school?igshid=YmMyMTA2M2Y=">
+                                 <img src="./assets/images/icons/instagram.svg" alt="instagram">
+                            </a>
+                         </li>
+                         <li class="socily__list__item">
+                             <a href="https://t.me/cic_school">
+                                  <img src="./assets/images/icons/telegram.svg" alt="telegram">
+                             </a>
+                          </li>
+                          <li class="socily__list__item">
+                             <a href="https://www.facebook.com/cicschooluz/">
+                                  <img src="./assets/images/icons/facebook.svg" alt="facebook">
+                             </a>
+                          </li>
+                    </ul>
+                    <h3>Have Any Questions?</h3>
+                    <ul class="quesion__form">
+                        <input class="input" type="text" placeholder="Name">
+                        <input class="input" type="text" placeholder="Mail address">
+                        <input class="input" type="text" placeholder="Type something..">
+                        <button class="btn">
+                            <img src="./assets/images/icons/send_icon.svg" alt="send icon">
+                            <span>Send</span>
+                        </button>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </footer> 
+
+</body>
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="./assets/javascript/swipperSettings.js"></script>
+<script src="./assets/javascript/aboutHeader.js"></script>
+<script src="./assets/javascript/language.js"></script>
+
+</script>
+
+</html>

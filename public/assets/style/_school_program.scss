@@ -1,0 +1,63 @@
+.school__programm {
+  background-color: #fff;
+  padding: 50px 0;
+  overflow: hidden;
+  &__section {
+    &__content {
+      .title {
+        font-weight: 500;
+        font-size: 44px;
+        line-height: 66px;
+      }
+      p {
+        margin-top: 20px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 32px;
+      }
+    }
+
+    &__image {
+      img {
+        width: 120%;
+        height: 300px;
+        object-fit: cover;
+        filter: brightness(50%);
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .school__programm {
+    background-color: #fff;
+    padding: 50px 0;
+    overflow: hidden;
+    &__section {
+      &__content {
+        order: 2;
+        .title {
+          font-weight: 500;
+          font-size: 24px;
+          line-height: 36px;
+        }
+        p {
+          margin-top: 20px;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 30px;
+        }
+      }
+
+      &__image {
+        order: 1;
+        margin-bottom: 50px;
+        margin-left: 30px;
+        img {
+          height: 250px;
+          filter: brightness(50%);
+        }
+      }
+    }
+  }
+}

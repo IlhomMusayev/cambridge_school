@@ -1,0 +1,108 @@
+{
+  "navbar": {
+    "navbar__list": {
+      "navbar__list__item1": {
+        "uz": "Bosh sahifa",
+        "ru": "Главная",
+        "eng": "Home"
+      },
+      "navbar__list__item2": {
+        "uz": "Biz haqimizda",
+        "ru": "О нас",
+        "eng": "About Us"
+      },
+      "navbar__list__item3": {
+        "uz": "CICdagi hayot",
+        "ru": "Жизнь в CIC",
+        "eng": "Life at CIC"
+      },
+      "navbar__list__item4": {
+        "uz": "Qabul",
+        "ru": "Допуск",
+        "eng": "Admission"
+      },
+      "navbar__list__item5": {
+        "uz": "Joylar",
+        "ru": "Места",
+        "eng": "Locations"
+      },
+      "navbar__list__item6": {
+        "uz": "Kontaktlar",
+        "ru": "Свяжитесь с нами",
+        "eng": "Contact Us"
+      }
+    }
+  },
+  "header": {
+    "subtitle": {
+      "eng": "Unforgetable Moments",
+      "ru": "Незабываемые моменты",
+      "uz": "Unutilmas lahzalar"
+    },
+    "title": {
+      "eng": "Campus Tour",
+      "ru": "Кампус тур",
+      "uz": "Kampus sayohati"
+    },
+    "content": {
+      "eng": "In our campus you forget your problems becouse in the area of our school is so beautiful and calm",
+      "ru": "В нашем кампусе вы забудете о своих проблемах, потому что в районе нашей школы так красиво и спокойно",
+      "uz": "Bizning kampusda siz muammolaringizni unutasiz, chunki bizning maktab hududi juda chiroyli va tinch"
+    },
+    "plat_btn": {
+      "eng": "Campus Life",
+      "ru": "Студенческая жизнь",
+      "uz": "Kampus hayoti"
+    }
+  },
+  "compus": {
+    "item1": {
+      "title": {
+        "uz": "Kampusimiz hayoti",
+        "ru": "Жизнь нашего кампуса",
+        "eng": "Life Of Our Campus"
+      },
+      "content": {
+        "eng": "Learn and enjoy with our comfortable places",
+        "ru": "Учитесь и наслаждайтесь в наших удобных местах",
+        "uz": "Bizning qulay joylarimizni o'rganing va zavqlaning"
+      }
+    },
+    "item2": {
+      "title": {
+        "uz": "Kampusimiz hayoti",
+        "ru": "Жизнь нашего кампуса",
+        "eng": "Life our campus"
+      },
+      "content": {
+        "uz": "CIC maktabi nafaqat sizning orzularingiz maktabi, balki qo'llab-quvvatlash va o'zaro tushunishga asoslangan yana bir katta oiladir. Agar siz bizning katta oilamiz a'zosi bo'lishingizga ishonchingiz komil bo'lsa, tez orada ro'yxatdan o'ting.",
+        "ru": "CIC School - не только школа вашей мечты, но это еще одна большая семья, на основе которой лежит поддержка и взаимопонимание. Если же вы уверены, что сможете стать частью нашей большой семьи, то скорее регистрируйтесь.",
+        "eng": "Millat Umidi School is not only the school of your dreams, but it is another big family based on support and mutual understanding. If you are sure that you can become part of our big family, then register soon."
+      }
+    }
+  },
+  "government": {
+    "title": {
+      "eng": "Students Government",
+      "ru": "Студенческое правительство",
+      "uz": "Talabalar hukumati"
+    }
+  },
+  "admission": {
+    "admission_title": {
+      "uz": "Qabul hozir ochiq",
+      "ru": "Прием открыт сейчас",
+      "eng": "Admission is Open Now"
+    },
+    "admission_subtitle": {
+      "uz": "Hozirda 1-11 sinflar uchun qabul ochiq",
+      "ru": "Набор открыт для 1-11 классов.",
+      "eng": "Admission is open for grades 1-11 now"
+    },
+    "apply_btn": {
+      "uz": "Hoziroq murojaat qiling",
+      "ru": "Применить сейчас",
+      "eng": "Apply Now"
+    }
+  }
+}

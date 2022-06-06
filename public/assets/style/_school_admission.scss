@@ -1,0 +1,131 @@
+.school__admission {
+  background-color: #fff;
+  padding: 100px 0;
+  overflow: hidden;
+  &__section {
+    &__content {
+      order: 2;
+      opacity: 1;
+      text-align: center;
+      //   text-align: end;
+      position: relative;
+      &__title {
+        font-weight: 500;
+        font-size: 34px;
+        line-height: 51px;
+        color: #000;
+      }
+      p {
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 22px;
+        color: #000;
+        margin-bottom: 25px;
+      }
+      .apply__btn {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        // right: 60px;
+
+        background: #ff9838;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 10px 25px;
+        border: none;
+        cursor: pointer;
+        img {
+          width: 20px;
+        }
+        span {
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 24px;
+          color: #fff;
+          margin-left: 10px;
+        }
+      }
+    }
+
+    &__image {
+      //   padding-left: -50%;
+      //   background: url("../images/school_admission.png") no-repeat center center;
+      img {
+        width: 120%;
+        height: 300px;
+        object-fit: cover;
+        margin-left: -20%;
+        filter: brightness(50%);
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .school__admission {
+    background-color: #fff;
+    padding: 50px 0;
+    overflow: hidden;
+    &__section {
+      &__content {
+        opacity: 1;
+        text-align: center;
+        //   text-align: end;
+        position: relative;
+        margin: 50px 0;
+        &__title {
+          font-weight: 500;
+          font-size: 24px;
+          line-height: 36px;
+          color: #000;
+        }
+        p {
+          font-weight: 500;
+          font-size: 15px;
+          line-height: 22px;
+          color: #000;
+          margin-bottom: 25px;
+        }
+        .apply__btn {
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          // right: 60px;
+
+          background: #ff9838;
+          border-radius: 8px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          padding: 10px 25px;
+          border: none;
+          cursor: pointer;
+          img {
+            width: 20px;
+          }
+          span {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            color: #fff;
+            margin-left: 10px;
+          }
+        }
+      }
+
+      &__image {
+        //   padding-left: -50%;
+        //   background: url("../images/school_admission.png") no-repeat center center;
+        img {
+          margin-left: -30%;
+          height: 250px;
+          filter: brightness(50%);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cambridge School</title>
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./assets/style/bootstrap-grid.min.css" />
+  <link rel="stylesheet" href="./assets/style/main.css" />
+</head>
+
+<body>
+  <div class="loader_wrapper">
+    <div class="loading2"></div>
+    <img src="./assets/images/logo_body.png" alt="logo" class="logo" />
+  </div>
+  <nav class="">
+    <div class="navbar container d-flex justify-content-between align-items-center">
+      <div class="logo">
+        <img src="./assets/images/logo-dark.png" alt="logo" />
+      </div>
+      <ul class="navbar__list d-flex align-items-center justify-content-between">
+        <li class="navbar__list__item mx-3">
+          <a href="/">
+            <%= admissionLanguage.navbar.navbar__list.navbar__list__item1[lan] %>
+          </a>
+        </li>
+        <li class="navbar__list__item mx-3">
+          <a href="/about">
+            <%= admissionLanguage.navbar.navbar__list.navbar__list__item2[lan] %>
+          </a>
+        </li>
+        <li class="navbar__list__item mx-3">
+          <a href="/life">
+            <%= admissionLanguage.navbar.navbar__list.navbar__list__item3[lan] %>
+          </a>
+        </li>
+        <li class="navbar__list__item mx-3 active">
+          <a href="/adminssion">
+            <%= admissionLanguage.navbar.navbar__list.navbar__list__item4[lan] %>
+          </a>
+        </li>
+        <li class="navbar__list__item mx-3">
+          <a href="/locations">
+            <%= admissionLanguage.navbar.navbar__list.navbar__list__item5[lan] %>
+          </a>
+        </li>
+
+      </ul>
+      <ul class="navbar__right d-flex align-items-center">
+
+        <li class="navbar__right__item">
+          <img src="/assets/images/icons/phone_icon.svg" alt="phone_icon">
+        </li>
+        <li class="navbar__right__item">
+          <select name="lan" id="lan">
+            <option value="eng" <% if(lan === "eng") { %> selected <% } %>>Eng</option>
+            <option value="uz" <% if(lan === "uz") { %> selected <% } %>>Uz</option>
+            <option value="ru" <% if(lan === "ru") { %> selected <% } %>>Ru</option>
+          </select>
+        </li>
+        <li class="navbar__right__item">
+          <button class="menu_btn">
+            <div class="wrapper-menu">
+              <div class="line-menu half start"></div>
+              <div class="line-menu"></div>
+              <div class="line-menu half end"></div>
+            </div>
+          </button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="menu__section row justify-content-between">
+      <ul class="menu__section__list col-lg-3">
+        <li class="menu__section__list__item">
+          <a href="" class="d-flex justify-content-start align-items-center ">
+            <span>
+              <%= admissionLanguage.navbar.navbar__list.navbar__list__item1[lan] %>
+            </span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0.292893 14.2038C-0.0976311 14.5943 -0.0976311 15.2275 0.292893 15.618C0.683418 16.0085 1.31658 16.0085 1.70711 15.618L0.292893 14.2038ZM15.911 0.999927C15.911 0.447642 15.4632 -7.31964e-05 14.911 -7.34493e-05L5.91096 -7.33228e-05C5.35868 -7.29856e-05 4.91096 0.447642 4.91096 0.999927C4.91096 1.55221 5.35868 1.99993 5.91096 1.99993L13.911 1.99993L13.911 9.99993C13.911 10.5522 14.3587 10.9999 14.911 10.9999C15.4632 10.9999 15.911 10.5522 15.911 9.99993L15.911 0.999927ZM1.70711 15.618L15.6181 1.70703L14.2039 0.29282L0.292893 14.2038L1.70711 15.618Z"
+                fill="white" />
+            </svg>
+          </a>
+        </li>
+        <li class="menu__section__list__item">
+          <a href="about" class="d-flex justify-content-start align-items-center ">
+            <span>
+              <%= admissionLanguage.navbar.navbar__list.navbar__list__item2[lan] %>
+            </span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0.292893 14.2038C-0.0976311 14.5943 -0.0976311 15.2275 0.292893 15.618C0.683418 16.0085 1.31658 16.0085 1.70711 15.618L0.292893 14.2038ZM15.911 0.999927C15.911 0.447642 15.4632 -7.31964e-05 14.911 -7.34493e-05L5.91096 -7.33228e-05C5.35868 -7.29856e-05 4.91096 0.447642 4.91096 0.999927C4.91096 1.55221 5.35868 1.99993 5.91096 1.99993L13.911 1.99993L13.911 9.99993C13.911 10.5522 14.3587 10.9999 14.911 10.9999C15.4632 10.9999 15.911 10.5522 15.911 9.99993L15.911 0.999927ZM1.70711 15.618L15.6181 1.70703L14.2039 0.29282L0.292893 14.2038L1.70711 15.618Z"
+                fill="white" />
+            </svg>
+          </a>
+        </li>
+        <li class="menu__section__list__item">
+          <a href="adminssion" class="d-flex justify-content-start align-items-center ">
+
+            <span>
+              <%= admissionLanguage.navbar.navbar__list.navbar__list__item4[lan] %>
+            </span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0.292893 14.2038C-0.0976311 14.5943 -0.0976311 15.2275 0.292893 15.618C0.683418 16.0085 1.31658 16.0085 1.70711 15.618L0.292893 14.2038ZM15.911 0.999927C15.911 0.447642 15.4632 -7.31964e-05 14.911 -7.34493e-05L5.91096 -7.33228e-05C5.35868 -7.29856e-05 4.91096 0.447642 4.91096 0.999927C4.91096 1.55221 5.35868 1.99993 5.91096 1.99993L13.911 1.99993L13.911 9.99993C13.911 10.5522 14.3587 10.9999 14.911 10.9999C15.4632 10.9999 15.911 10.5522 15.911 9.99993L15.911 0.999927ZM1.70711 15.618L15.6181 1.70703L14.2039 0.29282L0.292893 14.2038L1.70711 15.618Z"
+                fill="white" />
+            </svg>
+          </a>
+        </li>
+        <li class="menu__section__list__item active">
+          <a href="life" class="d-flex justify-content-start align-items-center ">
+
+            <span>
+              <%= admissionLanguage.navbar.navbar__list.navbar__list__item3[lan] %>
+            </span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0.292893 14.2038C-0.0976311 14.5943 -0.0976311 15.2275 0.292893 15.618C0.683418 16.0085 1.31658 16.0085 1.70711 15.618L0.292893 14.2038ZM15.911 0.999927C15.911 0.447642 15.4632 -7.31964e-05 14.911 -7.34493e-05L5.91096 -7.33228e-05C5.35868 -7.29856e-05 4.91096 0.447642 4.91096 0.999927C4.91096 1.55221 5.35868 1.99993 5.91096 1.99993L13.911 1.99993L13.911 9.99993C13.911 10.5522 14.3587 10.9999 14.911 10.9999C15.4632 10.9999 15.911 10.5522 15.911 9.99993L15.911 0.999927ZM1.70711 15.618L15.6181 1.70703L14.2039 0.29282L0.292893 14.2038L1.70711 15.618Z"
+                fill="white" />
+            </svg>
+          </a>
+        </li>
+        <li class="menu__section__list__item d-flex justify-content-start align-items-center">
+          <a href="locations" class="d-flex justify-content-start align-items-center ">
+
+            <span>
+              <%= admissionLanguage.navbar.navbar__list.navbar__list__item5[lan] %>
+            </span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0.292893 14.2038C-0.0976311 14.5943 -0.0976311 15.2275 0.292893 15.618C0.683418 16.0085 1.31658 16.0085 1.70711 15.618L0.292893 14.2038ZM15.911 0.999927C15.911 0.447642 15.4632 -7.31964e-05 14.911 -7.34493e-05L5.91096 -7.33228e-05C5.35868 -7.29856e-05 4.91096 0.447642 4.91096 0.999927C4.91096 1.55221 5.35868 1.99993 5.91096 1.99993L13.911 1.99993L13.911 9.99993C13.911 10.5522 14.3587 10.9999 14.911 10.9999C15.4632 10.9999 15.911 10.5522 15.911 9.99993L15.911 0.999927ZM1.70711 15.618L15.6181 1.70703L14.2039 0.29282L0.292893 14.2038L1.70711 15.618Z"
+                fill="white" />
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <div class="contacts col-lg-3">
+        <div class="admission__section">
+          <h3 class="admission__section__title">
+            <%= admissionLanguage.admission.admission_title[lan] %>
+          </h3>
+          <button class="btn">
+            <img src="./assets/images/icons/apply_icon.svg" alt="icon">
+            <span>
+              <%= admissionLanguage.admission.apply_btn[lan] %>
+            </span>
+          </button>
+        </div>
+        <h3>Contact Us</h3>
+        <ul class="contacts__list">
+          <li class="contacts__list__item d-flex justify-content-left align-items-center">
+            <img src="./assets/images/icons/email_icon.svg" alt="message icon">
+            <span>info@cambridge.uz</span>
+          </li>
+          <li class="contacts__list__item d-flex justify-content-left align-items-center">
+            <img src="./assets/images/icons/phone_icon.svg" alt="phoone icon">
+            <span>+998 71 200 0308 || 99 462 40 04</span>
+          </li>
+          <li class="contacts__list__item d-flex justify-content-left align-items-center">
+            <img src="./assets/images/icons/location_icon.svg" alt="location_icon">
+            <span>Kh. Rakhmatullaev st. 3,
+              Shayhontohur, Tashkent</span>
+          </li>
+          <li class="contacts__list__item d-flex justify-content-left align-items-center">
+            <img src="./assets/images/icons/location_icon.svg" alt="location_icon">
+            <span>Navai Street. 16,
+              Yunusobod, Tashkent</span>
+          </li>
+          <li class="contacts__list__item d-flex justify-content-left align-items-center">
+            <img src="./assets/images/icons/location_icon.svg" alt="location_icon">
+            <span>Samarkand region,
+              Shakhrisabz, Samarkand, 15</span>
+          </li>
+        </ul>
+      </div>
+      <div class="socials__list col-lg-1">
+        <h3>Contact with us</h3>
+        <ul class="d-lg-block d-flex">
+          <li>
+            <a href="https://www.facebook.com/cicschooluz/">
+              <img src="./assets/images/icons/facebook.svg" alt="icon">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/cic_school/?igshid=YmMyMTA2M2Y=">
+              <img src="./assets/images/icons/instagram.svg" alt="icon">
+            </a>
+          </li>
+          <li>
+            <a href="https://t.me/cic_school">
+              <img src="./assets/images/icons/telegram.svg" alt="icon">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="admission">
+    <div class="imgHeader">
+      <img src="./assets/images/adminssionheader.png" alt="admission" />
+    </div>
+    <main>
+      <div class="box"></div>
+      <div class="tab_bar container">
+        <div class="section-nav">
+          <ol>
+            <li class="tab_bar_item">
+              <a href="#scholarships" class="tab_bar_item_link">
+                  <%= admissionLanguage.sidebar.item1[lan] %>
+              </a>
+            </li>
+            <li class="tab_bar_item">
+              <a href="#programm" class="tab_bar_item_link">
+                <%= admissionLanguage.sidebar.item2[lan] %>
+              </a>
+            </li>
+            <li class="tab_bar_item">
+              <a href="#apply_requrimens" class="tab_bar_item_link">
+                <%= admissionLanguage.sidebar.item3[lan] %>
+              </a>
+            </li>
+            <li class="tab_bar_item">
+              <a href="#apply_instruction" class="tab_bar_item_link">
+                <%= admissionLanguage.sidebar.item4[lan] %>
+              </a>
+            </li>
+          </ol>
+        </div>
+      </div>
+      <div class="content container">
+        <section id="scholarships">
+          <h2>
+            <%= admissionLanguage.scholarships.title[lan] %>
+          </h2>
+          <ul>
+            <li>
+            <%= admissionLanguage.scholarships.item1[lan] %>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <%= admissionLanguage.scholarships.item2[lan] %>
+            </li>
+            <li>
+              <%= admissionLanguage.scholarships.item3[lan] %>
+            </li>
+            <li>
+              <%= admissionLanguage.scholarships.item4[lan] %>
+            </li>
+            <li>
+              <%= admissionLanguage.scholarships.item5[lan] %>
+            </li>
+          </ul>
+          <div class="admission__section">
+            <h3 class="title">
+              <%= admissionLanguage.apply_alert.title[lan] %>
+            </h3>
+            <div class="btn__group d-flex justify-content-start align-items-center">
+              <img src="./assets/images/icons/right_arrow_white.svg" alt="arrow" />
+              <button class="apply__btn">
+                <img src="/assets/images/icons/apply_icon.svg" alt="apply__btn" />
+                <span>
+                  <%= admissionLanguage.apply_alert.btn[lan] %>
+                </span>
+              </button>
+            </div>
+          </div>
+        </section>
+        <section id="programm">
+          <h2>
+            <%= admissionLanguage.tuition_fee.title[lan] %>
+          </h2>
+          <table>
+            <tr>
+              <td>
+                <%= admissionLanguage.tuition_fee.table.th1[lan] %>
+              </td>
+              <td>
+                <%= admissionLanguage.tuition_fee.table.th2[lan] %>
+              </td>
+              <td>
+                <%= admissionLanguage.tuition_fee.table.th3[lan] %>
+              </td>
+            </tr>
+            <tr>
+              <td>2022/23</td>
+              <td>3.4 mln sum</td>
+              <td>30.6 mln sum</td>
+            </tr>
+          </table>
+          <ul>
+            <li>
+              <%= admissionLanguage.tuition_fee.item1[lan] %>
+            </li>
+          </ul>
+          <div class="admission__section">
+            <h3 class="title">
+              <%= admissionLanguage.apply_alert.title[lan] %>
+            </h3>
+            <div class="btn__group d-flex justify-content-start align-items-center">
+              <img src="./assets/images/icons/right_arrow_white.svg" alt="arrow" />
+              <button class="apply__btn">
+                <img src="/assets/images/icons/apply_icon.svg" alt="apply__btn" />
+                <span>
+                  <%= admissionLanguage.apply_alert.btn[lan] %>
+                </span>
+              </button>
+            </div>
+          </div>
+        </section>
+        <section id="apply_requrimens">
+          <h2>
+            <%= admissionLanguage.requriments.title[lan] %>
+          </h2>
+          <ul>
+            <li>
+              <%= admissionLanguage.requriments.item1[lan] %>
+            </li>
+            <li>
+              <%= admissionLanguage.requriments.item2[lan] %>
+            </li>
+            <li>
+              <%= admissionLanguage.requriments.item3[lan] %>
+            </li>
+            <li>
+              <%= admissionLanguage.requriments.item4[lan] %>
+            </li>
+            <li>
+              <%= admissionLanguage.requriments.item5[lan] %>
+            </li>
+          </ul>
+          <div class="admission__section">
+            <h3 class="title">
+              <%= admissionLanguage.apply_alert.title[lan] %>
+            </h3>
+            <div class="btn__group d-flex justify-content-start align-items-center">
+              <img src="./assets/images/icons/right_arrow_white.svg" alt="arrow" />
+              <button class="apply__btn">
+                <img src="/assets/images/icons/apply_icon.svg" alt="apply__btn" />
+                <span>
+                  <%= admissionLanguage.apply_alert.btn[lan] %>
+                </span>
+              </button>
+            </div>
+          </div>
+        </section>
+        <section id="apply_instruction">
+          <h2>
+            <%= admissionLanguage.instruction.title[lan] %>
+          </h2>
+          <ul>
+            <li>
+              <%= admissionLanguage.instruction.item1[lan] %>
+            </li>
+            <li>
+              <%= admissionLanguage.instruction.item2[lan] %>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </main>
+    <div class="admission-form">
+      <div class="form__applications container">
+        <div>
+          <h1>
+            <%= admissionLanguage.admission_form.title[lan] %>
+          </h1>
+        </div>
+        <div class="alert alert-success"></div>
+        <div class="alert alert-warn"></div>
+        <div class="alert alert-error"></div>
+        <form class="admission_form">
+          <div class="application_atimes d-lg-flex justify-content-between">
+            <div class="input__applications">
+              <h2>
+                <%= admissionLanguage.admission_form.subtitle[lan] %>
+              </h2>
+              <div class="card-form">
+                <% var branchs = branchs || []; %>
+                <div>
+                  <select placeholder="Select breanch" class="select_branch" name="branch_id" required>
+                    <option selected disabled>
+                      <%= admissionLanguage.admission_form.form.branch[lan] %>
+                    </option>
+                    <% branchs.forEach(function(branch){ %>
+                    <option value="<%= branch.branch_id %>">
+                      <%= branch.branch_name %>
+                    </option>
+                    <% }) %>
+                  </select>
+                </div>
+                <div class="input">
+                  <input name="adminssion_user_fullname" type="text" class="input-field" required />
+                  <label class="input-label">
+                    <%= admissionLanguage.admission_form.form.full_name[lan] %>
+                  </label>
+                </div>
+                <div class="input">
+                  <input name="adminssion_user_email" type="email" class="input-field" required />
+                  <label class="input-label">
+                    <%= admissionLanguage.admission_form.form.email[lan] %>
+                  </label>
+                </div>
+                <div class="input">
+                  <input name="adminssion_user_phone" type="telephone" class="input-field" required />
+                  <label class="input-label">
+                    <%= admissionLanguage.admission_form.form.mobil[lan] %>
+                  </label>
+                </div>
+                <div class="input">
+                  <input type="text" onfocus="(this.type='date')" class="input-field" name="adminssion_user_birthdate"
+                    required />
+                  <label class="input-label">
+                    <%= admissionLanguage.admission_form.form.birthdate[lan] %>
+                    * (DD/MM/YYYY)</label>
+                </div>
+              </div>
+              <div>
+                <select placeholder="Select Product ID Type" class="apply_grade" name="adminssion_user_grade" required>
+                  <option selected disabled>
+                    <%= admissionLanguage.admission_form.form.grade[lan] %>
+                  </option>
+                </select>
+              </div>
+              <div>
+                <select class="select english__new" name="adminssion_user_english_degree" required>
+                  <option disabled selected>
+                    <%= admissionLanguage.admission_form.form.english_level[lan] %>
+                  </option>
+                  <option value="Beginner">Beginner</option>
+                  <option value="Elementary">Elementary</option>
+                  <option value="Pre Intermediate">Pre Intermediate</option>
+                  <option value="Intermediate">Intermediate</option>
+                  <option value="Upper Intermediate">
+                    Upper Intermediate
+                  </option>
+                  <option value="Advanced">Advanced</option>
+                  <option value="Proficient">Proficient</option>
+                </select>
+              </div>
+              <div>
+                <select class="select region" name="adminssion_user_region" required>
+                  <option selected disabled>
+                    <%= admissionLanguage.admission_form.form.region[lan] %>
+                  </option>
+                  <option value="Andijan">Andijan</option>
+                  <option value="Bukhara">Bukhara</option>
+                  <option value="Fergana">Fergana</option>
+                  <option value="Jizzakh">Jizzakh</option>
+                  <option value="Xorazm">Xorazm</option>
+                  <option value="Namangan">Namangan</option>
+                  <option value="Navoiy">Navoiy</option>
+                  <option value="Qashqadaryo">Qashqadaryo</option>
+                  <option value="Samarqand">Samarqand</option>
+                  <option value="Sirdaryo">Sirdaryo</option>
+                  <option value="Surxondaryo">Surxondaryo</option>
+                  <option value="Tashkent">Tashkent</option>
+                  <option value="Karakalpakstan">Karakalpakstan</option>
+                </select>
+              </div>
+              <div class="input">
+                <input type="text" class="input-field" name="adminssion_user_address" required />
+                <label class="input-label">
+                  <%= admissionLanguage.admission_form.form.address[lan] %>
+                </label>
+              </div>
+              <div action="card-form">
+                <div class="input">
+                  <input type="text" class="input-field" name="adminssion_user_partents_fullname" required />
+                  <label class="input-label">
+                    <%= admissionLanguage.admission_form.form.parents_fullname[lan] %>
+                  </label>
+                </div>
+                <div class="input">
+                  <input type="telephone" class="input-field" name="adminssion_user_partents_phone" required />
+                  <label class="input-label">
+                    <%= admissionLanguage.admission_form.form.parents_mobile[lan] %>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="upload__applications">
+                <h1>
+                  <%= admissionLanguage.admission_form.form.files_title[lan] %>
+                </h1>
+                <h2>1. <%= admissionLanguage.admission_form.form.grades_certificate.label[lan] %></h2>
+                <p><%= admissionLanguage.admission_form.form.grades_certificate.content[lan] %></p>
+                <div class="upload__inputs">
+                  <div class="form__dowload">
+                    <div class="form">
+                      <input type="file" name="adminssion_user_grade_certificate" required />
+                      <img src="./assets/images/design.svg" alt="icon" />
+                      <p>Choose or drag and drop your files</p>
+                      <span>File(s) size limit is 20 MB (png / jpeg / pdf /
+                        zip)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="upload__applications">
+                <h2>2. <%= admissionLanguage.admission_form.form.passport.label[lan] %></h2>
+                <p><%= admissionLanguage.admission_form.form.passport.content[lan] %></p>
+                <div class="upload__inputs">
+                  <div class="form__dowload">
+                    <div class="form">
+                      <input type="file" name="adminssion_user_passport" required />
+                      <img src="./assets/images/design.svg" alt="icon" />
+                      <p>Choose or drag and drop your files</p>
+                      <span>File(s) size limit is 20 MB (png / jpeg / pdf /
+                        zip)</span>
+                      <!--  <button type="submit">Upload</button> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="upload__applications">
+                <h2>3.  <%= admissionLanguage.admission_form.form.parents_passport.label[lan] %></h2>
+                <p><%= admissionLanguage.admission_form.form.parents_passport.content[lan] %></p>
+                <div class="upload__inputs">
+                  <div class="form__dowload">
+                    <div class="form">
+                      <input type="file" name="adminssion_user_partents_passport" required />
+                      <img src="./assets/images/design.svg" alt="icon" />
+                      <p>Choose or drag and drop your files</p>
+                      <span>File(s) size limit is 20 MB (png / jpeg / pdf /
+                        zip)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="buttons">
+            <button type="submit" class="button_one">
+              <%= admissionLanguage.admission_form.submit[lan] %>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer container">
+        <div class="footer__logo">
+          <img src="/assets/images/logo-dark.png" alt="logo" />
+        </div>
+        <ul class="footer__menus row d-flex justify-content-between align-items-start">
+          <li class="footer__menus__item col-lg-3 mb-lg-0 mb-5">
+            <p>
+              Education is the most powerful weapon which you can use to
+              change the world
+            </p>
+            <h3>Contact Us</h3>
+            <ul class="contacts__list">
+              <li class="contacts__list__item d-flex justify-content-left align-items-center">
+                <img src="./assets/images/icons/email_icon.svg" alt="message icon" />
+                <span>cicschool@cambridge.uz</span>
+              </li>
+              <li class="contacts__list__item d-flex justify-content-left align-items-center">
+                <img src="./assets/images/icons/phone_icon.svg" alt="phoone icon" />
+                <span>+998 71 200 0308</span>
+              </li>
+              <li class="contacts__list__item d-flex justify-content-left align-items-center">
+                <img src="./assets/images/icons/location_icon.svg" alt="location_icon" />
+                <span>Kh. Rakhmatullaev st. 3, Shayhontohur, Tashkent</span>
+              </li>
+              <li class="contacts__list__item d-flex justify-content-left align-items-center">
+                <img src="./assets/images/icons/location_icon.svg" alt="location_icon" />
+                <span>Navai Street. 16, Yunusobod, Tashkent</span>
+              </li>
+              <li class="contacts__list__item d-flex justify-content-left align-items-center">
+                <img src="./assets/images/icons/location_icon.svg" alt="location_icon" />
+                <span>Samarkand region, Shakhrisabz, Samarkand, 15</span>
+              </li>
+            </ul>
+          </li>
+          <li class="footer__menus__item col-lg-3 col-6">
+            <h3>Home</h3>
+            <ul class="contacts__list">
+              <li class="contacts__list__item">
+                <a href="#"> News </a>
+              </li>
+              <li class="contacts__list__item">
+                <a href="#"> Statistics </a>
+              </li>
+              <li class="contacts__list__item">
+                <a href="#"> Our Facilities </a>
+              </li>
+              <li class="contacts__list__item">
+                <a href="#"> Campus Life </a>
+              </li>
+              <li class="contacts__list__item">
+                <a href="#"> Admission </a>
+              </li>
+              <li class="contacts__list__item">
+                <a href="#"> Studens Portfolio </a>
+              </li>
+              <li class="contacts__list__item">
+                <a href="#"> Why CIC School? </a>
+              </li>
+              <li class="contacts__list__item">
+                <a href="#"> Our Partners </a>
+              </li>
+            </ul>
+          </li>
+          <li class="footer__menus__item col-lg-3 col-6">
+            <h3>Pages</h3>
+            <ul class="contacts__list">
+              <li class="contacts__list__item">
+                <a href="#"> Home </a>
+              </li>
+              <li class="contacts__list__item">
+                <a href="#"> About Us </a>
+              </li>
+              <li class="contacts__list__item">
+                <a href="#"> Admissions </a>
+              </li>
+              <li class="contacts__list__item">
+                <a href="#"> Life at CIC </a>
+              </li>
+              <li class="contacts__list__item">
+                <a href="#"> All News </a>
+              </li>
+              <li class="contacts__list__item">
+                <a href="#"> Students’ Government </a>
+              </li>
+            </ul>
+          </li>
+          <li class="footer__menus__item col-lg-3 mt-lg-0 mt-5">
+            <h3>Folloow Us</h3>
+            <ul class="socily__list d-flex justify-content-between">
+              <li class="socily__list__item">
+                <a href="https://instagram.com/cic_school?igshid=YmMyMTA2M2Y=">
+                  <img src="./assets/images/icons/instagram.svg" alt="instagram" />
+                </a>
+              </li>
+              <li class="socily__list__item">
+                <a href="https://t.me/cic_school">
+                  <img src="./assets/images/icons/telegram.svg" alt="telegram" />
+                </a>
+              </li>
+              <li class="socily__list__item">
+                <a href="https://www.facebook.com/cicschooluz/">
+                  <img src="./assets/images/icons/facebook.svg" alt="facebook" />
+                </a>
+              </li>
+            </ul>
+            <h3>Have Any Questions?</h3>
+            <ul class="quesion__form">
+              <input class="input" type="text" placeholder="Name" />
+              <input class="input" type="text" placeholder="Mail address" />
+              <input class="input" type="text" placeholder="Type something.." />
+              <button class="btn">
+                <img src="./assets/images/icons/send_icon.svg" alt="send icon" />
+                <span>Send</span>
+              </button>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </section>
+</body>
+<script src="./assets/javascript/menu.js"></script>
+<script src="./assets/javascript/language.js"></script>
+<script src="./assets/javascript/admission.js"></script>
+<script src="./assets/fetchReqsJs/adminssion.js"></script>
+<script>
+  const sectionBranchElement = document.querySelector(".select_branch");
+  const applyGradeElement = document.querySelector(".apply_grade");
+  sectionBranchElement.addEventListener("change", async (e) => {
+    console.log(e.target.value);
+    let res = await fetch(`/branch/${e.target.value}`, {
+      method: "GET",
+    });
+    6;
+    let data = await res.json();
+    console.log(data);
+    data.data.branch.branch_grades.forEach((element) => {
+      let option = document.createElement("option");
+      option.value = element;
+      option.textContent = element;
+      applyGradeElement.appendChild(option);
+    });
+  });
+</script>
+
+</html>

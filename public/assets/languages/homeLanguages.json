@@ -1,0 +1,380 @@
+{
+  "navbar": {
+    "navbar__list": {
+      "navbar__list__item1": {
+        "uz": "Bosh sahifa",
+        "ru": "Главная",
+        "eng": "Home"
+      },
+      "navbar__list__item2": {
+        "uz": "Biz haqimizda",
+        "ru": "О нас",
+        "eng": "About Us"
+      },
+      "navbar__list__item3": {
+        "uz": "CICdagi hayot",
+        "ru": "Жизнь в CIC",
+        "eng": "Life at CIC"
+      },
+      "navbar__list__item4": {
+        "uz": "Qabul",
+        "ru": "Допуск",
+        "eng": "Admission"
+      },
+      "navbar__list__item5": {
+        "uz": "Joylar",
+        "ru": "Места",
+        "eng": "Locations"
+      }
+    }
+  },
+  "header": {
+    "header1": {
+      "title": {
+        "uz": "AP kurslarini olish",
+        "ru": "Прохождение курсов AP.",
+        "eng": "Taking AP courses"
+      },
+      "header_list": {
+        "header_list__item1": {
+          "uz": "TOP Universitetlarga kirishga yordam beradi",
+          "ru": "Помогает поступить в ТОП ВУЗы",
+          "eng": "Helps to get into TOP Universities."
+        },
+        "header_list__item2": {
+          "uz": "AP - global hisob ma'lumotidir",
+          "ru": "AP — это глобальное кредит.",
+          "eng": "AP is a Global Credential."
+        },
+        "header_list__item3": {
+          "uz": "Ko'nikmalar va ishonchni shakllantiradi",
+          "ru": "Развивает навыки и уверенность.",
+          "eng": "Build skills and confidence."
+        }
+      }
+    },
+    "header2": {
+      "title": {
+        "uz": "Chet ellik o'qituvchilar:",
+        "ru": "Иностранные преподаватели:",
+        "eng": "Foreign teachers"
+      },
+      "header_list": {
+        "header_list__item1": {
+          "uz": "Nazariy va amaliy bilimlarni olish imkoniyati.",
+          "ru": "Возможность получить как теоретические, так и практические знания.",
+          "eng": "Opportunity to gain both theoretical and practical knowledge."
+        },
+        "header_list__item2": {
+          "uz": "Mahalliy o'qituvchilar bilan ingliz tilini yaxshilash",
+          "ru": "Улучшение английского языка с носителями языка",
+          "eng": "Improving English with Native teachers."
+        },
+        "header_list__item3": {
+          "uz": "Motivatsion insholar bilan yordam.",
+          "ru": "Помощь с мотивационными эссе.",
+          "eng": "Assistance with motivational essays."
+        }
+      }
+    },
+    "header3": {
+      "title": {
+        "uz": "Universitetga ariza berish jarayoniga yordam berish",
+        "ru": "Помощь в подаче заявления в университет.",
+        "eng": "Assistance with University application process"
+      },
+      "header_list": {
+        "header_list__item1": {
+          "uz": "'EduAction' konsalting xizmati uchun bepul yordam.",
+          "ru": "Бесплатная помощь для консультационной службы «Образование».",
+          "eng": "Free assistance from Eduaction consulting service."
+        },
+        "header_list__item2": {
+          "uz": "TOP universitetlari talabalaridan master-klasslar.",
+          "ru": "Мастер-классы от студентов ТОП ВУЗов",
+          "eng": "Masterclasses from students of TOP Universities."
+        },
+        "header_list__item3": {
+          "uz": "Maktab maslahatchisidan to'g'ri ko'rsatmalar.",
+          "ru": "Правильные рекомендации от школьного консультанта.",
+          "eng": "Proper guidelines from school counselor."
+        }
+      }
+    },
+    "close_btn": {
+      "uz": "Yopish",
+      "ru": "Закрыть",
+      "eng": "Close"
+    },
+    "header_about_btn": {
+      "uz": "Maktabimiz haqida",
+      "ru": "О нашей школе",
+      "eng": "About our school"
+    }
+  },
+  "admission": {
+    "admission_title": {
+      "uz": "Qabul hozir ochiq",
+      "ru": "Прием открыт сейчас",
+      "eng": "Admission is Open Now"
+    },
+    "admission_subtitle": {
+      "uz": "Hozirda 1-11 sinflar uchun qabul ochiq.",
+      "ru": "Набор открыт для 1-11 классов.",
+      "eng": "Admission is open for grades 1-11 now."
+    },
+    "apply_btn": {
+      "uz": "Hozir hujjat topshiring",
+      "ru": "Подать сейчас",
+      "eng": "Apply Now"
+    }
+  },
+  "news": {
+    "news_title": {
+      "uz": "So'ngi yangiliklar",
+      "ru": "Последние новости",
+      "eng": "Latest News"
+    }
+  },
+  "facilities": {
+    "facilities_list": {
+      "facilities_list__item1": {
+        "title": {
+          "uz": "Millat Umidi maktabining ochilishi",
+          "ru": "Открытие школы Миллата Умиди",
+          "eng": "The Launching of Millat Umidi School"
+        },
+        "content": {
+          "uz": "Toshkent shahridagi INHA universitetida “Millat Umidi” xalqaro maktabi o‘zining ochilishini uning asoschisi Umidjon Ishmuhamedov bilan nishonladi. Ta’lim muassasasi asoschisi, Umidjon Ishmuhammedov “Millat Umidi” xalqaro maktabining maqsad-muddaolarini ochiq-oydin aytib o‘tdi, bu maqsadda ilg‘or o‘quvchilarga eng yaxshi universitetlarga o‘qishga kirish imkoniyatini taqdim etish, shuningdek, stipendiyalar bilan ta’minlash ta'kidlab o‘tildi",
+          "ru": "Международная школа Миллат Умиди отпраздновала свое открытие в Университете INHA в Ташкенте, а ее основатель Умиджон Ишмухамедов выступил в качестве принимающей стороны. Основатель учебного заведения очень четко обозначил намерения Международной школы Миллата Умиди, чтобы предоставить достойным студентам возможности, которые приведут их к обучению в лучших университетах, а также стипендии, чтобы проложить путь для выдающихся студентов.",
+          "eng": "Millat Umidi International School celebrated its launch at INHA University in Tashkent with it’s founder Umidjon Ishmukhamedov, as its host. The founder of the educational institution made Millat Umidi International School’s intentions very clear in order to provide merit students with opportunities that lead their studies to the Top Universities as well as also scholarships to pave the way for distinction students."
+        }
+      },
+      "facilities_list__item2": {
+        "title": {
+          "uz": "Bizning imkoniyatlarimiz",
+          "ru": "Наши объекты",
+          "eng": "Our Facilities"
+        },
+        "content1": {
+          "uz": "Biz Millat Umidi maktabida zamonaviy va qulay sharoitlarga ega bo‘lish ta’limning muhim qismi deb hisoblaymiz. Maydon bo'ylab sayohat tadbirlar bilan gavjum maktabni ko'rsatadi.",
+          "ru": "Мы в школе Миллат Умиди считаем, что наличие современных и удобных помещений является неотъемлемой частью полноценного образования. Экскурсия по территории покажет школу, которая кипит мероприятиями.",
+          "eng": "We at Millat Umidi School believe having modern and comfortable facilities is an essential part of nourishing one’s education. A tour around the grounds will reveal a school that buzzes with activities."
+        },
+        "content2": {
+          "uz": "Maktab hududi kompyuter to'plamlari, oshxona, to'liq jihozlangan sinf xonalari, yopiq sport maydonchasi, ochiq sport maydonchasi va kutubxonani o'z ichiga oladi.",
+          "ru": "Территория школы включает в себя компьютерные классы, кухню, полностью оборудованные классы, крытую спортивную арену, открытую спортивную площадку и библиотеку.",
+          "eng": "School grounds include computer suites, a kitchen, fully equipped classrooms, an indoor sports arena, an outdoor sports area, and a library."
+        }
+      },
+      "facilities_list__item3": {
+        "title": {
+          "uz": "Birgalikda mukammallikka erishish",
+          "ru": "Достижение совершенства вместе",
+          "eng": "Achieving Excellence Together"
+        },
+        "content": {
+          "uz": "Millat Umidi xalqaro maktabi sizga MIT, Harvard, Yale va boshqa nufuzli xalqaro universitetlarda toʻliq stipendiya asosida oʻqishga tayyor boʻlish imkoniyatini beradi.",
+          "ru": "Международная школа Миллата Умиди даст вам возможность подготовиться к обучению в ведущих международных университетах, таких как Массачусетский технологический институт, Гарвард, Йельский университет и другие, на полной стипендии.",
+          "eng": "Millat Umidi International School will give you the opportunity to be ready to study at top international universities such as MIT, Harvard, Yale and others on full ride scholarship."
+        }
+      }
+    }
+  },
+  "statistics": {
+    "title1": {
+      "uz": "Ochildi",
+      "ru": "Открыть",
+      "eng": "Open in"
+    },
+    "title2": {
+      "uz": "O'qituvchilar",
+      "ru": "Учителя",
+      "eng": "Teachers"
+    },
+    "title3": {
+      "uz": "Talabalar",
+      "ru": "Ученики",
+      "eng": "Students"
+    }
+  },
+  "future_here": {
+    "title": {
+      "uz": "Sizning kelajagingiz shu erda boshlanadi",
+      "ru": "Ваше будущее начинается здесь.",
+      "eng": "Your Future Begins Here"
+    },
+    "subtitle": {
+      "uz": "O'zingizning ajoyib va go'zal karerangizni biz bilan birga quring.",
+      "ru": "Построй свою удивительную и красивую карьеру вместе с нами.",
+      "eng": "Built Your Amazing And Beautiful Career With Us Together"
+    }
+  },
+  "compus": {
+    "item1": {
+      "title": {
+        "uz": "Kampusimiz hayoti",
+        "ru": "Жизнь нашего кампуса",
+        "eng": "Life Of Our Campus"
+      },
+      "content": {
+        "eng": "Learn and enjoy with our comfortable places",
+        "ru": "Учитесь и наслаждайтесь в наших удобных местах",
+        "uz": "Bizning qulay joylarimizni o'rganing va zavqlaning"
+      }
+    },
+    "item2": {
+      "title": {
+        "uz": "Kampusimiz hayoti",
+        "ru": "Жизнь нашего кампуса",
+        "eng": "Life our campus"
+      },
+      "content": {
+        "uz": "CIC maktabi nafaqat sizning orzularingiz maktabi, balki qo'llab-quvvatlash va o'zaro tushunishga asoslangan yana bir katta oiladir. Agar siz bizning katta oilamiz a'zosi bo'lishingizga ishonchingiz komil bo'lsa, tez orada ro'yxatdan o'ting.",
+        "ru": "CIC School - не только школа вашей мечты, но это еще одна большая семья, на основе которой лежит поддержка и взаимопонимание. Если же вы уверены, что сможете стать частью нашей большой семьи, то скорее регистрируйтесь.",
+        "eng": "Millat Umidi School is not only the school of your dreams, but it is another big family based on support and mutual understanding. If you are sure that you can become part of our big family, then register soon."
+      }
+    }
+  },
+  "student_portfolio": {
+    "item1": {
+      "title": {
+        "uz": "Ajoyib talabalar portfeli",
+        "ru": "Отличное студенческое портфолио",
+        "eng": "Excellent Student Portfolio"
+      },
+      "content": {
+        "uz": "Talaba portfeli o'rta maktabdan universitetga o'tayotgan har bir talaba arizasining ajralmas qismidir. Millat Umidi xalqaro maktabi talabalarga o'z portfellarini yaratish uchun barcha zarur vositalarni taqdim etadi. Millat Umidi talabalari dunyoning eng yaxshi universitetlariga kirish va stipendiya asosida o‘qish imkoniyatiga ega bo‘ladilar.",
+        "ru": "Студенческое портфолио является неотъемлемой частью заявления каждого учащегося, поступающего из средней школы в университет. Международная школа Миллата Умиди предоставляет учащимся все необходимые инструменты для создания выделяющихся портфолио. У студентов Millat Umidi будет возможность поступить в лучшие университеты мира и возможность учиться на стипендии.",
+        "eng": "Student Portfolio is an integral part of each student's application advancing from high school to a university. Millat Umidi International school provides all necessary tools for students to build their portfolios that stand out. Students in Millat Umidi will have the chance to enter Top Universities worldwide and have the opportunity to study based on scholarships."
+      }
+    },
+    "item2": {
+      "title": {
+        "uz": "Grantlar",
+        "ru": "Стипендии",
+        "eng": "Scholarships"
+      },
+      "content": {
+        "uz": "Talabalarimiz MIT, Harvard, Yale va boshqalar kabi dunyoning eng yaxshi universitetlarida toʻliq stipendiya asosida oʻqish imkoniyatiga ega.",
+        "ru": "У наших студентов есть возможность учиться в лучших университетах мира, таких как Массачусетский технологический институт, Гарвард, Йельский университет и другие, на полной стипендии.",
+        "eng": "Our students have a chance to study in Top Universities worldwide such as MIT, Harvard, Yale and others on full ride scholarship."
+      }
+    },
+    "item3": {
+      "title": {
+        "uz": "O'quv dasturlari",
+        "ru": "Программы обучения",
+        "eng": "Learning Programs"
+      },
+      "content": {
+        "eng": "Students of Millat Umidi International School will have a learning program designed to enhance student's academic skills in STEM fields in addition to local educational programs.",
+        "ru": "Студенты Международной школы Миллата Умиди будут иметь программу обучения, предназначенную для повышения академических навыков учащихся в областях STEM в дополнение к местным образовательным программам.",
+        "uz": "Millat Umidi xalqaro maktabi talabalari mahalliy ta'lim dasturlari bilan bir qatorda STEM sohalarida talabalarning akademik ko'nikmalarini oshirish uchun mo'ljallangan o'quv dasturiga ega bo'lishadi."
+      }
+    },
+    "item4": {
+      "title": {
+        "eng": "Certificate",
+        "uz": "Sertifikat",
+        "ru": "Сертификат"
+      },
+      "content": {
+        "eng": "Students completing Millat Umidi International School are awarded with Secondary School Certificate and students are enrolled for AP courses.",
+        "ru": "Учащиеся, окончившие международную школу Миллата Умиди, получают аттестат о среднем образовании и зачисляются на курсы AP.",
+        "uz": "Millat Umidi xalqaro maktabini tamomlagan talabalar o'rta maktab sertifikati bilan taqdirlanadilar va talabalar AP kurslariga yoziladi."
+      }
+    }
+  },
+  "school_accardion": {
+    "title": {
+      "uz": "Millat Umidi maktabini tanlashning 6 ta sababi",
+      "ru": "6 причин, почему вы должны выбрать школу Millat Umidi",
+      "eng": "6 Reasons Why You Should Choose Millat Umidi School"
+    },
+    "accardion1": {
+      "title": {
+        "eng": "Teaching Staff",
+        "ru": "Преподавательский состав",
+        "uz": "Pedagogik xodimlar"
+      },
+      "contnet": {
+        "eng": "The best quality and interactive lessons led by the most qualified IELTS and SAT teachers",
+        "ru": "Лучшее качество и интерактивные уроки под руководством самых квалифицированных преподавателей  IELTS и SAT",
+        "uz": "IELTS va SAT darslari uchun eng malakali o'qituvchilar nazorati ostida eng sifatli va interaktiv darslar"
+      }
+    },
+    "accardion2": {
+      "contnet": {
+        "eng": "Portfolio is the key to a grant abroad, and our partner Khan academy will help you with this",
+        "ru": "Портфолио - ключ к гранту за рубежом, а поможет вам в этом наш партнёр, Khan academy",
+        "uz": "Portfolio xorijdagi grant kalitidir va bu borada hamkorimiz Khan akademiyasi bizga yordam beradi"
+      },
+      "title": {
+        "eng": "Khan Academy",
+        "ru": "Khan Academy",
+        "uz": "Khan Academy"
+      }
+    },
+    "accardion3": {
+      "title": {
+        "eng": "Progression Opportunities",
+        "ru": "Возможности развития",
+        "uz": "Rivojlanish imkoniyatlari"
+      },
+      "contnet": {
+        "eng": "Great opportunity to become the student of IVY League and other TOP universities of the world.",
+        "ru": "Отличная возможность стать студентом IVY League и других ТОПовых университетов мира.",
+        "uz": "IVY League va dunyoning boshqa TOP universitetlari talabasi bo'lish uchun ajoyib imkoniyat."
+      }
+    },
+    "accardion4": {
+      "title": {
+        "eng": "Scholarships",
+        "ru": "Стипендии",
+        "uz": "Grantlar"
+      },
+      "contnet": {
+        "eng": "Students with IELTS 7+ and SAT 1500+ will be provided with great opportunity – scholarship by Umidjon Ishmukhamedov",
+        "ru": "Студентам с IELTS 7+ и SAT 1500+ предоставляется отличная возможность – стипендия Умиджона Ишмухамедова",
+        "uz": "IELTS 7+ va SAT 1500+ boʻlgan talabalarga katta imkoniyat taqdim etiladi – Umidjon Ishmuhamedov stipendiyasi"
+      }
+    },
+    "accardion5": {
+      "title": {
+        "eng": "Facilities",
+        "ru": "Удобства",
+        "uz": "Imkoniyatlar"
+      },
+      "contnet": {
+        "eng": "World class educational building, all conditions and conveniences for students, healthy and delicious meal twice a day.",
+        "ru": "В нашей школе предоставлены все условия для получения качественного образования (широкие кабинеты, компьютерные комнаты, bookcafe) ну и конечно же вкусное и полезное питание (2 раза в день)",
+        "uz": "Maktabimizda sifatli ta’lim olish uchun barcha sharoitlar yaratilgan (keng o‘quv xonalari, kompyuter xonalari, kitob kafesi) va, albatta, mazali va sog‘lom taomlar (kuniga 2 mahal)"
+      }
+    },
+    "accardion6": {
+      "title": {
+        "eng": "Information Technologies",
+        "ru": "Информационные технологии",
+        "uz": "Axborot texnologiyalari"
+      },
+      "contnet": {
+        "eng": "Chance to learn one of the most modern professions – IT, by iSystem IT Academy",
+        "ru": "Возможность освоить одну из самых современных профессий – IT от iSystem IT Academy",
+        "uz": "iSystem IT Academy tomonidan eng zamonaviy kasblardan biri - ITni o'rganish imkoniyati"
+      }
+    }
+  },
+  "partners": {
+    "title": {
+      "eng": "Our Partners",
+      "ru": "Наши партнеры",
+      "uz": "Bizning hamkorlarimiz"
+    },
+    "subtitle": {
+      "eng": "Our best parnerships download and distribute with our compliments",
+      "ru": "Наши лучшие партнерские отношения загружайте и распространяйте с нашей благодарностью",
+      "uz": "Bizning hamkorlarimiz"
+    }
+  }
+}

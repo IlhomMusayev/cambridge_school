@@ -9,8 +9,6 @@ const sidebatListLinkElement = document.querySelectorAll(
 window.addEventListener(
   "scroll",
   (e) => {
-    console.log(footerElement.offsetTop);
-    console.log(height + 500);
     height = window.pageYOffset;
     if (programmElement.offsetTop < height + 250) {
       sidebarList.style.display = "block";

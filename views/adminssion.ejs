@@ -677,13 +677,11 @@
   const sectionBranchElement = document.querySelector(".select_branch");
   const applyGradeElement = document.querySelector(".apply_grade");
   sectionBranchElement.addEventListener("change", async (e) => {
-    console.log(e.target.value);
     let res = await fetch(`/branch/${e.target.value}`, {
       method: "GET",
     });
     6;
     let data = await res.json();
-    console.log(data);
     data.data.branch.branch_grades.forEach((element) => {
       let option = document.createElement("option");
       option.value = element;

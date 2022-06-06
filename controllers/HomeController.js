@@ -21,7 +21,6 @@ module.exports = class HomeController {
     } else if (req.language.toString() === "uz") {
       lan = "uz";
     }
-    console.log(lastNews);
     res.render("index", {
       lastNews,
       HomeLanguages,

@@ -32,7 +32,6 @@ playVideoBtnElements.forEach((btn) => {
 });
 
 const closeBtnsElements = document.querySelectorAll(".close__header__btn");
-console.log(closeBtnsElements);
 closeBtnsElements.forEach((btn) => {
   btn.addEventListener("click", (e) => {
     const parentElement = btn.parentNode;

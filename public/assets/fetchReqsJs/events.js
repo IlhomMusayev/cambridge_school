@@ -56,7 +56,6 @@ createeventsFormElement.addEventListener("submit", async (e) => {
   };
   let response = await fetch("/admin/events", option);
   response = await response.json();
-  console.log(response);
   if (response.ok) {
     successAlertElement.style.display = "block";
     successAlertElement.innerHTML = `
@@ -82,7 +81,6 @@ editeventsEditElements.forEach((editeventsEdit) => {
   editeventsEdit.addEventListener("click", async (e) => {
     e.preventDefault();
     const eventItem = JSON.parse(editeventsEdit.dataset.events);
-    console.log(eventItem);
 
     const editeventsFormElement = document.querySelector(".edit__events__form");
 
@@ -108,6 +106,7 @@ editeventsEditElements.forEach((editeventsEdit) => {
       const successAlertElement =
         editeventsFormElement.querySelector(".alert__success");
 
+      formData.append("branch_id", createeventsFormElement.branch_id.value);
       formData.append("event_id", eventItem.event_id);
       formData.append(
         "event_title_uz",
@@ -157,7 +156,6 @@ editeventsEditElements.forEach((editeventsEdit) => {
       };
       let response = await fetch("/admin/events", option);
       response = await response.json();
-      console.log(response);
       if (response.ok) {
         successAlertElement.style.display = "block";
         successAlertElement.innerHTML = `

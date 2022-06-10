@@ -20,8 +20,10 @@
   <nav class="">
     <div class="navbar container d-flex justify-content-between align-items-center">
       <div class="logo">
-        <img src="./assets/images/logo-dark.png" alt="logo" />
-      </div>
+        <a href="/">
+            <img src="../assets/images/logo-dark.png" alt="logo" />
+        </a>
+    </div>
       <ul class="navbar__list d-flex align-items-center justify-content-between">
         <li class="navbar__list__item mx-3">
           <a href="/">
@@ -39,7 +41,7 @@
           </a>
         </li>
         <li class="navbar__list__item mx-3 active">
-          <a href="/adminssion">
+          <a href="/admission">
             <%= admissionLanguage.navbar.navbar__list.navbar__list__item4[lan] %>
           </a>
         </li>
@@ -53,8 +55,10 @@
       <ul class="navbar__right d-flex align-items-center">
 
         <li class="navbar__right__item">
-          <img src="/assets/images/icons/phone_icon.svg" alt="phone_icon">
-        </li>
+          <a href="tel:+998 71 200 0308">
+              <img src="/assets/images/icons/phone_icon.svg" alt="phone_icon">
+          </a>
+      </li>
         <li class="navbar__right__item">
           <select name="lan" id="lan">
             <option value="eng" <% if(lan === "eng") { %> selected <% } %>>Eng</option>
@@ -77,7 +81,7 @@
     <div class="menu__section row justify-content-between">
       <ul class="menu__section__list col-lg-3">
         <li class="menu__section__list__item">
-          <a href="" class="d-flex justify-content-start align-items-center ">
+          <a href="/" class="d-flex justify-content-start align-items-center ">
             <span>
               <%= admissionLanguage.navbar.navbar__list.navbar__list__item1[lan] %>
             </span>
@@ -101,7 +105,7 @@
           </a>
         </li>
         <li class="menu__section__list__item">
-          <a href="adminssion" class="d-flex justify-content-start align-items-center ">
+          <a href="admission" class="d-flex justify-content-start align-items-center ">
 
             <span>
               <%= admissionLanguage.navbar.navbar__list.navbar__list__item4[lan] %>
@@ -162,21 +166,12 @@
             <img src="./assets/images/icons/phone_icon.svg" alt="phoone icon">
             <span>+998 71 200 0308 || 99 462 40 04</span>
           </li>
-          <li class="contacts__list__item d-flex justify-content-left align-items-center">
-            <img src="./assets/images/icons/location_icon.svg" alt="location_icon">
-            <span>Kh. Rakhmatullaev st. 3,
-              Shayhontohur, Tashkent</span>
-          </li>
-          <li class="contacts__list__item d-flex justify-content-left align-items-center">
-            <img src="./assets/images/icons/location_icon.svg" alt="location_icon">
-            <span>Navai Street. 16,
-              Yunusobod, Tashkent</span>
-          </li>
-          <li class="contacts__list__item d-flex justify-content-left align-items-center">
-            <img src="./assets/images/icons/location_icon.svg" alt="location_icon">
-            <span>Samarkand region,
-              Shakhrisabz, Samarkand, 15</span>
-          </li>
+          <% branchs.forEach(function(item){ %>
+            <li class="contacts__list__item d-flex justify-content-left align-items-center">
+                <img src="./assets/images/icons/location_icon.svg" alt="location_icon">
+                <span><%= item.branch_name %></span>
+            </li>
+        <% }) %>
         </ul>
       </div>
       <div class="socials__list col-lg-1">
@@ -264,12 +259,12 @@
             </h3>
             <div class="btn__group d-flex justify-content-start align-items-center">
               <img src="./assets/images/icons/right_arrow_white.svg" alt="arrow" />
-              <button class="apply__btn">
+              <a href="/admission#admission" class="apply__btn">
                 <img src="/assets/images/icons/apply_icon.svg" alt="apply__btn" />
                 <span>
                   <%= admissionLanguage.apply_alert.btn[lan] %>
                 </span>
-              </button>
+              </a>
             </div>
           </div>
         </section>
@@ -306,12 +301,12 @@
             </h3>
             <div class="btn__group d-flex justify-content-start align-items-center">
               <img src="./assets/images/icons/right_arrow_white.svg" alt="arrow" />
-              <button class="apply__btn">
+              <a href="/admission#admission" class="apply__btn">
                 <img src="/assets/images/icons/apply_icon.svg" alt="apply__btn" />
                 <span>
                   <%= admissionLanguage.apply_alert.btn[lan] %>
                 </span>
-              </button>
+              </a>
             </div>
           </div>
         </section>
@@ -342,12 +337,12 @@
             </h3>
             <div class="btn__group d-flex justify-content-start align-items-center">
               <img src="./assets/images/icons/right_arrow_white.svg" alt="arrow" />
-              <button class="apply__btn">
+              <a href="/admission#admission" class="apply__btn">
                 <img src="/assets/images/icons/apply_icon.svg" alt="apply__btn" />
                 <span>
                   <%= admissionLanguage.apply_alert.btn[lan] %>
                 </span>
-              </button>
+              </a>
             </div>
           </div>
         </section>
@@ -366,7 +361,7 @@
         </section>
       </div>
     </main>
-    <div class="admission-form">
+    <div class="admission-form" id="admission">
       <div class="form__applications container">
         <div>
           <h1>
@@ -546,142 +541,176 @@
         </form>
       </div>
     </div>
-
     <footer>
       <div class="footer container">
-        <div class="footer__logo">
-          <img src="/assets/images/logo-dark.png" alt="logo" />
-        </div>
-        <ul class="footer__menus row d-flex justify-content-between align-items-start">
-          <li class="footer__menus__item col-lg-3 mb-lg-0 mb-5">
-            <p>
-              Education is the most powerful weapon which you can use to
-              change the world
-            </p>
-            <h3>Contact Us</h3>
-            <ul class="contacts__list">
-              <li class="contacts__list__item d-flex justify-content-left align-items-center">
-                <img src="./assets/images/icons/email_icon.svg" alt="message icon" />
-                <span>cicschool@cambridge.uz</span>
+          <div class="footer__logo">
+              <img src="/assets/images/logo-dark.png" alt="logo">
+          </div>
+          <ul class="footer__menus row d-flex justify-content-between align-items-start">
+              <li class="footer__menus__item col-lg-3 mb-lg-0 mb-5">
+                  <p>
+                      <%= admissionLanguage.footer.content[lan] %>
+                  </p>
+                  <h3>
+                      <%= admissionLanguage.footer.contect_us[lan] %>
+                  </h3>
+                  <ul class="contacts__list">
+                      <li class="contacts__list__item d-flex justify-content-left align-items-center">
+                          <img src="./assets/images/icons/email_icon.svg" alt="message icon">
+                          <span>info@cambridge.uz</span>
+                      </li>
+                      <li class="contacts__list__item d-flex justify-content-left align-items-center">
+                          <img src="./assets/images/icons/phone_icon.svg" alt="phoone icon">
+                          <span>+998 71 200 0308 || 99 462 40 04</span>
+                      </li>
+                      <% var branchs = branchs || [] %> 
+
+                      <% branchs.forEach(function(item){ %>
+                        <li class="contacts__list__item d-flex justify-content-left align-items-center">
+                            <img src="./assets/images/icons/location_icon.svg" alt="location_icon">
+                            <span><%= item.branch_name %></span>
+                        </li>
+                    <% }) %>
+                  </ul>
               </li>
-              <li class="contacts__list__item d-flex justify-content-left align-items-center">
-                <img src="./assets/images/icons/phone_icon.svg" alt="phoone icon" />
-                <span>+998 71 200 0308</span>
+              <li class="footer__menus__item col-lg-3 col-6">
+                  <h3><%= admissionLanguage.footer.home.title[lan] %></h3>
+                  <ul class="contacts__list">
+                      <li class="contacts__list__item">
+                         <a href="#news">
+                          <%= admissionLanguage.footer.home.item1[lan] %>
+                         </a>
+                      </li>
+                      <li class="contacts__list__item">
+                          <a href="#statistics">
+                              <%= admissionLanguage.footer.home.item2[lan] %>
+                         </a>
+                      </li>
+                      <li class="contacts__list__item">
+                          <a href="#facilities">
+                              <%= admissionLanguage.footer.home.item3[lan] %>
+                          </a>
+                      </li>
+                      <li class="contacts__list__item">
+                          <a href="#compus">
+                              <%= admissionLanguage.footer.home.item4[lan] %>
+                          </a>
+                      </li>
+                      <li class="contacts__list__item">
+                          <a href="#admission">
+                              <%= admissionLanguage.footer.home.item5[lan] %>
+                          </a>
+                      </li>
+                      <li class="contacts__list__item">
+                          <a href="#studentportfolio">
+                              <%= admissionLanguage.footer.home.item6[lan] %>
+                          </a>
+                      </li>
+                      <li class="contacts__list__item">
+                          <a href="#whymillatumidischool">
+                              <%= admissionLanguage.footer.home.item7[lan] %>
+                          </a>
+                      </li>
+                      <li class="contacts__list__item">
+                          <a href="#partners">
+                              <%= admissionLanguage.footer.home.item8[lan] %>
+                          </a>
+                      </li>
+                  </ul>
               </li>
-              <li class="contacts__list__item d-flex justify-content-left align-items-center">
-                <img src="./assets/images/icons/location_icon.svg" alt="location_icon" />
-                <span>Kh. Rakhmatullaev st. 3, Shayhontohur, Tashkent</span>
+              <li class="footer__menus__item col-lg-3 col-6">
+                  <h3>
+                      <%= admissionLanguage.footer.pages.title[lan] %>
+                  </h3>
+                  <ul class="contacts__list">
+                      <li class="contacts__list__item">
+                         <a href="/">
+                          <%= admissionLanguage.footer.pages.item1[lan] %>
+                         </a>
+                      </li>
+                      <li class="contacts__list__item">
+                          <a href="/about">
+                              <%= admissionLanguage.footer.pages.item2[lan] %>
+                         </a>
+                      </li>
+                      <li class="contacts__list__item">
+                          <a href="/admission">
+                              <%= admissionLanguage.footer.pages.item3[lan] %>
+                         </a>
+                      </li>
+                      <li class="contacts__list__item">
+                          <a href="/life">
+                              <%= admissionLanguage.footer.pages.item4[lan] %>
+                         </a>
+                      </li>
+                      <li class="contacts__list__item">
+                          <a href="/locaation">
+                              <%= admissionLanguage.footer.pages.item5[lan] %>
+                         </a>
+                      </li>
+
+                  </ul>
               </li>
-              <li class="contacts__list__item d-flex justify-content-left align-items-center">
-                <img src="./assets/images/icons/location_icon.svg" alt="location_icon" />
-                <span>Navai Street. 16, Yunusobod, Tashkent</span>
+              <li class="footer__menus__item col-lg-3 mt-lg-0 mt-5">
+                  <h3>
+                      <%= admissionLanguage.footer.follow.title[lan] %>
+                  </h3>
+                  <ul class="socily__list d-flex justify-content-between">
+                      <li class="socily__list__item">
+                          <a href="https://instagram.com/cic_school?igshid=YmMyMTA2M2Y=">
+                               <img src="./assets/images/icons/instagram.svg" alt="instagram">
+                          </a>
+                       </li>
+                       <li class="socily__list__item">
+                           <a href="https://t.me/cic_school">
+                                <img src="./assets/images/icons/telegram.svg" alt="telegram">
+                           </a>
+                        </li>
+                        <li class="socily__list__item">
+                           <a href="https://www.facebook.com/cicschooluz/">
+                                <img src="./assets/images/icons/facebook.svg" alt="facebook">
+                           </a>
+                        </li>
+                  </ul>
+                  <h3>
+                      <%= admissionLanguage.footer.question.title[lan] %>    
+                  </h3>
+                  <ul class="quesion__form">
+                      <form class="question_form">
+                          <input class="input" name="name" type="text" placeholder="Name">
+                          <input class="input" name="email" type="email" placeholder="Mail address">
+                          <input class="input" name="message" type="text" placeholder="Type something..">
+                          <button class="btn">
+                              <img src="./assets/images/icons/send_icon.svg" alt="send icon">
+                              <span>
+                                  <%= admissionLanguage.footer.question.send[lan] %>    
+                              </span>
+                          </button>
+                      </form>
+                  </ul>
               </li>
-              <li class="contacts__list__item d-flex justify-content-left align-items-center">
-                <img src="./assets/images/icons/location_icon.svg" alt="location_icon" />
-                <span>Samarkand region, Shakhrisabz, Samarkand, 15</span>
-              </li>
-            </ul>
-          </li>
-          <li class="footer__menus__item col-lg-3 col-6">
-            <h3>Home</h3>
-            <ul class="contacts__list">
-              <li class="contacts__list__item">
-                <a href="#"> News </a>
-              </li>
-              <li class="contacts__list__item">
-                <a href="#"> Statistics </a>
-              </li>
-              <li class="contacts__list__item">
-                <a href="#"> Our Facilities </a>
-              </li>
-              <li class="contacts__list__item">
-                <a href="#"> Campus Life </a>
-              </li>
-              <li class="contacts__list__item">
-                <a href="#"> Admission </a>
-              </li>
-              <li class="contacts__list__item">
-                <a href="#"> Studens Portfolio </a>
-              </li>
-              <li class="contacts__list__item">
-                <a href="#"> Why CIC School? </a>
-              </li>
-              <li class="contacts__list__item">
-                <a href="#"> Our Partners </a>
-              </li>
-            </ul>
-          </li>
-          <li class="footer__menus__item col-lg-3 col-6">
-            <h3>Pages</h3>
-            <ul class="contacts__list">
-              <li class="contacts__list__item">
-                <a href="#"> Home </a>
-              </li>
-              <li class="contacts__list__item">
-                <a href="#"> About Us </a>
-              </li>
-              <li class="contacts__list__item">
-                <a href="#"> Admissions </a>
-              </li>
-              <li class="contacts__list__item">
-                <a href="#"> Life at CIC </a>
-              </li>
-              <li class="contacts__list__item">
-                <a href="#"> All News </a>
-              </li>
-              <li class="contacts__list__item">
-                <a href="#"> Students’ Government </a>
-              </li>
-            </ul>
-          </li>
-          <li class="footer__menus__item col-lg-3 mt-lg-0 mt-5">
-            <h3>Folloow Us</h3>
-            <ul class="socily__list d-flex justify-content-between">
-              <li class="socily__list__item">
-                <a href="https://instagram.com/cic_school?igshid=YmMyMTA2M2Y=">
-                  <img src="./assets/images/icons/instagram.svg" alt="instagram" />
-                </a>
-              </li>
-              <li class="socily__list__item">
-                <a href="https://t.me/cic_school">
-                  <img src="./assets/images/icons/telegram.svg" alt="telegram" />
-                </a>
-              </li>
-              <li class="socily__list__item">
-                <a href="https://www.facebook.com/cicschooluz/">
-                  <img src="./assets/images/icons/facebook.svg" alt="facebook" />
-                </a>
-              </li>
-            </ul>
-            <h3>Have Any Questions?</h3>
-            <ul class="quesion__form">
-              <input class="input" type="text" placeholder="Name" />
-              <input class="input" type="text" placeholder="Mail address" />
-              <input class="input" type="text" placeholder="Type something.." />
-              <button class="btn">
-                <img src="./assets/images/icons/send_icon.svg" alt="send icon" />
-                <span>Send</span>
-              </button>
-            </ul>
-          </li>
-        </ul>
+          </ul>
       </div>
-    </footer>
+  </footer> 
   </section>
 </body>
 <script src="./assets/javascript/menu.js"></script>
 <script src="./assets/javascript/language.js"></script>
 <script src="./assets/javascript/admission.js"></script>
 <script src="./assets/fetchReqsJs/adminssion.js"></script>
+<script src="./assets/javascript/question.js"></script>
+
 <script>
   const sectionBranchElement = document.querySelector(".select_branch");
   const applyGradeElement = document.querySelector(".apply_grade");
   sectionBranchElement.addEventListener("change", async (e) => {
+    console.log(e.target.value);
     let res = await fetch(`/branch/${e.target.value}`, {
       method: "GET",
     });
     6;
     let data = await res.json();
+    console.log(data);
     data.data.branch.branch_grades.forEach((element) => {
       let option = document.createElement("option");
       option.value = element;

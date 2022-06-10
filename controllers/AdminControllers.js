@@ -80,6 +80,7 @@ module.exports = class AdminController {
     const news = await req.db.news.count({});
     const events = await req.db.events.count({});
 
+    console.log(admissions);
     res.render("admin", {
       admissions,
       news,
@@ -123,6 +124,7 @@ module.exports = class AdminController {
       let offset = req.query.offset - 1 || 0;
 
       const newsCount = await req.db.news.findAll({});
+      console.log(newsCount);
       const count = Math.ceil(newsCount.length / limit);
       if (offset < 0) {
         offset = 0;
@@ -133,6 +135,7 @@ module.exports = class AdminController {
         offset,
         order: [["createdAt", "DESC"]],
       });
+      console.log(news);
       res.render("adminNews", {
         news,
         limit,
@@ -348,7 +351,6 @@ module.exports = class AdminController {
 
       const events = await req.db.events.update(
         {
-          branch_id: data.branch_id,
           event_slug: slug(data.event_title_eng),
           event_title_uz: data.event_title_uz,
           event_title_ru: data.event_title_ru,
@@ -503,6 +505,7 @@ module.exports = class AdminController {
           },
         ],
       });
+      console.log(adminssion.dataValues.branch.dataValues.branch_name);
       res.render("adminApplicationSingle", {
         adminssion,
       });

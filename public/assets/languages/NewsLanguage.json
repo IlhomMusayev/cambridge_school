@@ -12,9 +12,9 @@
         "eng": "About Us"
       },
       "navbar__list__item3": {
-        "uz": "CICdagi hayot",
-        "ru": "Жизнь в CIC",
-        "eng": "Life at CIC"
+        "uz": "Millat Umididagi hayot",
+        "ru": "Жизнь в Millat Umidi",
+        "eng": "Life at Millat Umidi"
       },
       "navbar__list__item4": {
         "uz": "Qabul",
@@ -63,5 +63,115 @@
     "eng": "Reed more",
     "uz": "Ko'proq",
     "ru": "Читать далее"
+  },
+  "footer": {
+    "content": {
+      "eng": "Education is the most powerful weapon which you can use to change the world.",
+      "ru": "Образование — самое мощное оружие, которое вы можете использовать, чтобы изменить мир",
+      "uz": "Ta'lim - bu dunyoni o'zgartirish uchun ishlatishingiz mumkin bo'lgan eng kuchli qurol."
+    },
+    "contect_us": {
+      "eng": "Contact Us",
+      "ru": "Свяжитесь с нами",
+      "uz": "Biz bilan aloqalar"
+    },
+    "home": {
+      "title": {
+        "eng": "Home",
+        "ru": "Главная",
+        "uz": "Bosh sahifa"
+      },
+      "item1": {
+        "eng": "News",
+        "ru": "Новости",
+        "uz": "Yangiliklar"
+      },
+      "item2": {
+        "eng": "Statistics",
+        "ru": "Статистика",
+        "uz": "Statistika"
+      },
+      "item3": {
+        "eng": "Our Facilities",
+        "ru": "Наши условия",
+        "uz": "Imkoniyatlar"
+      },
+      "item4": {
+        "eng": "Campus Life",
+        "ru": "Жизнь на кампусе",
+        "uz": "Kampus hayoti"
+      },
+      "item5": {
+        "eng": "Admission",
+        "ru": "Приём",
+        "uz": "Kirish"
+      },
+      "item6": {
+        "eng": "Studens Portfolio",
+        "ru": "Портфолио студентов",
+        "uz": "Talabalarga portfoliya"
+      },
+      "item7": {
+        "eng": "Why Millat Umidi School?",
+        "ru": "Почему Миллат Умиди Школа?",
+        "uz": "Nima uchun Millat Umidi School"
+      },
+      "item8": {
+        "eng": "Our Partners",
+        "ru": "Наши партнеры",
+        "uz": "Bizning hamkorlarimiz"
+      }
+    },
+    "pages": {
+      "title": {
+        "eng": "Pages",
+        "ru": "Страницы",
+        "uz": "Sahifalar"
+      },
+      "item2": {
+        "eng": "About Us",
+        "ru": "О нас",
+        "uz": "Biz haqimizda"
+      },
+      "item1": {
+        "eng": "Home",
+        "ru": "Главная",
+        "uz": "Bosh sahifa"
+      },
+      "item3": {
+        "eng": "Admissions",
+        "ru": "Приём",
+        "uz": "Kirish"
+      },
+      "item4": {
+        "eng": "Life at Millat Umidi",
+        "ru": "Жизнь на Millat Umidi",
+        "uz": "Millat Umididagi hayot"
+      },
+      "item5": {
+        "eng": "Locations",
+        "ru": "Расположение",
+        "uz": "Joylashuv"
+      }
+    },
+    "follow": {
+      "title": {
+        "eng": "Follow Us",
+        "ru": "Подписывайтесь на нас",
+        "uz": "Bizni kuzatib boring"
+      }
+    },
+    "question": {
+      "title": {
+        "eng": "Have Any Questions?",
+        "ru": "Есть вопросы?",
+        "uz": "Savollaringiz bormi?"
+      },
+      "send": {
+        "eng": "Send",
+        "ru": "Отправить",
+        "uz": "Yuborish"
+      }
+    }
   }
 }

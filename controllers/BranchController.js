@@ -10,6 +10,7 @@ module.exports = class BranchController {
         branch_id,
       },
     });
+    console.log(branch);
 
     res.status(200).json({
       ok: true,

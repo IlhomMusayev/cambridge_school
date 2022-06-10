@@ -39,6 +39,7 @@ createNewsFormElement.addEventListener("submit", async (e) => {
   };
   let response = await fetch("/admin/news", option);
   response = await response.json();
+  console.log(response);
   if (response.ok) {
     successAlertElement.style.display = "block";
     successAlertElement.innerHTML = `
@@ -64,6 +65,7 @@ editNewsEditElements.forEach((editNewsEdit) => {
   editNewsEdit.addEventListener("click", async (e) => {
     e.preventDefault();
     const newItem = JSON.parse(editNewsEdit.dataset.news);
+    console.log(newItem);
 
     const editNewsFormElement = document.querySelector(".edit__news__form");
 
@@ -126,6 +128,7 @@ editNewsEditElements.forEach((editNewsEdit) => {
       };
       let response = await fetch("/admin/news", option);
       response = await response.json();
+      console.log(response);
       if (response.ok) {
         successAlertElement.style.display = "block";
         successAlertElement.innerHTML = `

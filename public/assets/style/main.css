@@ -36,6 +36,8 @@ nav .navbar__right__item select {
 nav .navbar__right__item select option {
   color: #000;
   background: none;
+  background-color: #ffb168;
+  padding: 10px;
 }
 
 nav .navbar__right__item .menu_btn {
@@ -237,6 +239,7 @@ nav .menu__section .contacts .admission__section .btn:hover {
 }
 
 nav .menu__section .contacts .admission__section .btn span {
+  white-space: nowrap;
   margin-left: 7px;
 }
 
@@ -481,6 +484,7 @@ nav .menu__section .socials__list ul li {
     background-color: #000;
   }
   nav .menu__section .contacts .admission__section .btn span {
+    white-space: nowrap;
     margin-left: 7px;
   }
   nav .menu__section .contacts .admission__section .btn svg {
@@ -715,6 +719,7 @@ nav .menu__section .socials__list ul li {
     background-color: #000;
   }
   nav .menu__section .contacts .admission__section .btn span {
+    white-space: nowrap;
     margin-left: 7px;
   }
   nav .menu__section .contacts .admission__section .btn svg {
@@ -761,7 +766,7 @@ nav .menu__section .socials__list ul li {
   nav .menu__section .socials__list ul {
     position: absolute;
     bottom: 22%;
-    left: 10%;
+    left: 21%;
     -webkit-transform: translate(15%, 50%);
             transform: translate(15%, 50%);
   }
@@ -997,11 +1002,18 @@ header .swiper-slide .header__right__section .apply__btn img {
 }
 
 header .swiper-slide .header__right__section .apply__btn span {
+  white-space: nowrap;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
   color: #fff;
   margin-left: 10px;
+}
+
+header .swiper-slide .header__right__section .apply__btn:hover {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background: #bd691b;
 }
 
 header .swiper-slide img {
@@ -1229,6 +1241,7 @@ header .swiper-pagination .swiper-pagination-bullet-active {
     width: 20px;
   }
   header .swiper-slide .header__right__section .apply__btn span {
+    white-space: nowrap;
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
@@ -1442,6 +1455,7 @@ header .swiper-pagination .swiper-pagination-bullet-active {
     margin-bottom: 25px;
   }
   header .swiper-slide .header__right__section .apply__btn {
+    width: 80%;
     position: absolute;
     left: 50%;
     -webkit-transform: translateX(-50%);
@@ -1466,6 +1480,7 @@ header .swiper-pagination .swiper-pagination-bullet-active {
     width: 20px;
   }
   header .swiper-slide .header__right__section .apply__btn span {
+    white-space: nowrap;
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
@@ -2343,13 +2358,13 @@ header .swiper-pagination .swiper-pagination-bullet-active {
 .future-here {
   position: relative;
   width: 100%;
-  height: 80vh;
+  height: 100vh;
 }
 
 .future-here .myImgBg {
   position: absolute;
   width: 100%;
-  height: 80vh;
+  height: 100vh;
   -o-object-fit: cover;
      object-fit: cover;
   right: 0;
@@ -2431,11 +2446,18 @@ header .swiper-pagination .swiper-pagination-bullet-active {
 }
 
 .future-here__content__admission .apply__btn span {
+  white-space: nowrap;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
   color: #fff;
   margin-left: 10px;
+}
+
+.future-here__content__admission .apply__btn:hover {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background: #bd691b;
 }
 
 @media (max-width: 600px) {
@@ -2522,6 +2544,7 @@ header .swiper-pagination .swiper-pagination-bullet-active {
     width: 20px;
   }
   .future-here__content__admission .apply__btn span {
+    white-space: nowrap;
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
@@ -2590,6 +2613,7 @@ header .swiper-pagination .swiper-pagination-bullet-active {
 }
 
 .compus__content .btn span {
+  white-space: nowrap;
   margin-right: 10px;
   font-weight: 600;
 }
@@ -2649,6 +2673,7 @@ header .swiper-pagination .swiper-pagination-bullet-active {
 }
 
 .compus__content__more .btn span {
+  white-space: nowrap;
   margin-left: 10px;
   font-weight: 600;
 }
@@ -2669,20 +2694,30 @@ header .swiper-pagination .swiper-pagination-bullet-active {
     height: 90vh;
   }
   .compus__content {
-    width: 70%;
     position: absolute;
-    top: 45%;
-    left: 40%;
+    top: 50%;
+    left: 200%;
+    width: 70%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+  }
+  .compus__content.active {
+    left: 60%;
   }
   .compus__content__title {
     font-weight: 600;
     font-size: 29px;
-    line-height: 44px;
+    line-height: 36px;
   }
   .compus__content p {
     font-weight: 500;
     font-size: 16px;
-    line-height: 28px;
+    line-height: 20px;
     margin: 10px 0;
   }
   .compus__content .btn {
@@ -2696,11 +2731,75 @@ header .swiper-pagination .swiper-pagination-bullet-active {
         -ms-flex-align: center;
             align-items: center;
     font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 18px;
+    line-height: 27px;
     color: #3b80ea;
     border: none;
     background: none;
+    cursor: pointer;
+  }
+  .compus__content .btn span {
+    white-space: nowrap;
+    margin-right: 10px;
+    font-weight: 600;
+  }
+  .compus__content .btn img {
+    width: 17px;
+  }
+  .compus__content__more {
+    position: absolute;
+    width: 100%;
+    top: 55%;
+    left: -100%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+  }
+  .compus__content__more.active {
+    left: 50%;
+  }
+  .compus__content__more__title {
+    font-weight: 600;
+    font-size: 29px;
+    line-height: 36px;
+  }
+  .compus__content__more p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25px;
+    margin: 10px 0;
+  }
+  .compus__content__more .btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #3b80ea;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  .compus__content__more .btn span {
+    white-space: nowrap;
+    margin-left: 10px;
+    font-weight: 600;
+  }
+  .compus__content__more .btn img {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    width: 17px;
   }
 }
 
@@ -3274,11 +3373,18 @@ header .swiper-pagination .swiper-pagination-bullet-active {
 }
 
 .school__accardion__admission .apply__btn span {
+  white-space: nowrap;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
   color: #fff;
   margin-left: 10px;
+}
+
+.school__accardion__admission .apply__btn:hover {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background: #bd691b;
 }
 
 .school__accardion__title h2 {
@@ -3413,6 +3519,7 @@ header .swiper-pagination .swiper-pagination-bullet-active {
 }
 
 .school__accardion__admission .apply__btn span {
+  white-space: nowrap;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
@@ -3551,6 +3658,7 @@ header .swiper-pagination .swiper-pagination-bullet-active {
     width: 20px;
   }
   .school__accardion__admission .apply__btn span {
+    white-space: nowrap;
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
@@ -4007,6 +4115,13 @@ footer .footer__menus__item .quesion__form button span {
   line-height: 24px;
   color: #fff;
   margin-left: 10px;
+  white-space: nowrap;
+}
+
+.admission .content section .admission__section .apply__btn:hover {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background: #bd691b;
 }
 
 .admission .section-nav a {
@@ -4166,6 +4281,7 @@ footer .footer__menus__item .quesion__form button span {
     width: 20px;
   }
   .admission .content section .admission__section .apply__btn span {
+    white-space: nowrap;
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
@@ -4564,11 +4680,18 @@ footer .footer__menus__item .quesion__form button span {
 }
 
 .school__admission__section__content .apply__btn span {
+  white-space: nowrap;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
   color: #fff;
   margin-left: 10px;
+}
+
+.school__admission__section__content .apply__btn:hover {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background: #bd691b;
 }
 
 .school__admission__section__image img {
@@ -4631,6 +4754,7 @@ footer .footer__menus__item .quesion__form button span {
     width: 20px;
   }
   .school__admission__section__content .apply__btn span {
+    white-space: nowrap;
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
@@ -4877,6 +5001,9 @@ footer .footer__menus__item .quesion__form button span {
     gap: 10px;
     margin: 50px 0;
     overflow-x: scroll;
+  }
+  .convenience__section__list img {
+    display: none;
   }
   .convenience__section__list__item {
     min-width: 280px;
@@ -5144,6 +5271,29 @@ footer .footer__menus__item .quesion__form button span {
   overflow: hidden;
 }
 
+.life-header .close__header__btn {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  display: none;
+  position: absolute;
+  bottom: 10%;
+  right: 5%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 9999999;
+  cursor: pointer;
+}
+
+.life-header .close__header__btn img {
+  border: 1px solid #fff;
+  border-radius: 50%;
+  width: 30px;
+}
+
 .life-header .swiper {
   width: 100%;
   height: 100%;
@@ -5206,29 +5356,6 @@ footer .footer__menus__item .quesion__form button span {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-}
-
-.life-header .lifeSwiper .swiper-slide .close__header__btn {
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  display: none;
-  position: absolute;
-  bottom: 15%;
-  right: 5%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  z-index: 9999999;
-  cursor: pointer;
-}
-
-.life-header .lifeSwiper .swiper-slide .close__header__btn img {
-  border: 1px solid #fff;
-  border-radius: 50%;
-  width: 30px;
 }
 
 .life-header .lifeSwiper .swiper-slide #myVideo {
@@ -5545,6 +5672,27 @@ footer .footer__menus__item .quesion__form button span {
     position: relative;
     overflow: hidden;
   }
+  .life-header .close__header__btn {
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    display: none;
+    position: absolute;
+    bottom: 18%;
+    right: 11%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    z-index: 9999999;
+    cursor: pointer;
+  }
+  .life-header .close__header__btn img {
+    border: 1px solid #fff;
+    border-radius: 50%;
+    width: 30px;
+  }
   .life-header .swiper {
     width: 100%;
     height: 100%;
@@ -5601,27 +5749,6 @@ footer .footer__menus__item .quesion__form button span {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-  }
-  .life-header .lifeSwiper .swiper-slide .close__header__btn {
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    display: none;
-    position: absolute;
-    bottom: 18%;
-    right: 11%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    z-index: 9999999;
-    cursor: pointer;
-  }
-  .life-header .lifeSwiper .swiper-slide .close__header__btn img {
-    border: 1px solid #fff;
-    border-radius: 50%;
-    width: 30px;
   }
   .life-header .lifeSwiper .swiper-slide #myVideo {
     position: fixed;
@@ -5710,7 +5837,7 @@ footer .footer__menus__item .quesion__form button span {
   }
   .life-header .lifeSwiper .swiper-slide .life-header__data .full_btn {
     position: absolute;
-    right: 8%;
+    right: 5%;
     bottom: -90%;
     background: none;
     border: none;
@@ -7161,6 +7288,29 @@ footer .footer__menus__item .quesion__form button span {
   overflow: hidden;
 }
 
+.location_header .close__header__btn {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  display: none;
+  position: absolute;
+  bottom: 15%;
+  right: 5%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 9999999;
+  cursor: pointer;
+}
+
+.location_header .close__header__btn img {
+  border: 1px solid #fff;
+  border-radius: 50%;
+  width: 30px;
+}
+
 .location_header .swiper {
   width: 100%;
   height: 100%;
@@ -7223,29 +7373,6 @@ footer .footer__menus__item .quesion__form button span {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-}
-
-.location_header .lifeSwiper .swiper-slide .close__header__btn {
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  display: none;
-  position: absolute;
-  bottom: 15%;
-  right: 5%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  z-index: 9999999;
-  cursor: pointer;
-}
-
-.location_header .lifeSwiper .swiper-slide .close__header__btn img {
-  border: 1px solid #fff;
-  border-radius: 50%;
-  width: 30px;
 }
 
 .location_header .lifeSwiper .swiper-slide #myVideo {
@@ -7387,6 +7514,7 @@ footer .footer__menus__item .quesion__form button span {
 
 .location_header .lifeSwiper .swiper-slide .location_header__data__adminssion .btn span {
   margin-left: 7px;
+  white-space: nowrap;
 }
 
 .location_header .lifeSwiper .swiper-slide .location_header__data__adminssion .btn svg {
@@ -7652,6 +7780,27 @@ footer .footer__menus__item .quesion__form button span {
     position: relative;
     overflow: hidden;
   }
+  .location_header .close__header__btn {
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    display: none;
+    position: absolute;
+    bottom: 18%;
+    right: 12%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    z-index: 9999999;
+    cursor: pointer;
+  }
+  .location_header .close__header__btn img {
+    border: 1px solid #fff;
+    border-radius: 50%;
+    width: 30px;
+  }
   .location_header .swiper {
     width: 100%;
     height: 100%;
@@ -7708,27 +7857,6 @@ footer .footer__menus__item .quesion__form button span {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-  }
-  .location_header .lifeSwiper .swiper-slide .close__header__btn {
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    display: none;
-    position: absolute;
-    bottom: 15%;
-    right: 0%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    z-index: 9999999;
-    cursor: pointer;
-  }
-  .location_header .lifeSwiper .swiper-slide .close__header__btn img {
-    border: 1px solid #fff;
-    border-radius: 50%;
-    width: 30px;
   }
   .location_header .lifeSwiper .swiper-slide #myVideo {
     position: fixed;
@@ -7854,6 +7982,7 @@ footer .footer__menus__item .quesion__form button span {
     opacity: 0.9;
   }
   .location_header .lifeSwiper .swiper-slide .location_header__data__adminssion .btn span {
+    white-space: nowrap;
     margin-left: 7px;
   }
   .location_header .lifeSwiper .swiper-slide .location_header__data__adminssion .btn svg {

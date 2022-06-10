@@ -36,6 +36,7 @@ module.exports = class LocationsController {
             branch_id: branch.branch_id,
           },
         });
+        console.log(events);
       }
     } else {
       branch = await req.db.branchs.findOne({
@@ -48,6 +49,10 @@ module.exports = class LocationsController {
         },
       });
     }
+    const branchs = await req.db.branchs.findAll({
+      raw: true,
+    });
+
     let lan = "eng";
     if (req.language.toString() === "ru") {
       lan = "ru";
@@ -60,6 +65,7 @@ module.exports = class LocationsController {
       lan,
       branch,
       events,
+      branchs
     });
   }
 };

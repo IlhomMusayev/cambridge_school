@@ -26,6 +26,10 @@ module.exports = class NewsController {
       order: [["createdAt", "DESC"]],
     });
 
+    const branchs = await req.db.branchs.findAll({
+      raw: true,
+    });
+
     let lan = "eng";
     if (req.language.toString() === "ru") {
       lan = "ru";
@@ -33,12 +37,14 @@ module.exports = class NewsController {
       lan = "uz";
     }
 
+    console.log(newItem);
     res.render("news", {
       newsLanguage,
       lan,
       newItem,
       lastNews,
       allNews,
+      branchs,
     });
   }
 };

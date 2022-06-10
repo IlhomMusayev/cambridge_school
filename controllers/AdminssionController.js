@@ -17,6 +17,7 @@ module.exports = class AdminssionController {
       raw: true,
     });
 
+    
     res.render("adminssion", {
       branchs,
       admissionLanguage,
@@ -27,6 +28,7 @@ module.exports = class AdminssionController {
   static async AdminssionPostController(req, res, next) {
     try {
       const data = await CreateAdminssionValidation(req.body);
+      console.log(data);
       // grade sertificate
       const adminssion_user_grade_certificate =
         req.files.adminssion_user_grade_certificate.name.split(".");
@@ -74,6 +76,8 @@ module.exports = class AdminssionController {
         adminssion_user_partents_passport:
           adminssion_user_partents_passport_filename,
       });
+      console.log(adminssion);
+
       // upload grade certificate
       await req.files.adminssion_user_grade_certificate.mv(
         path.join(
@@ -112,6 +116,7 @@ module.exports = class AdminssionController {
       });
     } catch (error) {
       next(error);
+      console.log(error);
     }
   }
 };

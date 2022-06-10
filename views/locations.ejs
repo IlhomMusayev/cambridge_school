@@ -22,9 +22,11 @@
 
     <nav class="">
         <div class="navbar container d-flex justify-content-between align-items-center">
-          <div class="logo">
-            <img src="./assets/images/logo-dark.png" alt="logo" />
-          </div>
+            <div class="logo">
+                <a href="/">
+                    <img src="../assets/images/logo-dark.png" alt="logo" />
+                </a>
+            </div>
           <ul class="navbar__list d-flex align-items-center justify-content-between">
             <li class="navbar__list__item mx-3">
               <a href="/">
@@ -47,7 +49,7 @@
               </a>
             </li>
             <li class="navbar__list__item mx-3 active">
-              <a href="/locations">
+              <a href="#">
                 <%= locationLanguage.navbar.navbar__list.navbar__list__item5[lan] %>
               </a>
             </li>
@@ -56,7 +58,9 @@
           <ul class="navbar__right d-flex align-items-center">
     
             <li class="navbar__right__item">
-              <img src="/assets/images/icons/phone_icon.svg" alt="phone_icon">
+                <a href="tel:+998 71 200 0308">
+                    <img src="/assets/images/icons/phone_icon.svg" alt="phone_icon">
+                </a>
             </li>
             <li class="navbar__right__item">
               <select name="lan" id="lan">
@@ -130,7 +134,7 @@
               </a>
             </li>
             <li class="menu__section__list__item active d-flex justify-content-start align-items-center">
-              <a href="locations" class="d-flex justify-content-start align-items-center ">
+              <a href="#" class="d-flex justify-content-start align-items-center ">
     
                 <span>
                   <%= locationLanguage.navbar.navbar__list.navbar__list__item5[lan] %>
@@ -165,21 +169,13 @@
                 <img src="./assets/images/icons/phone_icon.svg" alt="phoone icon">
                 <span>+998 71 200 0308 || 99 462 40 04</span>
               </li>
-              <li class="contacts__list__item d-flex justify-content-left align-items-center">
-                <img src="./assets/images/icons/location_icon.svg" alt="location_icon">
-                <span>Kh. Rakhmatullaev st. 3,
-                  Shayhontohur, Tashkent</span>
-              </li>
-              <li class="contacts__list__item d-flex justify-content-left align-items-center">
-                <img src="./assets/images/icons/location_icon.svg" alt="location_icon">
-                <span>Navai Street. 16,
-                  Yunusobod, Tashkent</span>
-              </li>
-              <li class="contacts__list__item d-flex justify-content-left align-items-center">
-                <img src="./assets/images/icons/location_icon.svg" alt="location_icon">
-                <span>Samarkand region,
-                  Shakhrisabz, Samarkand, 15</span>
-              </li>
+              <% var branchs = branchs || [] %>
+              <% branchs.forEach(function(item){ %>
+                <li class="contacts__list__item d-flex justify-content-left align-items-center">
+                    <img src="./assets/images/icons/location_icon.svg" alt="location_icon">
+                    <span><%= item.branch_name %></span>
+                </li>
+            <% }) %>
             </ul>
           </div>
           <div class="socials__list col-lg-1">
@@ -205,10 +201,11 @@
         </div>
       </nav>
     <% var branchsList = branchsList || []; %>
+
     <aside class="sidebar">
         <ul class="sidebar__list">
             <% branchsList.forEach(function(branch) { %>
-            <li class="sidebar__list__item active">
+            <li class="sidebar__list__item" data-slug = "<%= branch.branch_slug %>"</li>
                 <a href="/locations?branch_name=<%=branch.branch_slug%>" class="sidebar__list__item__link">
                     <%= branch.branch_name.split(',')[branch.branch_name.split(',').length - 1] %>
                     <%= branch.branch_name.split(',')[branch.branch_name.split(',').length - 2] %>
@@ -273,9 +270,7 @@
                             <img src="/assets/images/icons/full_icon.svg" alt="full icon">
                         </button>
                     </div>
-                    <div class="close__header__btn">
-                        <img src="./assets/images/icons/close-line (3) 1.svg" alt="close icon">
-                    </div>
+
                 </div>
                 <div class="swiper-slide">
                     <video autoplay muted loop id="myVideo">
@@ -296,18 +291,17 @@
                                     <li class="contacts__list__item d-flex justify-content-left align-items-center">
                                         <img src="./assets/images/icons/phone_icon.svg" alt="phoone icon">
                                         <span>
-                                            +998 71 200 0308
+                                            <%= branch.branch_phone %>
                                         </span>
                                     </li>
                                     <li class="contacts__list__item d-flex justify-content-left align-items-center">
                                         <img src="./assets/images/icons/location_icon.svg" alt="location_icon">
                                         <span>
-                                            Kh. Rakhmatullaev st. 3,
-                                            Shayhontohur, Tashkent
+                                            <%= branch.branch_name %>
                                         </span>
                                     </li>
                                     <li class="contacts__list__item d-flex justify-content-left align-items-center">
-                                        <a href="">
+                                        <a href="<%= branch.branch_location_link %>">
                                             <img src="./assets/images/icons/viewmap.svg" alt="location_icon">
                                             <span>
                                                 View On The Map
@@ -317,13 +311,14 @@
                                 </ul>
                             </div>
                             <div class="location_header__data__adminssion col-lg-6">
-                                <h3>
+                                <h3>                
                                     <%= locationLanguage.admission.admission_title[lan] %>
                                 </h3>
                                 <button class="btn">
                                     <img src="./assets/images/icons/apply_icon.svg" alt="icon">
-                                    <span>                  
-                                        <%= locationLanguage.admission.apply_btn[lan] %></span>
+                                    <span>
+                                        <%= locationLanguage.admission.apply_btn[lan] %>
+                                    </span>
                                 </button>
                             </div>
                         </div>
@@ -331,9 +326,7 @@
                             <img src="/assets/images/icons/full_icon.svg" alt="full icon">
                         </button>
                     </div>
-                    <div class="close__header__btn">
-                        <img src="./assets/images/icons/close-line (3) 1.svg" alt="close icon">
-                    </div>
+
                 </div>
                 <div class="swiper-slide">
                     <video autoplay muted loop id="myVideo">
@@ -354,18 +347,17 @@
                                     <li class="contacts__list__item d-flex justify-content-left align-items-center">
                                         <img src="./assets/images/icons/phone_icon.svg" alt="phoone icon">
                                         <span>
-                                            +998 71 200 0308
+                                            <%= branch.branch_phone %>
                                         </span>
                                     </li>
                                     <li class="contacts__list__item d-flex justify-content-left align-items-center">
                                         <img src="./assets/images/icons/location_icon.svg" alt="location_icon">
                                         <span>
-                                            Kh. Rakhmatullaev st. 3,
-                                            Shayhontohur, Tashkent
+                                            <%= branch.branch_name %>
                                         </span>
                                     </li>
                                     <li class="contacts__list__item d-flex justify-content-left align-items-center">
-                                        <a href="">
+                                        <a href="<%= branch.branch_location_link %>">
                                             <img src="./assets/images/icons/viewmap.svg" alt="location_icon">
                                             <span>
                                                 View On The Map
@@ -375,7 +367,7 @@
                                 </ul>
                             </div>
                             <div class="location_header__data__adminssion col-lg-6">
-                                <h3>
+                                <h3>                
                                     <%= locationLanguage.admission.admission_title[lan] %>
                                 </h3>
                                 <button class="btn">
@@ -389,9 +381,6 @@
                         <button class="full_btn">
                             <img src="/assets/images/icons/full_icon.svg" alt="full icon">
                         </button>
-                    </div>
-                    <div class="close__header__btn">
-                        <img src="./assets/images/icons/close-line (3) 1.svg" alt="close icon">
                     </div>
                 </div>
                 <div class="swiper-slide">
@@ -412,18 +401,17 @@
                                     <li class="contacts__list__item d-flex justify-content-left align-items-center">
                                         <img src="./assets/images/icons/phone_icon.svg" alt="phoone icon">
                                         <span>
-                                            +998 71 200 0308
+                                            <%= branch.branch_phone %>
                                         </span>
                                     </li>
                                     <li class="contacts__list__item d-flex justify-content-left align-items-center">
                                         <img src="./assets/images/icons/location_icon.svg" alt="location_icon">
                                         <span>
-                                            Kh. Rakhmatullaev st. 3,
-                                            Shayhontohur, Tashkent
+                                            <%= branch.branch_name %>
                                         </span>
                                     </li>
                                     <li class="contacts__list__item d-flex justify-content-left align-items-center">
-                                        <a href="">
+                                        <a href="<%= branch.branch_location_link %>">
                                             <img src="./assets/images/icons/viewmap.svg" alt="location_icon">
                                             <span>
                                                 View On The Map
@@ -433,12 +421,14 @@
                                 </ul>
                             </div>
                             <div class="location_header__data__adminssion col-lg-6">
-                                <h3>
+                                <h3>                
                                     <%= locationLanguage.admission.admission_title[lan] %>
                                 </h3>
                                 <button class="btn">
                                     <img src="./assets/images/icons/apply_icon.svg" alt="icon">
-                                    <span>                  <%= locationLanguage.admission.apply_btn[lan] %></span>
+                                    <span>
+                                        <%= locationLanguage.admission.apply_btn[lan] %>
+                                    </span>
                                 </button>
                             </div>
                         </div>
@@ -447,10 +437,6 @@
                         </button>
                     </div>
 
-
-                    <div class="close__header__btn">
-                        <img src="./assets/images/icons/close-line (3) 1.svg" alt="close icon">
-                    </div>
                 </div>
                 <div class="swiper-slide">
                     <img class="slide_img" src="./assets/images/DSC01809212.JPG" />
@@ -462,15 +448,16 @@
                     </div>
 
 
-                    <div class="close__header__btn">
-                        <img src="./assets/images/icons/close-line (3) 1.svg" alt="close icon">
-                    </div>
+            
                 </div>
             </div>
             <div class="pagination__btns">
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
             </div>
+        </div>
+        <div class="close__header__btn">
+            <img src="./assets/images/icons/close-line (3) 1.svg" alt="close icon">
         </div>
         <div thumbsSlider="" class="swiper thumbsSwiper">
             <div class="swiper-wrapper">
@@ -545,7 +532,7 @@
                                 <span> <%= moment( event.createdAt).format('MMM YYYY'); %> </span>
                             </div>
                             <div class="all_news__list__item__image">
-                                <img src="./assets/images/photo_2022-05-26_22-39-29.jpg" alt="news image">
+                                <img src="./files/<%= event.event_image %>" alt="news image">
                             </div>
                         </div>
                         <div class="all_news__list__item__content d-flex align-items-center">
@@ -568,7 +555,7 @@
                                         <%= event.event_subtitle_eng %>
                                     <% } %>
                                 </p>
-                                <a href="/news/<%= event.event_slug %>" class="read_more d-flex align-content-center">
+                                <a href="/events/<%= event.event_slug %>" class="read_more d-flex align-content-center">
                                     <span>
                                         Read More
                                     </span>
@@ -594,150 +581,149 @@
                 <img src="/assets/images/logo-dark.png" alt="logo">
             </div>
             <ul class="footer__menus row d-flex justify-content-between align-items-start">
-                <li class="footer__menus__item col-lg-3">
-                    <p>Education is the most powerful weapon which
-                        you can use to change the world</p>
-                    <h3>Contact Us</h3>
+                <li class="footer__menus__item col-lg-3 mb-lg-0 mb-5">
+                    <p>
+                        <%= locationLanguage.footer.content[lan] %>
+                    </p>
+                    <h3>
+                        <%= locationLanguage.footer.contect_us[lan] %>
+                    </h3>
                     <ul class="contacts__list">
                         <li class="contacts__list__item d-flex justify-content-left align-items-center">
                             <img src="./assets/images/icons/email_icon.svg" alt="message icon">
-                            <span>cicschool@cambridge.uz</span>
+                            <span>info@cambridge.uz</span>
                         </li>
                         <li class="contacts__list__item d-flex justify-content-left align-items-center">
                             <img src="./assets/images/icons/phone_icon.svg" alt="phoone icon">
-                            <span>+998 71 200 0308</span>
+                            <span>+998 71 200 0308 || 99 462 40 04</span>
                         </li>
-                        <li class="contacts__list__item d-flex justify-content-left align-items-center">
-                            <img src="./assets/images/icons/location_icon.svg" alt="location_icon">
-                            <span>Kh. Rakhmatullaev st. 3,
-                                Shayhontohur, Tashkent</span>
-                        </li>
-                        <li class="contacts__list__item d-flex justify-content-left align-items-center">
-                            <img src="./assets/images/icons/location_icon.svg" alt="location_icon">
-                            <span>Navai Street. 16,
-                                Yunusobod, Tashkent</span>
-                        </li>
-                        <li class="contacts__list__item d-flex justify-content-left align-items-center">
-                            <img src="./assets/images/icons/location_icon.svg" alt="location_icon">
-                            <span>Samarkand region,
-                                Shakhrisabz, Samarkand, 15</span>
-                        </li>
+                        <% branchs.forEach(function(item){ %>
+                            <li class="contacts__list__item d-flex justify-content-left align-items-center">
+                                <img src="./assets/images/icons/location_icon.svg" alt="location_icon">
+                                <span><%= item.branch_name %></span>
+                            </li>
+                        <% }) %>
                     </ul>
                 </li>
-                <li class="footer__menus__item col-lg-3">
-                    <h3>Home</h3>
+                <li class="footer__menus__item col-lg-3 col-6">
+                    <h3><%= locationLanguage.footer.home.title[lan] %></h3>
                     <ul class="contacts__list">
                         <li class="contacts__list__item">
-                            <a href="#">
-                                News
+                           <a href="#news">
+                            <%= locationLanguage.footer.home.item1[lan] %>
+                           </a>
+                        </li>
+                        <li class="contacts__list__item">
+                            <a href="#statistics">
+                                <%= locationLanguage.footer.home.item2[lan] %>
+                           </a>
+                        </li>
+                        <li class="contacts__list__item">
+                            <a href="#facilities">
+                                <%= locationLanguage.footer.home.item3[lan] %>
                             </a>
                         </li>
                         <li class="contacts__list__item">
-                            <a href="#">
-                                Statistics
+                            <a href="#compus">
+                                <%= locationLanguage.footer.home.item4[lan] %>
                             </a>
                         </li>
                         <li class="contacts__list__item">
-                            <a href="#">
-                                Our Facilities
+                            <a href="#admission">
+                                <%= locationLanguage.footer.home.item5[lan] %>
                             </a>
                         </li>
                         <li class="contacts__list__item">
-                            <a href="#">
-                                Campus Life
+                            <a href="#studentportfolio">
+                                <%= locationLanguage.footer.home.item6[lan] %>
                             </a>
                         </li>
                         <li class="contacts__list__item">
-                            <a href="#">
-                                Admission
+                            <a href="#whymillatumidischool">
+                                <%= locationLanguage.footer.home.item7[lan] %>
                             </a>
                         </li>
                         <li class="contacts__list__item">
-                            <a href="#">
-                                Studens Portfolio
-                            </a>
-                        </li>
-                        <li class="contacts__list__item">
-                            <a href="#">
-                                Why CIC School?
-                            </a>
-                        </li>
-                        <li class="contacts__list__item">
-                            <a href="#">
-                                Our Partners
+                            <a href="#partners">
+                                <%= locationLanguage.footer.home.item8[lan] %>
                             </a>
                         </li>
                     </ul>
                 </li>
-                <li class="footer__menus__item col-lg-3">
-                    <h3>Pages</h3>
+                <li class="footer__menus__item col-lg-3 col-6">
+                    <h3>
+                        <%= locationLanguage.footer.pages.title[lan] %>
+                    </h3>
                     <ul class="contacts__list">
                         <li class="contacts__list__item">
-                            <a href="#">
-                                Home
-                            </a>
+                           <a href="/">
+                            <%= locationLanguage.footer.pages.item1[lan] %>
+                           </a>
                         </li>
                         <li class="contacts__list__item">
-                            <a href="#">
-                                About Us
-                            </a>
+                            <a href="/about">
+                                <%= locationLanguage.footer.pages.item2[lan] %>
+                           </a>
                         </li>
                         <li class="contacts__list__item">
-                            <a href="#">
-                                Admissions
-                            </a>
+                            <a href="/admission">
+                                <%= locationLanguage.footer.pages.item3[lan] %>
+                           </a>
                         </li>
                         <li class="contacts__list__item">
-                            <a href="#">
-                                Life at CIC
-                            </a>
+                            <a href="/life">
+                                <%= locationLanguage.footer.pages.item4[lan] %>
+                           </a>
                         </li>
                         <li class="contacts__list__item">
-                            <a href="#">
-                                All News
-                            </a>
+                            <a href="/locaation">
+                                <%= locationLanguage.footer.pages.item5[lan] %>
+                           </a>
                         </li>
-                        <li class="contacts__list__item">
-                            <a href="#">
-                                Students’ Government
-                            </a>
-                        </li>
+
                     </ul>
                 </li>
-                <li class="footer__menus__item col-lg-3">
-                    <h3>Folloow Us</h3>
+                <li class="footer__menus__item col-lg-3 mt-lg-0 mt-5">
+                    <h3>
+                        <%= locationLanguage.footer.follow.title[lan] %>
+                    </h3>
                     <ul class="socily__list d-flex justify-content-between">
                         <li class="socily__list__item">
                             <a href="https://instagram.com/cic_school?igshid=YmMyMTA2M2Y=">
-                                <img src="./assets/images/icons/instagram.svg" alt="instagram">
+                                 <img src="./assets/images/icons/instagram.svg" alt="instagram">
                             </a>
-                        </li>
-                        <li class="socily__list__item">
-                            <a href="https://t.me/cic_school">
-                                <img src="./assets/images/icons/telegram.svg" alt="telegram">
-                            </a>
-                        </li>
-                        <li class="socily__list__item">
-                            <a href="https://www.facebook.com/cicschooluz/">
-                                <img src="./assets/images/icons/facebook.svg" alt="facebook">
-                            </a>
-                        </li>
+                         </li>
+                         <li class="socily__list__item">
+                             <a href="https://t.me/cic_school">
+                                  <img src="./assets/images/icons/telegram.svg" alt="telegram">
+                             </a>
+                          </li>
+                          <li class="socily__list__item">
+                             <a href="https://www.facebook.com/cicschooluz/">
+                                  <img src="./assets/images/icons/facebook.svg" alt="facebook">
+                             </a>
+                          </li>
                     </ul>
-                    <h3>Have Any Questions?</h3>
+                    <h3>
+                        <%= locationLanguage.footer.question.title[lan] %>    
+                    </h3>
                     <ul class="quesion__form">
-                        <input class="input" type="text" placeholder="Name">
-                        <input class="input" type="text" placeholder="Mail address">
-                        <input class="input" type="text" placeholder="Type something..">
-                        <button class="btn">
-                            <img src="./assets/images/icons/send_icon.svg" alt="send icon">
-                            <span>Send</span>
-                        </button>
+                        <form class="question_form">
+                            <input class="input" name="name" type="text" placeholder="Name">
+                            <input class="input" name="email" type="email" placeholder="Mail address">
+                            <input class="input" name="message" type="text" placeholder="Type something..">
+                            <button class="btn">
+                                <img src="./assets/images/icons/send_icon.svg" alt="send icon">
+                                <span>
+                                    <%= locationLanguage.footer.question.send[lan] %>    
+                                </span>
+                            </button>
+                        </form>
                     </ul>
                 </li>
             </ul>
         </div>
-    </footer>
-
+    </footer> 
 </body>
 <!-- Swiper JS -->
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
@@ -745,6 +731,20 @@
 <script src="./assets/javascript/locationHeader.js"></script>
 <script src="./assets/javascript/locationsidebar.js"></script>
 <script src="./assets/javascript/menu.js"></script>
+<script src="./assets/javascript/question.js"></script>
+
+<script>
+    var url = new URL(window.location);
+    var c = url.searchParams.get("branch_name");
+    
+    const sidebar__list__item = document.querySelectorAll('.sidebar__list__item');
+    sidebar__list__item.forEach(item => {
+        const slug = item.dataset.slug
+        if (slug === c) {
+            item.classList.add('active')
+        }
+    });
+</script>
 
 
 </script>

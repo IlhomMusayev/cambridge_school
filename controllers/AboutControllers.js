@@ -10,9 +10,13 @@ module.exports = class AboutController {
     } else if (req.language.toString() === "uz") {
       lan = "uz";
     }
+    const branchs = await req.db.branchs.findAll({
+      raw: true,
+    });
     res.render("about", {
       AboutLanguage,
       lan,
+      branchs,
     });
   }
 };

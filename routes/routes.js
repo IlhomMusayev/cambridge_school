@@ -7,6 +7,7 @@ const EventRoute = require("./EventsRoute");
 const LocationRoute = require("./LocationRoute");
 const AdminRoute = require("./AdminRoute");
 const BranchRoute = require("./BranchRoute");
+const QuestionRoute = require("./QuestionRoute");
 const errorHandler = require("../helpers/errorHandler");
 
 module.exports = async function (app) {
@@ -20,6 +21,7 @@ module.exports = async function (app) {
     app.use("/events", EventRoute);
     app.use("/branch", BranchRoute);
     app.use("/admin", AdminRoute);
+    app.use("/question", QuestionRoute);
     app.use((req, res) => {
       res.render("404", {});
     });

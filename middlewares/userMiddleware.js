@@ -25,6 +25,7 @@ module.exports = async function userMiddleware(req, res, next) {
       throw new res.error(401, "Session isn't found");
     }
 
+    // console.log(user);
     req.session = await session;
 
     next();

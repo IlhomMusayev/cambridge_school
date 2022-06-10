@@ -218,6 +218,9 @@
         gap: 10px;
         margin: 50px 0;
         overflow-x: scroll;
+        img {
+          display: none;
+        }
         &__item {
           min-width: 280px;
           background-color: #fff;

@@ -5,6 +5,7 @@ const playVideoBtnElements = document.querySelectorAll(
   ".life-header__data__btn"
 );
 const fullBtnElements = document.querySelectorAll(".full_btn");
+const closeBtnElement = document.querySelector(".close__header__btn");
 
 playVideoBtnElements.forEach((btn) => {
   btn.addEventListener("click", (e) => {
@@ -14,7 +15,6 @@ playVideoBtnElements.forEach((btn) => {
 
     const headerContent = parentElement.querySelector(".life-header__data");
     const navbarElement = document.querySelector("nav");
-    const closeBtnElement = document.querySelector(".close__header__btn");
     headerContent.style.display = "none";
     if (video) {
       video.style.filter = "brightness(90%)";
@@ -37,7 +37,6 @@ fullBtnElements.forEach((btn) => {
 
     const headerContent = parentElement.querySelector(".life-header__data");
     const navbarElement = document.querySelector("nav");
-    const closeBtnElement = document.querySelector(".close__header__btn");
     headerContent.style.display = "none";
     if (video) {
       video.style.filter = "brightness(90%)";
@@ -53,17 +52,15 @@ fullBtnElements.forEach((btn) => {
   });
 });
 
-const closeBtnsElements = document.querySelectorAll(".close__header__btn");
-console.log(closeBtnsElements);
-closeBtnsElements.forEach((btn) => {
-  btn.addEventListener("click", (e) => {
-    const parentElement = btn.parentNode;
+closeBtnElement.addEventListener("click", (e) => {
+  headerContentsElement.forEach((headerItem) => {
+    const parentElement = headerItem.parentNode;
     const video = parentElement.querySelector("#myVideo");
     const image = parentElement.querySelector(".slide_img");
 
     const headerContent = parentElement.querySelector(".life-header__data");
     const navbarElement = document.querySelector("nav");
-    btn.style.display = "none";
+    headerItem.style.display = "none";
     headerContent.style.display = "block";
     if (video) {
       video.style.filter = "brightness(50%)";
@@ -75,6 +72,7 @@ closeBtnsElements.forEach((btn) => {
     navbarElement.style.opacity = "1";
     thumbsSwiperElement.style.display = "block";
     paginationBtnELement.classList.remove("active");
+    closeBtnElement.style.display = "none";
   });
 });
 

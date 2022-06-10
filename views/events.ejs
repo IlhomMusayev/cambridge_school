@@ -23,7 +23,9 @@
     <nav class="">
         <div class="navbar container d-flex justify-content-between align-items-center">
             <div class="logo">
-                <img src="../assets/images/logo-dark.png" alt="logo" />
+                <a href="/">
+                    <img src="../assets/images/logo-dark.png" alt="logo" />
+                </a>
             </div>
             <ul class="navbar__list d-flex align-items-center justify-content-between">
                 <li class="navbar__list__item mx-3 ">
@@ -55,7 +57,9 @@
             <ul class="navbar__right d-flex align-items-center">
          
                 <li class="navbar__right__item">
-                    <img src="/assets/images/icons/phone_icon.svg" alt="phone_icon">
+                    <a href="tel:+998 71 200 0308">
+                        <img src="/assets/images/icons/phone_icon.svg" alt="phone_icon">
+                    </a>
                 </li>
                 <li class="navbar__right__item">
                     <select name="lan" id="lan">
@@ -79,8 +83,10 @@
         <div class="menu__section row justify-content-between">
             <ul class="menu__section__list col-lg-3">
                 <li class="menu__section__list__item ">
-                    <a href="" class="d-flex justify-content-start align-items-center ">
-                        <span>Home</span>
+                    <a href="/" class="d-flex justify-content-start align-items-center ">
+                        <span>
+                            <%= eventsLanguage.navbar.navbar__list.navbar__list__item1[lan] %>
+                        </span>
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M0.292893 14.2038C-0.0976311 14.5943 -0.0976311 15.2275 0.292893 15.618C0.683418 16.0085 1.31658 16.0085 1.70711 15.618L0.292893 14.2038ZM15.911 0.999927C15.911 0.447642 15.4632 -7.31964e-05 14.911 -7.34493e-05L5.91096 -7.33228e-05C5.35868 -7.29856e-05 4.91096 0.447642 4.91096 0.999927C4.91096 1.55221 5.35868 1.99993 5.91096 1.99993L13.911 1.99993L13.911 9.99993C13.911 10.5522 14.3587 10.9999 14.911 10.9999C15.4632 10.9999 15.911 10.5522 15.911 9.99993L15.911 0.999927ZM1.70711 15.618L15.6181 1.70703L14.2039 0.29282L0.292893 14.2038L1.70711 15.618Z"
@@ -90,7 +96,9 @@
                 </li>
                 <li class="menu__section__list__item">
                     <a href="about" class="d-flex justify-content-start align-items-center ">
-                    <span>About Us</span>
+                    <span>
+                        <%= eventsLanguage.navbar.navbar__list.navbar__list__item2[lan] %>
+                    </span>
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M0.292893 14.2038C-0.0976311 14.5943 -0.0976311 15.2275 0.292893 15.618C0.683418 16.0085 1.31658 16.0085 1.70711 15.618L0.292893 14.2038ZM15.911 0.999927C15.911 0.447642 15.4632 -7.31964e-05 14.911 -7.34493e-05L5.91096 -7.33228e-05C5.35868 -7.29856e-05 4.91096 0.447642 4.91096 0.999927C4.91096 1.55221 5.35868 1.99993 5.91096 1.99993L13.911 1.99993L13.911 9.99993C13.911 10.5522 14.3587 10.9999 14.911 10.9999C15.4632 10.9999 15.911 10.5522 15.911 9.99993L15.911 0.999927ZM1.70711 15.618L15.6181 1.70703L14.2039 0.29282L0.292893 14.2038L1.70711 15.618Z"
@@ -101,7 +109,9 @@
                 <li class="menu__section__list__item">
                     <a href="/admission" class="d-flex justify-content-start align-items-center ">
 
-                    <span>Admissions</span>
+                    <span>
+                        <%= eventsLanguage.navbar.navbar__list.navbar__list__item3[lan] %>
+                    </span>
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M0.292893 14.2038C-0.0976311 14.5943 -0.0976311 15.2275 0.292893 15.618C0.683418 16.0085 1.31658 16.0085 1.70711 15.618L0.292893 14.2038ZM15.911 0.999927C15.911 0.447642 15.4632 -7.31964e-05 14.911 -7.34493e-05L5.91096 -7.33228e-05C5.35868 -7.29856e-05 4.91096 0.447642 4.91096 0.999927C4.91096 1.55221 5.35868 1.99993 5.91096 1.99993L13.911 1.99993L13.911 9.99993C13.911 10.5522 14.3587 10.9999 14.911 10.9999C15.4632 10.9999 15.911 10.5522 15.911 9.99993L15.911 0.999927ZM1.70711 15.618L15.6181 1.70703L14.2039 0.29282L0.292893 14.2038L1.70711 15.618Z"
@@ -112,7 +122,9 @@
                 <li class="menu__section__list__item">
                     <a href="life" class="d-flex justify-content-start align-items-center ">
 
-                    <span>Life at Millat Umidi</span>
+                    <span>
+                        <%= eventsLanguage.navbar.navbar__list.navbar__list__item4[lan] %>
+                    </span>
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M0.292893 14.2038C-0.0976311 14.5943 -0.0976311 15.2275 0.292893 15.618C0.683418 16.0085 1.31658 16.0085 1.70711 15.618L0.292893 14.2038ZM15.911 0.999927C15.911 0.447642 15.4632 -7.31964e-05 14.911 -7.34493e-05L5.91096 -7.33228e-05C5.35868 -7.29856e-05 4.91096 0.447642 4.91096 0.999927C4.91096 1.55221 5.35868 1.99993 5.91096 1.99993L13.911 1.99993L13.911 9.99993C13.911 10.5522 14.3587 10.9999 14.911 10.9999C15.4632 10.9999 15.911 10.5522 15.911 9.99993L15.911 0.999927ZM1.70711 15.618L15.6181 1.70703L14.2039 0.29282L0.292893 14.2038L1.70711 15.618Z"
@@ -123,7 +135,9 @@
                 <li class="menu__section__list__item d-flex justify-content-start align-items-center">
                     <a href="locations" class="d-flex justify-content-start align-items-center ">
 
-                    <span>Locations</span>
+                    <span>
+                        <%= eventsLanguage.navbar.navbar__list.navbar__list__item5[lan] %>
+                    </span>
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M0.292893 14.2038C-0.0976311 14.5943 -0.0976311 15.2275 0.292893 15.618C0.683418 16.0085 1.31658 16.0085 1.70711 15.618L0.292893 14.2038ZM15.911 0.999927C15.911 0.447642 15.4632 -7.31964e-05 14.911 -7.34493e-05L5.91096 -7.33228e-05C5.35868 -7.29856e-05 4.91096 0.447642 4.91096 0.999927C4.91096 1.55221 5.35868 1.99993 5.91096 1.99993L13.911 1.99993L13.911 9.99993C13.911 10.5522 14.3587 10.9999 14.911 10.9999C15.4632 10.9999 15.911 10.5522 15.911 9.99993L15.911 0.999927ZM1.70711 15.618L15.6181 1.70703L14.2039 0.29282L0.292893 14.2038L1.70711 15.618Z"
@@ -152,21 +166,13 @@
                         <img src="../assets/images/icons/phone_icon.svg" alt="phoone icon">
                         <span>+998 71 200 0308 || 99 462 40 04</span>
                     </li>
-                    <li class="contacts__list__item d-flex justify-content-left align-items-center">
-                        <img src="../assets/images/icons/location_icon.svg" alt="location_icon">
-                        <span>Kh. Rakhmatullaev st. 3,
-                            Shayhontohur, Tashkent</span>
-                    </li>
-                    <li class="contacts__list__item d-flex justify-content-left align-items-center">
-                        <img src="../assets/images/icons/location_icon.svg" alt="location_icon">
-                        <span>Navai Street. 16,
-                            Yunusobod, Tashkent</span>
-                    </li>
-                    <li class="contacts__list__item d-flex justify-content-left align-items-center">
-                        <img src="../assets/images/icons/location_icon.svg" alt="location_icon">
-                        <span>Samarkand region,
-                            Shakhrisabz, Samarkand, 15</span>
-                    </li>
+                    <% var branchs = branchs || [] %>
+                    <% branchs.forEach(function(item){ %>
+                        <li class="contacts__list__item d-flex justify-content-left align-items-center">
+                            <img src="../assets/images/icons/location_icon.svg" alt="location_icon">
+                            <span><%= item.branch_name %></span>
+                        </li>
+                    <% }) %>
                 </ul>
             </div>
             <div class="socials__list col-lg-1">
@@ -314,7 +320,6 @@
         <h2>Event topilmadi</h2> 
         <% } %> 
     </section>
-
     <footer>
         <div class="footer container">
             <div class="footer__logo">
@@ -322,117 +327,111 @@
             </div>
             <ul class="footer__menus row d-flex justify-content-between align-items-start">
                 <li class="footer__menus__item col-lg-3 mb-lg-0 mb-5">
-                    <p>Education is the most powerful weapon which 
-                        you can use to change the world</p>
-                    <h3>Contact Us</h3>
+                    <p>
+                        <%= eventsLanguage.footer.content[lan] %>
+                    </p>
+                    <h3>
+                        <%= eventsLanguage.footer.contect_us[lan] %>
+                    </h3>
                     <ul class="contacts__list">
                         <li class="contacts__list__item d-flex justify-content-left align-items-center">
                             <img src="../assets/images/icons/email_icon.svg" alt="message icon">
-                            <span>cicschool@cambridge.uz</span>
+                            <span>info@cambridge.uz</span>
                         </li>
                         <li class="contacts__list__item d-flex justify-content-left align-items-center">
                             <img src="../assets/images/icons/phone_icon.svg" alt="phoone icon">
-                            <span>+998 71 200 0308</span>
+                            <span>+998 71 200 0308 || 99 462 40 04</span>
                         </li>
-                        <li class="contacts__list__item d-flex justify-content-left align-items-center">
-                            <img src="../assets/images/icons/location_icon.svg" alt="location_icon">
-                            <span>Kh. Rakhmatullaev st. 3, 
-                                Shayhontohur, Tashkent</span>
+                        <% branchs.forEach(function(item){ %>
+                            <li class="contacts__list__item d-flex justify-content-left align-items-center">
+                                <img src="../assets/images/icons/location_icon.svg" alt="location_icon">
+                                <span><%= item.branch_name %></span>
+                            </li>
+                        <% }) %>
+                    </ul>
+                </li>
+                <li class="footer__menus__item col-lg-3 col-6">
+                    <h3><%= eventsLanguage.footer.home.title[lan] %></h3>
+                    <ul class="contacts__list">
+                        <li class="contacts__list__item">
+                           <a href="#news">
+                            <%= eventsLanguage.footer.home.item1[lan] %>
+                           </a>
                         </li>
-                        <li class="contacts__list__item d-flex justify-content-left align-items-center">
-                            <img src="../assets/images/icons/location_icon.svg" alt="location_icon">
-                            <span>Navai Street. 16, 
-                                Yunusobod, Tashkent</span>
+                        <li class="contacts__list__item">
+                            <a href="#statistics">
+                                <%= eventsLanguage.footer.home.item2[lan] %>
+                           </a>
                         </li>
-                        <li class="contacts__list__item d-flex justify-content-left align-items-center">
-                            <img src="../assets/images/icons/location_icon.svg" alt="location_icon">
-                            <span>Samarkand region, 
-                                Shakhrisabz, Samarkand, 15</span>
+                        <li class="contacts__list__item">
+                            <a href="#facilities">
+                                <%= eventsLanguage.footer.home.item3[lan] %>
+                            </a>
+                        </li>
+                        <li class="contacts__list__item">
+                            <a href="#compus">
+                                <%= eventsLanguage.footer.home.item4[lan] %>
+                            </a>
+                        </li>
+                        <li class="contacts__list__item">
+                            <a href="#admission">
+                                <%= eventsLanguage.footer.home.item5[lan] %>
+                            </a>
+                        </li>
+                        <li class="contacts__list__item">
+                            <a href="#studentportfolio">
+                                <%= eventsLanguage.footer.home.item6[lan] %>
+                            </a>
+                        </li>
+                        <li class="contacts__list__item">
+                            <a href="#whymillatumidischool">
+                                <%= eventsLanguage.footer.home.item7[lan] %>
+                            </a>
+                        </li>
+                        <li class="contacts__list__item">
+                            <a href="#partners">
+                                <%= eventsLanguage.footer.home.item8[lan] %>
+                            </a>
                         </li>
                     </ul>
                 </li>
                 <li class="footer__menus__item col-lg-3 col-6">
-                    <h3>Home</h3>
+                    <h3>
+                        <%= eventsLanguage.footer.pages.title[lan] %>
+                    </h3>
                     <ul class="contacts__list">
                         <li class="contacts__list__item">
-                           <a href="#">
-                                News
+                           <a href="/">
+                            <%= eventsLanguage.footer.pages.item1[lan] %>
                            </a>
                         </li>
                         <li class="contacts__list__item">
-                            <a href="#">
-                                Statistics
+                            <a href="/about">
+                                <%= eventsLanguage.footer.pages.item2[lan] %>
                            </a>
                         </li>
                         <li class="contacts__list__item">
-                            <a href="#">
-                                Our Facilities
+                            <a href="/admission">
+                                <%= eventsLanguage.footer.pages.item3[lan] %>
                            </a>
                         </li>
                         <li class="contacts__list__item">
-                            <a href="#">
-                                Campus Life
+                            <a href="/life">
+                                <%= eventsLanguage.footer.pages.item4[lan] %>
                            </a>
                         </li>
                         <li class="contacts__list__item">
-                            <a href="#">
-                                Admission
+                            <a href="/locaation">
+                                <%= eventsLanguage.footer.pages.item5[lan] %>
                            </a>
                         </li>
-                        <li class="contacts__list__item">
-                            <a href="#">
-                                Studens Portfolio
-                           </a>
-                        </li>
-                        <li class="contacts__list__item">
-                            <a href="#">
-                                Why CIC School?
-                           </a>
-                        </li>
-                        <li class="contacts__list__item">
-                            <a href="#">
-                                Our Partners
-                           </a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="footer__menus__item col-lg-3 col-6">
-                    <h3>Pages</h3>
-                    <ul class="contacts__list">
-                        <li class="contacts__list__item">
-                           <a href="#">
-                            Home
-                           </a>
-                        </li>
-                        <li class="contacts__list__item">
-                            <a href="#">
-                                About Us
-                           </a>
-                        </li>
-                        <li class="contacts__list__item">
-                            <a href="#">
-                                Admissions
-                           </a>
-                        </li>
-                        <li class="contacts__list__item">
-                            <a href="#">
-                                Life at CIC
-                           </a>
-                        </li>
-                        <li class="contacts__list__item">
-                            <a href="#">
-                                All News
-                           </a>
-                        </li>
-                        <li class="contacts__list__item">
-                            <a href="#">
-                                Students’ Government
-                           </a>
-                        </li>
+
                     </ul>
                 </li>
                 <li class="footer__menus__item col-lg-3 mt-lg-0 mt-5">
-                    <h3>Folloow Us</h3>
+                    <h3>
+                        <%= eventsLanguage.footer.follow.title[lan] %>
+                    </h3>
                     <ul class="socily__list d-flex justify-content-between">
                         <li class="socily__list__item">
                             <a href="https://instagram.com/cic_school?igshid=YmMyMTA2M2Y=">
@@ -450,15 +449,21 @@
                              </a>
                           </li>
                     </ul>
-                    <h3>Have Any Questions?</h3>
+                    <h3>
+                        <%= eventsLanguage.footer.question.title[lan] %>    
+                    </h3>
                     <ul class="quesion__form">
-                        <input class="input" type="text" placeholder="Name">
-                        <input class="input" type="text" placeholder="Mail address">
-                        <input class="input" type="text" placeholder="Type something..">
-                        <button class="btn">
-                            <img src="../assets/images/icons/send_icon.svg" alt="send icon">
-                            <span>Send</span>
-                        </button>
+                        <form class="question_form">
+                            <input class="input" name="name" type="text" placeholder="Name">
+                            <input class="input" name="email" type="email" placeholder="Mail address">
+                            <input class="input" name="message" type="text" placeholder="Type something..">
+                            <button class="btn">
+                                <img src="../assets/images/icons/send_icon.svg" alt="send icon">
+                                <span>
+                                    <%= eventsLanguage.footer.question.send[lan] %>    
+                                </span>
+                            </button>
+                        </form>
                     </ul>
                 </li>
             </ul>
@@ -472,6 +477,7 @@
 <script src="../assets/javascript/accardionSettings.js"></script>
 <script src="../assets/javascript/header.js"></script>
 <script src="../assets/javascript/menu.js"></script>
+<script src="../assets/javascript/question.js"></script>
 
 </script>
 

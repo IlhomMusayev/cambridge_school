@@ -32,6 +32,10 @@ module.exports = class EventController {
     } else if (req.language.toString() === "uz") {
       lan = "uz";
     }
+    const branchs = await req.db.branchs.findAll({
+      raw: true,
+    });
+
 
     res.render("events", {
       eventsLanguage,
@@ -39,6 +43,7 @@ module.exports = class EventController {
       eventItem,
       lastEvents,
       allEvents,
+      branchs,
     });
   }
 };

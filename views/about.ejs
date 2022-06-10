@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./assets/style/bootstrap-grid.min.css">
     <link rel="stylesheet" href="./assets/style/main.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 
@@ -196,11 +197,11 @@
     
     
 
-    <section class="about container">
+    <section class="about">
         <video autoplay muted loop id="myVideo">
             <source src="./assets/videos/header2.mp4" type="video/mp4">
         </video>
-        <div class="about-header">
+        <div class="about-header container">
             <div class="about-header__content">
                 <h2 class="title">
                     <%= AboutLanguage.header.title[lan] %>
@@ -227,7 +228,7 @@
         </button>
     </section>
 
-    <section class="mission__school">
+    <section class="mission__school" data-aos="fade-up">
         <div class="mission__school__section row container align-items-center">
             <div class="mission__school__section__image col-lg-6">
                 <img src="./assets/images/about_one.png" alt="img">
@@ -245,7 +246,7 @@
         </div>
     </section>
 
-    <section class="school__programm">
+    <section class="school__programm" data-aos="fade-up">
         <div class="school__programm__section row container align-items-center">
             <div class="school__programm__section__content col-lg-5">
                 <h2 class="title">
@@ -261,7 +262,7 @@
         </div>
     </section>
 
-    <section class="school__admission">
+    <section class="school__admission" data-aos="fade-up">
         <div class="school__admission__section container row justify-content-between align-items-center">
             <div class="school__admission__section__image col-lg-7">
                 <img src="./assets/images/about_header2.jpg" alt="image">
@@ -283,7 +284,7 @@
         </div>
     </section>
 
-    <div class="convenience">
+    <div class="convenience" data-aos="fade-up">
         <div class="container__section container">
             <div class="convenience__section__title">
                 <h2>
@@ -366,7 +367,7 @@
         </div>
     </div>
 
-    <div class="school__statistics">
+    <div class="school__statistics" data-aos="fade-up">
         <div class="school__statistics__section container row justify-content-between align-items-center">
             <div class="school__statistics__section__content col-lg-7">
                 <div class="title">
@@ -412,7 +413,7 @@
         </div>
     </div>
 
-    <section class="partners">
+    <section class="partners" data-aos="fade-up">
         <div class="container">
             <div class="partners__title">
                 <h2>
@@ -619,6 +620,10 @@
 <script src="./assets/javascript/language.js"></script>
 <script src="./assets/javascript/question.js"></script>
 
-</script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
+
 
 </html>

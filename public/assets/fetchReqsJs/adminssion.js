@@ -20,7 +20,6 @@ adminssion_form.addEventListener("submit", async (e) => {
     adminssion_user_passport,
     adminssion_user_partents_passport,
   } = e.target;
-  console.log(typeof adminssion_user_grade_certificate.files[0]);
   const formData = new FormData();
   formData.append("branch_id", branch_id.value);
   formData.append("adminssion_user_fullname", adminssion_user_fullname.value);
@@ -55,7 +54,7 @@ adminssion_form.addEventListener("submit", async (e) => {
     adminssion_user_partents_passport.files[0]
   );
 
-  const response = await fetch("/adminssion", {
+  const response = await fetch("/admission", {
     method: "POST",
     body: formData,
   });

@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./assets/style/bootstrap-grid.min.css">
     <link rel="stylesheet" href="./assets/style/main.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 
@@ -490,7 +491,7 @@
     <div class="main row d-lg-flex justify-content-between">
         <div class="main__sidebar col-lg-4 col-12"></div>
         <div class="main__content col-lg-7 col-12">
-            <section class="programm container">
+            <section class="programm container" data-aos="fade-up">
                 <div class="programm__section row d-flex justify-content-between">
         
                     <div class="programm__section__content col-lg-8">
@@ -518,7 +519,7 @@
                 </div>
             </section>
         
-            <section class="all_news container">
+            <section class="all_news container" data-aos="fade-up">
                 <h2 class="all_news__title">
                     <%= locationLanguage.event_title[lan] %>
                 </h2>
@@ -745,8 +746,9 @@
         }
     });
 </script>
-
-
-</script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
 
 </html>

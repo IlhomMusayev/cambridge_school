@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./assets/style/bootstrap-grid.min.css">
     <link rel="stylesheet" href="./assets/style/main.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 
@@ -367,7 +368,7 @@
         </div>
     </section>
 
-    <section class="compus">
+    <section class="compus" data-aos="fade-up">
         <div class="container">
             <div class="compus__content active">
                 <h2 class="compus__content__title">
@@ -397,7 +398,7 @@
             </div>
         </div>
     </section> 
-    <section class="students-government container">
+    <section class="students-government container" data-aos="fade-up">
         <div class="students-government__title">
             <h2>Students Government</h2>
         </div>
@@ -619,8 +620,10 @@
 <script src="./assets/javascript/cumpus.js"></script>
 <script src="./assets/javascript/question.js"></script>
 
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
 
-
-</script>
 
 </html>

@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./assets/style/bootstrap-grid.min.css">
     <link rel="stylesheet" href="./assets/style/main.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 
@@ -370,7 +371,7 @@
         </div>
     </header>
 
-    <section class="news container" id="news">
+    <section class="news container" id="news" data-aos="fade-up">
         <div class="news__title">
             <h2>
                 <%= HomeLanguages.news.news_title[lan] %>
@@ -423,7 +424,7 @@
     </section> 
     
  
-    <section class="facilities" id="facilities">
+    <section class="facilities" id="facilities" data-aos="fade-up">
         <video autoplay muted loop id="myVideo">
             <source src="./assets/videos/pexels-yan-krukov-8198505.mp4" type="video/mp4">
         </video>
@@ -490,7 +491,7 @@
     </section>
 
 
-    <section class="statistics" id="statistics">
+    <section class="statistics" id="statistics" data-aos="fade-up">
         <div class="container">
             <ul class="statistics__list row d-flex align-content-between align-content-center">
                 <li class="statistics__list__item col-lg-4">
@@ -522,7 +523,7 @@
     </section>
 
 
-    <section class="future-here" id="admission">
+    <section class="future-here" id="admission" data-aos="fade-up">
         <img class="myImgBg" src="./assets/images/camilo-botia-k4vFDPJoDZk-unsplash.jpg" alt="img">
         <div class="container">
             <div class="future-here__content">
@@ -550,7 +551,7 @@
         </div>
     </section>
 
-    <section class="compus" id="compus">
+    <section class="compus" id="compus" data-aos="fade-up">
         <div class="container">
             <div class="compus__content active">
                 <h2 class="compus__content__title">
@@ -581,7 +582,7 @@
         </div>
     </section> 
 
-    <section class="student-portfolios" id="studentportfolio">
+    <section class="student-portfolios" id="studentportfolio" data-aos="fade-up">
         <div class="">
             <div class="gallery-wrap row d-flex">
                 <div class="item item-1 col-xl-3 col-md-6 col-12">
@@ -645,7 +646,7 @@
         </div>
     </section> 
 
-    <section class="school__accardion container" id="whymillatumidischool">   
+    <section class="school__accardion container" id="whymillatumidischool" data-aos="fade-up">   
         <div class="school__accardion__title">
             <h2>
                 <%= HomeLanguages.school_accardion.title[lan] %>
@@ -730,7 +731,7 @@
     </section>
   
 
-    <section class="partners" id="partners">
+    <section class="partners" id="partners" data-aos="fade-up">
         <div class="container">
             <div class="partners__title">
                 <h2>
@@ -932,6 +933,7 @@
     </footer> 
 
 </body>
+
 <!-- Swiper JS -->
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="./assets/javascript/swipperSettings.js"></script>
@@ -942,5 +944,8 @@
 <script src="./assets/javascript/language.js"></script>
 <script src="./assets/javascript/counter.js"></script>
 <script src="./assets/javascript/question.js"></script>
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
 </html>

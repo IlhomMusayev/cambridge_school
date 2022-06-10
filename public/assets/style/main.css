@@ -1632,14 +1632,14 @@ header .swiper-pagination .swiper-pagination-bullet-active {
 }
 
 .news__list .news__item .news__data {
-  -webkit-transform: translateY(45%);
-          transform: translateY(45%);
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
   -webkit-transition: -webkit-transform 0.5s ease;
   transition: -webkit-transform 0.5s ease;
   transition: transform 0.5s ease;
   transition: transform 0.5s ease, -webkit-transform 0.5s ease;
   position: absolute;
-  bottom: 3%;
+  bottom: 2%;
   width: 90%;
 }
 
@@ -4321,7 +4321,7 @@ footer .footer__menus__item .quesion__form button span {
 }
 
 .about #myVideo {
-  position: fixed;
+  position: absolute;
   right: 0;
   bottom: 0;
   width: 100%;
@@ -4392,7 +4392,7 @@ footer .footer__menus__item .quesion__form button span {
   display: none;
   position: absolute;
   bottom: 10%;
-  left: 1%;
+  left: 5%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -4420,7 +4420,7 @@ footer .footer__menus__item .quesion__form button span {
     width: 100%;
   }
   .about #myVideo {
-    position: fixed;
+    position: absolute;
     right: 0;
     bottom: 0;
     width: 100%;
@@ -8490,6 +8490,10 @@ a {
 
 html {
   scroll-behavior: smooth;
+}
+
+hr {
+  border: none;
 }
 
 ul,

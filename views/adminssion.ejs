@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./assets/style/bootstrap-grid.min.css" />
   <link rel="stylesheet" href="./assets/style/main.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -361,7 +363,7 @@
         </section>
       </div>
     </main>
-    <div class="admission-form" id="admission">
+    <div class="admission-form" id="admission" data-aos="fade-up">
       <div class="form__applications container">
         <div>
           <h1>
@@ -704,13 +706,12 @@
   const sectionBranchElement = document.querySelector(".select_branch");
   const applyGradeElement = document.querySelector(".apply_grade");
   sectionBranchElement.addEventListener("change", async (e) => {
-    console.log(e.target.value);
     let res = await fetch(`/branch/${e.target.value}`, {
       method: "GET",
     });
-    6;
     let data = await res.json();
     console.log(data);
+    applyGradeElement.innerHTML = ""
     data.data.branch.branch_grades.forEach((element) => {
       let option = document.createElement("option");
       option.value = element;
@@ -719,5 +720,10 @@
     });
   });
 </script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
 
 </html>

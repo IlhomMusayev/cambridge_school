@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="../assets/style/bootstrap-grid.min.css">
     <link rel="stylesheet" href="../assets/style/main.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 
@@ -264,7 +265,7 @@
 
 
     <% var allEvents = allEvents || [] %> 
-    <section class="all_news container">
+    <section class="all_news container" data-aos="fade-up">
         <h2 class="all_news__title">
             <%= eventsLanguage.all_events.news_title[lan] %>
         </h2>
@@ -478,7 +479,8 @@
 <script src="../assets/javascript/header.js"></script>
 <script src="../assets/javascript/menu.js"></script>
 <script src="../assets/javascript/question.js"></script>
-
-</script>
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
 </html>

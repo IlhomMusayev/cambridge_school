@@ -31,6 +31,7 @@
     "jsonwebtoken": "^8.5.1",
     "moment": "^2.29.3",
     "node-fetch": "^3.2.4",
+    "nodemon": "^2.0.18",
     "npm": "^8.9.0",
     "pg": "^8.7.3",
     "random-number": "^0.0.9",

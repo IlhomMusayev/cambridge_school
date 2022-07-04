@@ -132,7 +132,7 @@ module.exports = class AdminController {
 
       const news = await req.db.news.findAll({
         limit,
-        offset,
+        offset: offset * limit,
         order: [["createdAt", "DESC"]],
       });
       console.log(news);
@@ -281,7 +281,7 @@ module.exports = class AdminController {
 
       const events = await req.db.events.findAll({
         limit,
-        offset,
+        offset: offset * limit,
         order: [["createdAt", "DESC"]],
       });
       res.render("adminEvents", {
@@ -426,7 +426,7 @@ module.exports = class AdminController {
 
     const branchs = await req.db.branchs.findAll({
       limit,
-      offset,
+      offset: offset * limit,
       order: [["createdAt", "DESC"]],
     });
     res.render("adminBranch", {
@@ -480,6 +480,8 @@ module.exports = class AdminController {
         offset = 0;
       }
       const adminssions = await req.db.adminssions.findAll({
+        limit,
+        offset: offset * limit,
         order: [["createdAt", "DESC"]],
       });
       res.render("adminOrder", {

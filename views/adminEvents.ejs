@@ -195,14 +195,14 @@
                 <nav aria-label="Table navigation">
                   <ul class="inline-flex items-center" class="buttons" style="display: flex;">
                     <li>
-                      <a class="button" href = "/admin/product?offset=<%= offset %>" class="px-3 py-1 rounded-md rounded-l-lg focus:outline-none focus:shadow-outline-purple"
+                      <a class="button" href = "/admin/events?offset=<%= offset %>" class="px-3 py-1 rounded-md rounded-l-lg focus:outline-none focus:shadow-outline-purple"
                         aria-label="Previous">
                        <
                       </a>
                     </li>
                     <% for(var i = 1; i <= count; i++) {%> 
                     <li>
-                      <a class="button" href= "/admin/product?offset=<%= i %>" 
+                      <a class="button" href= "/admin/events?offset=<%= i %>" 
                         <% if(offset === i-1) {%> 
                           class="px-3 py-1 text-white transition-colors duration-150 bg-purple-600 border border-r-0 border-purple-600 rounded-md focus:outline-none focus:shadow-outline-purple"
                         <% } else { %> 
@@ -213,7 +213,7 @@
                     </li>
                     <% } %> 
                     <li>
-                      <a class="button" href = "/admin/product?offset=<%= offset+2 %>" class="px-3 py-1 rounded-md rounded-r-lg focus:outline-none focus:shadow-outline-purple"
+                      <a class="button" href = "/admin/events?offset=<%= offset+2 %>" class="px-3 py-1 rounded-md rounded-r-lg focus:outline-none focus:shadow-outline-purple"
                         aria-label="Next">
                        >
                       </a>

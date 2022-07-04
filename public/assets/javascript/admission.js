@@ -3,7 +3,7 @@ const grandElement = document.querySelector("#scholarships");
 const applyRequrimensElement = document.querySelector("#apply_requrimens");
 const tabListItemLinks = document.querySelectorAll(".tab_bar_item_link");
 const applyInstructionElement = document.querySelector("#apply_instruction");
-const admissionFormElement = document.querySelector(".form__applications");
+const admissionFormElement = document.querySelector("#admission");
 const tabMenuElement = document.querySelector(".tab_bar");
 const videoBackgroundElement = document.querySelector(".imgHeader");
 
@@ -190,3 +190,23 @@ if (screen.width < 768) {
     { passive: true }
   );
 }
+
+const admissionFileInputElements = document.querySelectorAll(
+  ".admission_file_input"
+);
+
+admissionFileInputElements.forEach((item) => {
+  item.addEventListener("change", (e) => {
+    const fileElement = item.parentNode;
+    const fileName = fileElement.querySelector(".file_admission_text");
+    fileName.textContent = item.files[0].name;
+    fileElement.style.border = "2px dashed #ff9838";
+  });
+});
+
+const selectElements = document.querySelectorAll("section");
+selectElements.forEach((item) => {
+  item.addEventListener("change", (e) => {
+    e.target.style.borderBottomColor = "#ff9838";
+  });
+});

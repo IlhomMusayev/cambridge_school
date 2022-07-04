@@ -13,6 +13,7 @@ $globalfont: "Poppins", sans-serif;
   background-color: #fff;
   padding-bottom: 100px;
 }
+
 .form__applications {
   padding: 50px;
   width: 70%;
@@ -154,7 +155,9 @@ $globalfont: "Poppins", sans-serif;
     }
   }
 }
-
+.admission_file_input {
+  border: 1px solid #ff9838;
+}
 /*  */
 
 .visuallyhidden {

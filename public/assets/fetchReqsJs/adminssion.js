@@ -1,6 +1,7 @@
 const adminssion_form = document.querySelector(".admission_form");
 
 adminssion_form.addEventListener("submit", async (e) => {
+  document.querySelector(".loader_wrapper").style.display = "block";
   const successAlertElement = document.querySelector(".alert-success");
   const dangerAlertElement = document.querySelector(".alert-error");
   e.preventDefault();
@@ -60,22 +61,11 @@ adminssion_form.addEventListener("submit", async (e) => {
   });
 
   const data_ = await response.json();
-  console.log(data_);
   if (data_.ok) {
-    successAlertElement.style.display = "block";
-    successAlertElement.innerHTML = `
-              <strong>Success!</strong> ${data_.message}
-            `;
-    setTimeout(() => {
-      successAlertElement.style.display = "none";
-    }, 3000);
+    document.querySelector(".loader_wrapper").style.display = "none";
+    swal("Good job!", "Your application has been accepted!", "success");
   } else {
-    dangerAlertElement.style.display = "block";
-    dangerAlertElement.innerHTML = `
-              <strong>Success!</strong> ${data_.message}
-            `;
-    setTimeout(() => {
-      dangerAlertElement.style.display = "none";
-    }, 3000);
+    document.querySelector(".loader_wrapper").style.display = "none";
+    swal("Good job!", `${data_.message}`, "warning");
   }
 });

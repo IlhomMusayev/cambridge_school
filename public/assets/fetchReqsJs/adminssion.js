@@ -1,7 +1,7 @@
 const adminssion_form = document.querySelector(".admission_form");
 
 adminssion_form.addEventListener("submit", async (e) => {
-  document.querySelector(".loader_wrapper").style.display = "block";
+  document.querySelector(".loader_wrapper2").style.display = "block";
   const successAlertElement = document.querySelector(".alert-success");
   const dangerAlertElement = document.querySelector(".alert-error");
   e.preventDefault();
@@ -62,10 +62,10 @@ adminssion_form.addEventListener("submit", async (e) => {
 
   const data_ = await response.json();
   if (data_.ok) {
-    document.querySelector(".loader_wrapper").style.display = "none";
+    document.querySelector(".loader_wrapper2").style.display = "none";
     swal("Good job!", "Your application has been accepted!", "success");
   } else {
-    document.querySelector(".loader_wrapper").style.display = "none";
+    document.querySelector(".loader_wrapper2").style.display = "none";
     swal("Good job!", `${data_.message}`, "warning");
   }
 });

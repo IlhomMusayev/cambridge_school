@@ -139,6 +139,10 @@
                         </td>
                         <td class="actions-cell">
                             <div class="buttons right nowrap">
+                              <button data-branchs = "<%= JSON.stringify(branch) %>"  class="edit_btn button small green --jb-modal" data-target="sample-modal-2"
+                                type="button">
+                                <span class="icon"><i class="mdi mdi-pencil-outline"></i></span>
+                            </button>
                                 <button data-branch_id="<%= branch.branch_id %>" class="delete_btn button small red --jb-modal" data-target="sample-modal"
                                     type="button">
                                     <span class="icon"><i class="mdi mdi-trash-can"></i></span>
@@ -200,10 +204,10 @@
             <div class="modal-background --jb-modal-close"></div>
             <div class="modal-card">
                 <header class="modal-card-head">
-                    <p class="modal-card-title">Rangni o'chirish</p>
+                    <p class="modal-card-title">Delete branch</p>
                 </header>
                 <section class="modal-card-body">
-                    <h1>Rangni o'chirishni tasdiqlang!</h1>
+                    <h1>Branchni o'chiqishni tasdiqlang!</h1>
                 </section>
                 <footer class="modal-card-foot">
                     <button class="button --jb-modal-close">Orqaga</button>
@@ -285,6 +289,79 @@
             </div>
         </div>
 
+        <div id="sample-modal-2" class="modal">
+          <div class="modal-background --jb-modal-close"></div>
+          <div class="modal-card" style="overflow-y: auto">
+            <form class="edit__branch__form">
+              <header class="modal-card-head">
+                <h3 class="">Edit events</h3>
+              </header>
+              <section class="modal-card-body" >
+                <div class="alert">
+                  <p class="alert__danger">
+                  </p>
+                  <p class="alert__success">
+                  </p>
+                </div>
+                  <div class="field">
+                      <label class="label">Branch name</label>
+                      <div class="field-body">
+                          <div class="field">
+                              <div class="control">
+                                  <input class="input" type="text" name="branch_name" placeholder="Branch Name">
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="field">
+                    <label class="label">Branch grades</label>
+                    <div class="field-body">
+                        <div class="field">
+                            <div class="control">
+                                <input class="input" type="text" name="branch_grades" placeholder="1,2,3,4,5,6">
+                            </div>
+                            <div class="alert-warn" style="display: block; padding: 5px 10px; margin: 10px 0;">
+                              Shu ko'rinishda kiriting: <br>
+                              <span>1,2,3,4,5,6</span>
+                              orada probel tashlamasdan yozing!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="field">
+                  <label class="label">Branch phone</label>
+                  <div class="field-body">
+                      <div class="field">
+                          <div class="control">
+                              <input class="input" type="text" name="branch_phone" placeholder="Branch phone">
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="field">
+                <label class="label">Branch location link</label>
+                <div class="field-body">
+                    <div class="field">
+                        <div class="control">
+                            <input class="input" type="text" name="branch_location_link" placeholder="Branch location link">
+                        </div>
+                        <div class="alert-warn" style="display: block; padding: 5px 10px; margin: 10px 0;">
+                          Bu yerga yandex yoki google maps yordamida olingan link yozing!
+                        </div>
+                    </div>
+                </div>
+            </div>
+                  <!-- <hr> -->
+              </section>
+              <footer class="modal-card-foot">
+                <button type="button" class="button --jb-modal-close">
+                  Cancel
+                </button>
+                <button type="submit" class="button green">Submit</button>
+              </footer>
+            </form>
+          </div>
+        </div>
     </div>
 
     </div>

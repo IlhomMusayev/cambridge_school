@@ -19,6 +19,9 @@
     <div class="loading2"></div>
     <img src="./assets/images/logo_body.png" alt="logo" class="logo" />
   </div>
+  <div class="loader_wrapper2" style="display: none;">
+    <div class="loading2"></div>
+  </div>
   <nav class="">
     <div class="navbar container d-flex justify-content-between align-items-center">
       <div class="logo">
@@ -374,9 +377,7 @@
         <form class="admission_form">
           <div class="application_atimes d-lg-flex justify-content-between">
             <div class="input__applications">
-              <h2>
-                <%= admissionLanguage.admission_form.subtitle[lan] %>
-              </h2>
+            
               <div class="card-form">
                 <% var branchs = branchs || []; %>
                 <div>
@@ -398,11 +399,12 @@
                   </label>
                 </div>
                 <div class="input">
-                  <input name="adminssion_user_email" type="email" class="input-field" required autocomplete="off"/>
+                  <input name="adminssion_user_email" type="text" class="input-field" required autocomplete="off"/>
                   <label class="input-label">
                     <%= admissionLanguage.admission_form.form.email[lan] %>
                   </label>
                 </div>
+             
                 <div class="input">
                   <input name="adminssion_user_phone" type="telephone" class="input-field" required autocomplete="off"/>
                   <label class="input-label">

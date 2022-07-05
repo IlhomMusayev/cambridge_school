@@ -28,6 +28,3 @@ window.addEventListener("scroll", (e) => {
 window.onload = function () {
   document.querySelector(".loader_wrapper").style.display = "none";
 };
-
-
-

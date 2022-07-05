@@ -1293,10 +1293,16 @@ header .swiper-pagination .swiper-pagination-bullet-active {
   transform: translateY(50%);
   transition: transform 0.5s ease;
   position: absolute;
-  bottom: 2%;
+  left: 5%;
+  bottom: 10px;
   width: 90%;
 }
 .news__list .news__item .news__data .title {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
   font-weight: 600;
   font-size: 22px;
   line-height: 36px;
@@ -1311,6 +1317,11 @@ header .swiper-pagination .swiper-pagination-bullet-active {
   transition: all 0.4s ease;
 }
 .news__list .news__item .news__data .subtitle {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
   margin-top: 30px;
   font-weight: 500;
   font-size: 18px;
@@ -1444,7 +1455,7 @@ header .swiper-pagination .swiper-pagination-bullet-active {
     transform: translateY(100px);
     transition: transform 0.5s ease;
     position: absolute;
-    bottom: 35%;
+    bottom: 34%;
     width: 90%;
   }
   .news__list .news__item .news__data .title {
@@ -5691,7 +5702,7 @@ footer .footer__menus__item .quesion__form button span {
   z-index: 1;
   background-color: transparent;
   border-bottom: 0.7px solid #8d8d8d;
-  font-size: 1.125rem;
+  font-size: 16px;
   padding: 0.25rem 0px;
 }
 .form__applications .input__applications .input-field.error {
@@ -5785,6 +5796,10 @@ footer .footer__menus__item .quesion__form button span {
 .visuallyhidden {
   overflow: hidden;
   position: absolute;
+}
+
+select {
+  font-size: 16px;
 }
 
 .upload__applications h1 {
@@ -5887,11 +5902,15 @@ footer .footer__menus__item .quesion__form button span {
   .form__applications .input__applications .input input {
     padding: 10px 0 0 2px;
   }
+  .form__applications .input__applications select {
+    font-size: 15px;
+  }
   .form__applications .input__applications .input-label {
     color: #8d8d8d;
     position: absolute;
     left: 1%;
     transition: 0.25s ease;
+    font-size: 15px;
   }
   .form__applications .input__applications .input-field {
     border: 0;
@@ -7089,9 +7108,6 @@ ol {
   z-index: 9999999;
 }
 .loader_wrapper .loading2 {
-  position: absolute;
-  top: 44%;
-  left: 46%;
   width: 100px;
   height: 100px;
   border-radius: 50%;
@@ -7123,6 +7139,42 @@ ol {
   100% {
     transform: rotate(359deg);
   }
+}
+
+.loader_wrapper2 {
+  background: #fafafa;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 9999999;
+}
+.loader_wrapper2 .loading2 {
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border-top: 4px solid;
+  border-color: #d29d01 transparent;
+  -webkit-animation: spin 0.6s linear infinite;
+          animation: spin 0.6s linear infinite;
+  z-index: 9999999;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}
+
+.swal-button {
+  background-color: #d29d01;
 }
 
 @media (max-width: 768px) {

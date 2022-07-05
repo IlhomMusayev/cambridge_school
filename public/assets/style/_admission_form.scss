@@ -50,7 +50,7 @@ $globalfont: "Poppins", sans-serif;
       z-index: 1;
       background-color: transparent;
       border-bottom: 0.7px solid #8d8d8d;
-      font-size: 1.125rem;
+      font-size: 16px;
       padding: 0.25rem 0px;
       &.error {
         border-bottom: 0.7px solid red;
@@ -165,7 +165,9 @@ $globalfont: "Poppins", sans-serif;
   position: absolute;
   // margin: 30px 120px;
 }
-
+select {
+  font-size: 16px;
+}
 .upload__applications {
   h1 {
     margin-top: 10px;
@@ -291,12 +293,15 @@ $globalfont: "Poppins", sans-serif;
           padding: 10px 0 0 2px;
         }
       }
-
+      select {
+        font-size: 15px;
+      }
       .input-label {
         color: #8d8d8d;
         position: absolute;
         left: 1%;
         transition: 0.25s ease;
+        font-size: 15px;
       }
 
       .input-field {

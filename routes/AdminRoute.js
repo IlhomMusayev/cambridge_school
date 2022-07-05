@@ -15,6 +15,8 @@ const {
   AdminssionGetController,
   AdminsssionGetByIdController,
   StatisticsController,
+  BranchDeleteController,
+  BranchPutController,
 } = require("../controllers/AdminControllers");
 const { AdminMiddleware } = require("../middlewares/authMiddleware");
 const expressFileUpload = require("express-fileupload");
@@ -43,6 +45,8 @@ router.delete("/events", AdminMiddleware, EventDeleteController);
 // branch routes
 router.get("/branchs", AdminMiddleware, BranchController);
 router.post("/branchs", AdminMiddleware, BranchPostController);
+router.put("/branchs", AdminMiddleware, BranchPutController);
+router.delete("/branchs", AdminMiddleware, BranchDeleteController);
 
 // adminssions routes
 router.get("/adminssions", AdminMiddleware, AdminssionGetController);

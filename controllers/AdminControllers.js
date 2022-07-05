@@ -467,6 +467,63 @@ module.exports = class AdminController {
       next(error);
     }
   }
+  static async BranchPutController(req, res, next) {
+    try {
+      const data = await req.body;
+      const branchGradesArray = data.branch_grades.split(",");
+      const branchs = await req.db.branchs.update(
+        {
+          branch_name: data.branch_name,
+          branch_slug: slug(data.branch_name),
+          branch_grades: branchGradesArray,
+          branch_phone: data.branch_phone,
+          branch_location_link: data.branch_location_link,
+        },
+        {
+          where: {
+            branch_id: data.branch_id,
+          },
+        }
+      );
+
+      res.status(201).json({
+        ok: true,
+        message: "Branch update successfully",
+        data: {
+          branchs,
+        },
+      });
+    } catch (error) {
+      if (error.message == "Validation error") {
+        res.status(201).json({
+          ok: false,
+          message: "This branch already exists",
+        });
+      }
+      console.log(error);
+      next(error);
+    }
+  }
+  static async BranchDeleteController(req, res, next) {
+    try {
+      const { branch_id } = req.body;
+
+      const branch = await req.db.branchs.destroy({
+        paranoid: true,
+        where: {
+          branch_id: branch_id,
+        },
+      });
+
+      res.status(200).json({
+        ok: true,
+        message: "Deleted new successfully",
+      });
+      // res.redirect("/admin/catalog");
+    } catch (error) {
+      next(error);
+    }
+  }
 
   // Adminssion get controller
   static async AdminssionGetController(req, res, next) {

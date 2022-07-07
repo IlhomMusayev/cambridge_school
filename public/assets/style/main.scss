@@ -131,7 +131,10 @@ ol {
   }
 }
 .swal-button {
-  background-color: #d29d01;
+  background-color: #ff9838;
+  &:hover {
+    background-color: #f58115;
+  }
 }
 @media (max-width: 768px) {
   .container {

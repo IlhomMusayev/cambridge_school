@@ -435,7 +435,8 @@ nav .menu__section .socials__list ul li {
     display: none;
   }
   nav .navbar__right__item:nth-child(2) {
-    display: none;
+    margin-top: 5px;
+    display: block;
   }
   nav .navbar__right__item .menu_btn {
     background: none;
@@ -686,7 +687,7 @@ header .swiper-slide .header__content {
 header .swiper-slide .header__content__title {
   opacity: 1;
   transition: opacity 0.3s;
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 44px;
@@ -6466,8 +6467,8 @@ select {
     transition: all 0.3s ease-in-out;
     display: none;
     position: absolute;
-    bottom: 18%;
-    right: 12%;
+    bottom: 15%;
+    right: 10%;
     justify-content: center;
     align-items: center;
     z-index: 9999999;
@@ -6553,6 +6554,7 @@ select {
   }
   .location_header .lifeSwiper .swiper-slide .location_header__data {
     position: absolute;
+    top: 42%;
     left: 0%;
     text-align: start;
     color: #fff;
@@ -6594,7 +6596,7 @@ select {
   .location_header .lifeSwiper .swiper-slide .location_header__data__adminssion {
     position: relative;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 10px;
   }
   .location_header .lifeSwiper .swiper-slide .location_header__data__adminssion h3 {
     font-weight: 500;
@@ -6695,14 +6697,14 @@ select {
   }
   .location_header .lifeSwiper .pagination__btns.active {
     position: absolute;
-    bottom: 16%;
-    right: 28%;
+    bottom: 11%;
+    right: 29%;
     z-index: 10;
     width: 90px;
   }
   .location_header .lifeSwiper .pagination__btns.active .swiper-button-next {
     top: 84%;
-    left: 100%;
+    left: 104%;
     color: #fff;
     transform: scale(0.4);
     border-radius: 50%;
@@ -6713,7 +6715,7 @@ select {
   }
   .location_header .lifeSwiper .pagination__btns.active .swiper-button-prev {
     top: 84%;
-    left: 5%;
+    left: 10%;
     color: #fff;
     transform: scale(0.4);
     border-radius: 50%;
@@ -6877,7 +6879,7 @@ select {
   .sidebar {
     position: absolute;
     z-index: 9;
-    top: 15%;
+    top: 12%;
     left: 10%;
     width: 85%;
     height: 25%;
@@ -6890,16 +6892,16 @@ select {
     margin: 8px 0;
     list-style-type: upper-greek;
     font-weight: 500;
-    font-size: 24px;
-    line-height: 36px;
+    font-size: 21px;
+    line-height: 30px;
     opacity: 0.5;
     transition: all 0.2s ease-in-out;
   }
   .sidebar__list__item a {
     color: #fff;
     font-weight: 500;
-    font-size: 24px;
-    line-height: 36px;
+    font-size: 22px;
+    line-height: 30px;
   }
   .sidebar__list__item:hover {
     opacity: 1;
@@ -7174,7 +7176,10 @@ ol {
 }
 
 .swal-button {
-  background-color: #d29d01;
+  background-color: #ff9838;
+}
+.swal-button:hover {
+  background-color: #f58115;
 }
 
 @media (max-width: 768px) {

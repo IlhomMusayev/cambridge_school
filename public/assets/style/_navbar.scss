@@ -490,7 +490,8 @@ nav {
             display: none;
           }
           &:nth-child(2) {
-            display: none;
+            margin-top: 5px;
+            display: block;
           }
           .menu_btn {
             background: none;

@@ -64,8 +64,15 @@ adminssion_form.addEventListener("submit", async (e) => {
   if (data_.ok) {
     document.querySelector(".loader_wrapper2").style.display = "none";
     swal("Good job!", "Your application has been accepted!", "success");
+    setTimeout(() => {
+      window.location.href = "/";
+    }, 3000);
   } else {
     document.querySelector(".loader_wrapper2").style.display = "none";
-    swal("Good job!", `${data_.message}`, "warning");
+    swal(
+      "There is a problem!",
+      `Make sure you fill in all the fields correctly`,
+      "warning"
+    );
   }
 });

@@ -24,7 +24,7 @@ window.addEventListener(
         item.style.color = "white";
       });
     }
-    if (footerElement.offsetTop < height + 400) {
+    if (footerElement.offsetTop < height + 600) {
       sidebarList.style.display = "none";
       sidebatListLinkElement.forEach((item) => {
         item.style.color = "black";

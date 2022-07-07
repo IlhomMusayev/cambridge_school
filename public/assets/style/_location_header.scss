@@ -427,8 +427,8 @@
       transition: all 0.3s ease-in-out;
       display: none;
       position: absolute;
-      bottom: 18%;
-      right: 12%;
+      bottom: 15%;
+      right: 10%;
       justify-content: center;
       align-items: center;
       z-index: 9999999;
@@ -534,6 +534,7 @@
           transition: opacity 0.3s ease-in-out;
           &__data {
             position: absolute;
+            top: 42%;
             left: 0%;
             text-align: start;
             color: #fff;
@@ -574,7 +575,7 @@
             &__adminssion {
               position: relative;
               text-align: center;
-              margin-top: 50px;
+              margin-top: 10px;
               h3 {
                 font-weight: 500;
                 font-size: 24px;
@@ -681,13 +682,13 @@
 
         &.active {
           position: absolute;
-          bottom: 16%;
-          right: 28%;
+          bottom: 11%;
+          right: 29%;
           z-index: 10;
           width: 90px;
           .swiper-button-next {
             top: 84%;
-            left: 100%;
+            left: 104%;
             color: #fff;
             transform: scale(0.4);
             border-radius: 50%;
@@ -698,7 +699,7 @@
           }
           .swiper-button-prev {
             top: 84%;
-            left: 5%;
+            left: 10%;
             color: #fff;
             transform: scale(0.4);
             border-radius: 50%;

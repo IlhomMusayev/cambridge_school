@@ -4796,6 +4796,7 @@ footer .footer__menus__item .quesion__form button span {
     margin-left: 10px;
   }
   .life-header .lifeSwiper .swiper-slide .life-header__data .full_btn {
+    display: none;
     position: absolute;
     right: 5%;
     bottom: -90%;

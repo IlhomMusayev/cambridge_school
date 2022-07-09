@@ -6,7 +6,17 @@ module.exports = async (sequelize, Sequelize) => {
       primaryKey: true,
       allowNull: false,
     },
-    branch_name: {
+    branch_name_uz: {
+      type: Sequelize.STRING(),
+      allowNull: false,
+      unique: true,
+    },
+    branch_name_ru: {
+      type: Sequelize.STRING(),
+      allowNull: false,
+      unique: true,
+    },
+    branch_name_eng: {
       type: Sequelize.STRING(),
       allowNull: false,
       unique: true,

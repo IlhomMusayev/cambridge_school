@@ -165,7 +165,7 @@
         <ul class="contacts__list">
           <li class="contacts__list__item d-flex justify-content-left align-items-center">
             <img src="./assets/images/icons/email_icon.svg" alt="message icon">
-            <span>info@cambridge.uz</span>
+            <span>info@muschool.uz </span>
           </li>
           <li class="contacts__list__item d-flex justify-content-left align-items-center">
             <img src="./assets/images/icons/phone_icon.svg" alt="phoone icon">
@@ -174,7 +174,14 @@
           <% branchs.forEach(function(item){ %>
             <li class="contacts__list__item d-flex justify-content-left align-items-center">
                 <img src="./assets/images/icons/location_icon.svg" alt="location_icon">
-                <span><%= item.branch_name %></span>
+                <span>  <% if(lan === "eng") { %> 
+                  <%= item.branch_name_eng %>
+              <% } %>
+              <% if(lan === "ru") { %> 
+                  <%= item.branch_name_ru %>
+              <% } if(lan === "uz") {%>
+                  <%= item.branch_name_uz %>
+              <% } %> </span>
             </li>
         <% }) %>
         </ul>
@@ -387,7 +394,14 @@
                     </option>
                     <% branchs.forEach(function(branch){ %>
                     <option value="<%= branch.branch_id %>">
-                      <%= branch.branch_name %>
+                      <% if(lan === "eng") { %> 
+                        <%= branch.branch_name_eng %>
+                    <% } %>
+                    <% if(lan === "ru") { %> 
+                        <%= branch.branch_name_ru %>
+                    <% } if(lan === "uz") {%>
+                        <%= branch.branch_name_uz %>
+                    <% } %> 
                     </option>
                     <% }) %>
                   </select>
@@ -513,7 +527,6 @@
                       <p class="file_admission_text">Choose or drag and drop your files</p>
                       <span>File(s) size limit is 20 MB (png / jpeg / pdf /
                         zip)</span>
-                      <!--  <button type="submit">Upload</button> -->
                     </div>
                   </div>
                 </div>
@@ -559,7 +572,7 @@
                   <ul class="contacts__list">
                       <li class="contacts__list__item d-flex justify-content-left align-items-center">
                           <img src="./assets/images/icons/email_icon.svg" alt="message icon">
-                          <span>info@cambridge.uz</span>
+                          <span>info@muschool.uz </span>
                       </li>
                       <li class="contacts__list__item d-flex justify-content-left align-items-center">
                           <img src="./assets/images/icons/phone_icon.svg" alt="phoone icon">
@@ -570,7 +583,16 @@
                       <% branchs.forEach(function(item){ %>
                         <li class="contacts__list__item d-flex justify-content-left align-items-center">
                             <img src="./assets/images/icons/location_icon.svg" alt="location_icon">
-                            <span><%= item.branch_name %></span>
+                            <span>
+                              <% if(lan === "eng") { %> 
+                                <%= item.branch_name_eng %>
+                            <% } %>
+                            <% if(lan === "ru") { %> 
+                                <%= item.branch_name_ru %>
+                            <% } if(lan === "uz") {%>
+                                <%= item.branch_name_uz %>
+                            <% } %> 
+                            </span>
                         </li>
                     <% }) %>
                   </ul>

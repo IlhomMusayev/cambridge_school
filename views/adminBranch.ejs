@@ -127,7 +127,7 @@
                       <% if(branchs.length > 0) { %> 
                         <% branchs.forEach(function(branch) { %> 
                       <tr>
-                        <td data-label="Name" ><%= branch.branch_name %></td>
+                        <td data-label="Name" ><%= branch.branch_name_eng %></td>
                         <td data-label="grade" ><%= branch.branch_grades %></td>
                         <td data-label="phone" ><%= branch.branch_phone %></td>
                         <td data-label="phone" ><%= branch.branch_location_link %></td>
@@ -231,15 +231,35 @@
                         </p>
                       </div>
                         <div class="field">
-                            <label class="label">Branch name</label>
+                            <label class="label">Branch name(uzbek)</label>
                             <div class="field-body">
                                 <div class="field">
                                     <div class="control">
-                                        <input class="input" type="text" name="branch_name" placeholder="Branch Name">
+                                        <input class="input" type="text" name="branch_name_uz" placeholder="Branch Name form uzbek">
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="field">
+                          <label class="label">Branch name(english)</label>
+                          <div class="field-body">
+                              <div class="field">
+                                  <div class="control">
+                                      <input class="input" type="text" name="branch_name_eng" placeholder="Branch Name from English">
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="field">
+                        <label class="label">Branch name(russion)</label>
+                        <div class="field-body">
+                            <div class="field">
+                                <div class="control">
+                                    <input class="input" type="text" name="branch_name_ru" placeholder="Branch Name from Russion">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                         <div class="field">
                           <label class="label">Branch grades</label>
                           <div class="field-body">
@@ -296,63 +316,83 @@
               <header class="modal-card-head">
                 <h3 class="">Edit events</h3>
               </header>
-              <section class="modal-card-body" >
-                <div class="alert">
-                  <p class="alert__danger">
-                  </p>
-                  <p class="alert__success">
-                  </p>
-                </div>
-                  <div class="field">
-                      <label class="label">Branch name</label>
+                 <section class="modal-card-body" >
+                      <div class="alert">
+                        <p class="alert__danger">
+                        </p>
+                        <p class="alert__success">
+                        </p>
+                      </div>
+                        <div class="field">
+                            <label class="label">Branch name(uzbek)</label>
+                            <div class="field-body">
+                                <div class="field">
+                                    <div class="control">
+                                        <input class="input" type="text" name="branch_name_uz" placeholder="Branch Name form uzbek">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="field">
+                          <label class="label">Branch name(english)</label>
+                          <div class="field-body">
+                              <div class="field">
+                                  <div class="control">
+                                      <input class="input" type="text" name="branch_name_eng" placeholder="Branch Name from English">
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="field">
+                        <label class="label">Branch name(russion)</label>
+                        <div class="field-body">
+                            <div class="field">
+                                <div class="control">
+                                    <input class="input" type="text" name="branch_name_ru" placeholder="Branch Name from Russion">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="field">
+                          <label class="label">Branch grades</label>
+                          <div class="field-body">
+                              <div class="field">
+                                  <div class="control">
+                                      <input class="input" type="text" name="branch_grades" placeholder="1,2,3,4,5,6">
+                                  </div>
+                                  <div class="alert-warn" style="display: block; padding: 5px 10px; margin: 10px 0;">
+                                    Shu ko'rinishda kiriting: <br>
+                                    <span>1,2,3,4,5,6</span>
+                                    orada probel tashlamasdan yozing!
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="field">
+                        <label class="label">Branch phone</label>
+                        <div class="field-body">
+                            <div class="field">
+                                <div class="control">
+                                    <input class="input" type="text" name="branch_phone" placeholder="Branch phone">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="field">
+                      <label class="label">Branch location link</label>
                       <div class="field-body">
                           <div class="field">
                               <div class="control">
-                                  <input class="input" type="text" name="branch_name" placeholder="Branch Name">
+                                  <input class="input" type="text" name="branch_location_link" placeholder="Branch location link">
+                              </div>
+                              <div class="alert-warn" style="display: block; padding: 5px 10px; margin: 10px 0;">
+                                Bu yerga yandex yoki google maps yordamida olingan link yozing!
                               </div>
                           </div>
                       </div>
                   </div>
-                  <div class="field">
-                    <label class="label">Branch grades</label>
-                    <div class="field-body">
-                        <div class="field">
-                            <div class="control">
-                                <input class="input" type="text" name="branch_grades" placeholder="1,2,3,4,5,6">
-                            </div>
-                            <div class="alert-warn" style="display: block; padding: 5px 10px; margin: 10px 0;">
-                              Shu ko'rinishda kiriting: <br>
-                              <span>1,2,3,4,5,6</span>
-                              orada probel tashlamasdan yozing!
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="field">
-                  <label class="label">Branch phone</label>
-                  <div class="field-body">
-                      <div class="field">
-                          <div class="control">
-                              <input class="input" type="text" name="branch_phone" placeholder="Branch phone">
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="field">
-                <label class="label">Branch location link</label>
-                <div class="field-body">
-                    <div class="field">
-                        <div class="control">
-                            <input class="input" type="text" name="branch_location_link" placeholder="Branch location link">
-                        </div>
-                        <div class="alert-warn" style="display: block; padding: 5px 10px; margin: 10px 0;">
-                          Bu yerga yandex yoki google maps yordamida olingan link yozing!
-                        </div>
-                    </div>
-                </div>
-            </div>
-                  <!-- <hr> -->
-              </section>
+                        <!-- <hr> -->
+                    </section>
               <footer class="modal-card-foot">
                 <button type="button" class="button --jb-modal-close">
                   Cancel

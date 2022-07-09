@@ -66,7 +66,7 @@ adminssion_form.addEventListener("submit", async (e) => {
     swal("Good job!", "Your application has been accepted!", "success");
     setTimeout(() => {
       window.location.href = "/";
-    }, 3000);
+    }, 5000);
   } else {
     document.querySelector(".loader_wrapper2").style.display = "none";
     swal(

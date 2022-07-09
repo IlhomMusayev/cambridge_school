@@ -2203,7 +2203,7 @@ header .swiper-pagination .swiper-pagination-bullet-active {
   .compus__content {
     position: absolute;
     top: 45%;
-    left: 100%;
+    left: -100%;
     width: 80%;
     transform: translate(-50%, -50%);
     transition: all 0.5s ease-in-out;
@@ -5863,10 +5863,15 @@ select {
   padding: 13px 61px;
   border-radius: 8px;
   border: none;
+  cursor: pointer;
 }
 .buttons .button_one {
   color: #ffffff;
   background-color: #ff9838;
+}
+.buttons .button_one:hover {
+  background-color: #e47711;
+  transition: all 0.2s;
 }
 
 @media (max-width: 660px) {

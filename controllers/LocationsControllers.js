@@ -65,7 +65,7 @@ module.exports = class LocationsController {
       lan,
       branch,
       events,
-      branchs
+      branchs,
     });
   }
 };

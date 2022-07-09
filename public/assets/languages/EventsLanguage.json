@@ -54,9 +54,9 @@
   },
   "all_events": {
     "news_title": {
-      "uz": "Barcha yangiliklar",
-      "ru": "Все новости",
-      "eng": "All News"
+      "uz": "Все События",
+      "ru": "Barcha Eventlar",
+      "eng": "All Events"
     }
   },
   "reed_more": {

@@ -160,11 +160,13 @@
                 </span>
               </button>
             </div>
-            <h3>Contact Us</h3>
+            <h3>
+                <%= locationLanguage.footer.contect_us[lan] %>
+            </h3>
             <ul class="contacts__list">
               <li class="contacts__list__item d-flex justify-content-left align-items-center">
                 <img src="./assets/images/icons/email_icon.svg" alt="message icon">
-                <span>info@cambridge.uz</span>
+                <span>info@muschool.uz </span>
               </li>
               <li class="contacts__list__item d-flex justify-content-left align-items-center">
                 <img src="./assets/images/icons/phone_icon.svg" alt="phoone icon">
@@ -174,13 +176,22 @@
               <% branchs.forEach(function(item){ %>
                 <li class="contacts__list__item d-flex justify-content-left align-items-center">
                     <img src="./assets/images/icons/location_icon.svg" alt="location_icon">
-                    <span><%= item.branch_name %></span>
+                    <span>
+                        <% if(lan === "eng") { %> 
+                            <%= item.branch_name_eng %>
+                        <% } %>
+                        <% if(lan === "ru") { %> 
+                            <%= item.branch_name_ru %>
+                        <% } if(lan === "uz") {%>
+                            <%= branch.branch_name_uz %>
+                        <% } %> 
+                    </span>
                 </li>
             <% }) %>
             </ul>
           </div>
           <div class="socials__list col-lg-1">
-            <h3>Contact with us</h3>
+            <h3> <%= locationLanguage.footer.contect_us[lan] %></h3>
             <ul class="d-lg-block d-flex">
               <li>
                 <a href="https://www.facebook.com/cicschooluz/">
@@ -206,10 +217,19 @@
     <aside class="sidebar">
         <ul class="sidebar__list">
             <% branchsList.forEach(function(branch) { %>
-            <li class="sidebar__list__item" data-slug = "<%= branch.branch_slug %>"</li>
+            <li class="sidebar__list__item" data-slug = "<%= branch.branch_slug %>">
                 <a href="/locations?branch_name=<%=branch.branch_slug%>" class="sidebar__list__item__link">
-                    <%= branch.branch_name.split(',')[branch.branch_name.split(',').length - 1] %>
-                    <%= branch.branch_name.split(',')[branch.branch_name.split(',').length - 2] %>
+                    <% if(lan === "uz") { %> 
+                        <%= branch.branch_name_uz.split(',')[branch.branch_name_uz.split(',').length - 1] %>   
+                        <%= branch.branch_name_uz.split(',')[branch.branch_name_uz.split(',').length - 2] %> 
+                    <% } %>
+                    <% if(lan === "ru") { %> 
+                        <%= branch.branch_name_ru.split(',')[branch.branch_name_ru.split(',').length - 1] %>   
+                        <%= branch.branch_name_ru.split(',')[branch.branch_name_ru.split(',').length - 2] %> 
+                    <% } if(lan === "eng") { %>
+                        <%= branch.branch_name_eng.split(',')[branch.branch_name_eng.split(',').length - 1] %>   
+                        <%= branch.branch_name_eng.split(',')[branch.branch_name_eng.split(',').length - 2] %> 
+                    <% } %>
                 </a>
             </li>
             <% }) %> 
@@ -225,12 +245,14 @@
                     <div class="location_header__data container">
                         <div class="row d-flex align-items-start">
                             <div class="location_header__data__contact col-lg-6">
-                                <h3>Contact Us</h3>
+                                <h3>
+                                    <%= locationLanguage.footer.contect_us[lan] %>
+                                </h3>
                                 <ul class="contacts__list">
                                     <li class="contacts__list__item d-flex justify-content-left align-items-center">
                                         <img src="./assets/images/icons/email_icon.svg" alt="message icon">
                                         <span>
-                                            cicschool@cambridge.uz
+                                            info@muschool.uz 
                                         </span>
                                     </li>
                                     <li class="contacts__list__item d-flex justify-content-left align-items-center">
@@ -242,7 +264,14 @@
                                     <li class="contacts__list__item d-flex justify-content-left align-items-center">
                                         <img src="./assets/images/icons/location_icon.svg" alt="location_icon">
                                         <span>
-                                            <%= branch.branch_name %>
+                                            <% if(lan === "eng") { %> 
+                                                <%= branch.branch_name_eng %>
+                                            <% } %>
+                                            <% if(lan === "ru") { %> 
+                                                <%= branch.branch_name_ru %>
+                                            <% }  if(lan === "uz") {%>
+                                                <%= branch.branch_name_uz %>
+                                            <% } %> 
                                         </span>
                                     </li>
                                     <li class="contacts__list__item d-flex justify-content-left align-items-center">
@@ -281,12 +310,14 @@
                     <div class="location_header__data container">
                         <div class="row d-flex align-items-start">
                             <div class="location_header__data__contact col-lg-6">
-                                <h3>Contact Us</h3>
+                                <h3>
+                                    <%= locationLanguage.footer.contect_us[lan] %>
+                                </h3>
                                 <ul class="contacts__list">
                                     <li class="contacts__list__item d-flex justify-content-left align-items-center">
                                         <img src="./assets/images/icons/email_icon.svg" alt="message icon">
                                         <span>
-                                            cicschool@cambridge.uz
+                                            info@muschool.uz 
                                         </span>
                                     </li>
                                     <li class="contacts__list__item d-flex justify-content-left align-items-center">
@@ -298,7 +329,14 @@
                                     <li class="contacts__list__item d-flex justify-content-left align-items-center">
                                         <img src="./assets/images/icons/location_icon.svg" alt="location_icon">
                                         <span>
-                                            <%= branch.branch_name %>
+                                            <% if(lan === "eng") { %> 
+                                                <%= branch.branch_name_eng %>
+                                            <% } %>
+                                            <% if(lan === "ru") { %> 
+                                                <%= branch.branch_name_ru %>
+                                            <% } if(lan === "uz") {%>
+                                                <%= branch.branch_name_uz %>
+                                            <% } %> 
                                         </span>
                                     </li>
                                     <li class="contacts__list__item d-flex justify-content-left align-items-center">
@@ -337,12 +375,14 @@
                     <div class="location_header__data container">
                         <div class="row d-flex align-items-start">
                             <div class="location_header__data__contact col-lg-6">
-                                <h3>Contact Us</h3>
+                                <h3>
+                                    <%= locationLanguage.footer.contect_us[lan] %>
+                                </h3>
                                 <ul class="contacts__list">
                                     <li class="contacts__list__item d-flex justify-content-left align-items-center">
                                         <img src="./assets/images/icons/email_icon.svg" alt="message icon">
                                         <span>
-                                            cicschool@cambridge.uz
+                                            info@muschool.uz 
                                         </span>
                                     </li>
                                     <li class="contacts__list__item d-flex justify-content-left align-items-center">
@@ -354,7 +394,14 @@
                                     <li class="contacts__list__item d-flex justify-content-left align-items-center">
                                         <img src="./assets/images/icons/location_icon.svg" alt="location_icon">
                                         <span>
-                                            <%= branch.branch_name %>
+                                            <% if(lan === "eng") { %> 
+                                                <%= branch.branch_name_eng %>
+                                            <% } %>
+                                            <% if(lan === "ru") { %> 
+                                                <%= branch.branch_name_ru %>
+                                            <% } if(lan === "uz") {%>
+                                                <%= branch.branch_name_uz %>
+                                            <% } %> 
                                         </span>
                                     </li>
                                     <li class="contacts__list__item d-flex justify-content-left align-items-center">
@@ -391,12 +438,14 @@
                     <div class="location_header__data container">
                         <div class="row d-flex align-items-start">
                             <div class="location_header__data__contact col-lg-6">
-                                <h3>Contact Us</h3>
+                                <h3>
+                                    <%= locationLanguage.footer.contect_us[lan] %>
+                                </h3>
                                 <ul class="contacts__list">
                                     <li class="contacts__list__item d-flex justify-content-left align-items-center">
                                         <img src="./assets/images/icons/email_icon.svg" alt="message icon">
                                         <span>
-                                            cicschool@cambridge.uz
+                                            info@muschool.uz 
                                         </span>
                                     </li>
                                     <li class="contacts__list__item d-flex justify-content-left align-items-center">
@@ -408,7 +457,14 @@
                                     <li class="contacts__list__item d-flex justify-content-left align-items-center">
                                         <img src="./assets/images/icons/location_icon.svg" alt="location_icon">
                                         <span>
-                                            <%= branch.branch_name %>
+                                            <% if(lan === "eng") { %> 
+                                                <%= branch.branch_name_eng %>
+                                            <% } %>
+                                            <% if(lan === "ru") { %> 
+                                                <%= branch.branch_name_ru %>
+                                            <% } if(lan === "uz") {%>
+                                                <%= branch.branch_name_uz %>
+                                            <% } %> 
                                         </span>
                                     </li>
                                     <li class="contacts__list__item d-flex justify-content-left align-items-center">
@@ -513,9 +569,6 @@
                             <li>
                                 <%= locationLanguage.requriments.item4[lan] %>
                             </li>
-                            <li>
-                                <%= locationLanguage.requriments.item5[lan] %>
-                            </li>
                         </ul>
         
                     </div>
@@ -546,7 +599,7 @@
                                         <%= event.event_title_uz %>
                                         <% } if(lan === "ru") { %>
                                         <%= event.event_title_ru %>
-                                        <% } else {%>
+                                        <% } if(lan === "eng") {%>
                                         <%= event.event_title_eng %>
                                     <% } %>
                                 </h2>
@@ -555,7 +608,7 @@
                                         <%= event.event_subtitle_uz %>
                                         <% } if(lan === "ru") { %>
                                         <%= event.event_subtitle_ru %>
-                                        <% } else {%>
+                                        <% } if(lan === "eng") {%>
                                         <%= event.event_subtitle_eng %>
                                     <% } %>
                                 </p>
@@ -595,7 +648,7 @@
                     <ul class="contacts__list">
                         <li class="contacts__list__item d-flex justify-content-left align-items-center">
                             <img src="./assets/images/icons/email_icon.svg" alt="message icon">
-                            <span>info@cambridge.uz</span>
+                            <span>info@muschool.uz </span>
                         </li>
                         <li class="contacts__list__item d-flex justify-content-left align-items-center">
                             <img src="./assets/images/icons/phone_icon.svg" alt="phoone icon">
@@ -604,7 +657,16 @@
                         <% branchs.forEach(function(item){ %>
                             <li class="contacts__list__item d-flex justify-content-left align-items-center">
                                 <img src="./assets/images/icons/location_icon.svg" alt="location_icon">
-                                <span><%= item.branch_name %></span>
+                                <span>
+                                    <% if(lan === "eng") { %> 
+                                        <%= item.branch_name_eng %>
+                                    <% } %>
+                                    <% if(lan === "ru") { %> 
+                                        <%= item.branch_name_ru %>
+                                    <% } if(lan === "uz") {%>
+                                        <%= item.branch_name_uz %>
+                                    <% } %> 
+                                </span>
                             </li>
                         <% }) %>
                     </ul>

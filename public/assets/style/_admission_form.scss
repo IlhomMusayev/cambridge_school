@@ -237,11 +237,17 @@ select {
     padding: 13px 61px;
     border-radius: 8px;
     border: none;
+    cursor: pointer;
   }
 
   .button_one {
     color: #ffffff;
     background-color: #ff9838;
+
+    &:hover {
+      background-color: #e47711;
+      transition: all 0.2s;
+    }
   }
 }
 

@@ -442,8 +442,10 @@ module.exports = class AdminController {
 
       const branchGradesArray = data.branch_grades.split(",");
       const branchs = await req.db.branchs.create({
-        branch_name: data.branch_name,
-        branch_slug: slug(data.branch_name),
+        branch_name_uz: data.branch_name_uz,
+        branch_name_eng: data.branch_name_eng,
+        branch_name_ru: data.branch_name_ru,
+        branch_slug: slug(data.branch_name_eng),
         branch_grades: branchGradesArray,
         branch_phone: data.branch_phone,
         branch_location_link: data.branch_location_link,
@@ -473,8 +475,10 @@ module.exports = class AdminController {
       const branchGradesArray = data.branch_grades.split(",");
       const branchs = await req.db.branchs.update(
         {
-          branch_name: data.branch_name,
-          branch_slug: slug(data.branch_name),
+          branch_name_uz: data.branch_name_uz,
+          branch_name_eng: data.branch_name_eng,
+          branch_name_ru: data.branch_name_ru,
+          branch_slug: slug(data.branch_name_eng),
           branch_grades: branchGradesArray,
           branch_phone: data.branch_phone,
           branch_location_link: data.branch_location_link,

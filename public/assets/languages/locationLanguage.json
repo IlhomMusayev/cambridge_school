@@ -79,9 +79,9 @@
   },
   "requriments": {
     "title": {
-      "eng": "Apply Requrimens",
-      "ru": "Применить требования",
-      "uz": "Qabul shartlari"
+      "eng": "Required documents of Millat Umidi school",
+      "ru": "Необходимые документы школы Миллат Умиди",
+      "uz": "Millat Umidi maktabi talab qiladigan hujjatlar"
     },
     "item1": {
       "eng": "School transcript (grades) or certificate.",
@@ -99,14 +99,9 @@
       "uz": "Ota-onaning pasporti nusxasi."
     },
     "item4": {
-      "eng": "We accept all students through an exam. The exam will be in English and Mathematics.",
-      "ru": "Мы принимаем всех студентов через экзамен. Экзамен будет по английскому языку и математике.",
-      "uz": "Biz barcha talabalarni imtihon orqali qabul qilamiz. Imtihon ingliz va matematika fanlaridan bo'ladi."
-    },
-    "item5": {
-      "eng": "It is also possible to be exempted from the exam, if the student has IELTS 6+ and SAT 1200+.",
-      "ru": "Также возможно освобождение от экзамена при наличии у студента IELTS 6+ и SAT 1200+.",
-      "uz": "Agar talaba IELTS 6+ va SAT 1200+ boʻlsa, imtihondan ozod boʻlish ham mumkin.."
+      "eng": "Must pass an internal exam in English and math.",
+      "ru": "Должен сдать внутренний экзамен по английскому языку и математике.",
+      "uz": "Ingliz tili va matematikadan ichki imtihon topshirishi kerak."
     }
   },
   "footer": {

@@ -2,15 +2,23 @@ const branchFormElement = document.querySelector(".create__branch__form");
 
 branchFormElement.addEventListener("submit", async (e) => {
   e.preventDefault();
-  const { branch_name, branch_grades, branch_phone, branch_location_link } =
-    e.target;
+  const {
+    branch_name_uz,
+    branch_name_ru,
+    branch_name_eng,
+    branch_grades,
+    branch_phone,
+    branch_location_link,
+  } = e.target;
 
   const dangerAlertElement = branchFormElement.querySelector(".alert__danger");
   const successAlertElement =
     branchFormElement.querySelector(".alert__success");
 
   const branch = {
-    branch_name: branch_name.value,
+    branch_name_uz: branch_name_uz.value,
+    branch_name_ru: branch_name_ru.value,
+    branch_name_eng: branch_name_eng.value,
     branch_grades: branch_grades.value,
     branch_phone: branch_phone.value,
     branch_location_link: branch_location_link.value,
@@ -56,7 +64,9 @@ editBranchEditElements.forEach((editBranchEdit) => {
       ".edit__branch__form"
     );
 
-    editBranchsFormElement.branch_name.value = branchItem.branch_name;
+    editBranchsFormElement.branch_name_uz.value = branchItem.branch_name_uz;
+    editBranchsFormElement.branch_name_eng.value = branchItem.branch_name_eng;
+    editBranchsFormElement.branch_name_ru.value = branchItem.branch_name_ru;
     editBranchsFormElement.branch_grades.value =
       branchItem.branch_grades.join(",");
     editBranchsFormElement.branch_phone.value = branchItem.branch_phone;
@@ -79,7 +89,9 @@ editBranchEditElements.forEach((editBranchEdit) => {
         },
         body: JSON.stringify({
           branch_id: branchItem.branch_id,
-          branch_name: editBranchsFormElement.branch_name.value,
+          branch_name_uz: editBranchsFormElement.branch_name_uz.value,
+          branch_name_ru: editBranchsFormElement.branch_name_ru.value,
+          branch_name_eng: editBranchsFormElement.branch_name_eng.value,
           branch_grades: editBranchsFormElement.branch_grades.value,
           branch_phone: editBranchsFormElement.branch_phone.value,
           branch_location_link:

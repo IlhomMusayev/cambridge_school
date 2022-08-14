@@ -2,7 +2,7 @@
   position: relative;
   width: 100%;
   height: 100vh;
-  #myVideo {
+  &__image img {
     width: 100%;
     height: 100vh;
     object-fit: cover;

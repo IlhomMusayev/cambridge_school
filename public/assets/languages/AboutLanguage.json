@@ -62,14 +62,19 @@
       "uz": "Maktabimizning missiyasi va qadriyatlari"
     },
     "content1": {
-      "eng": "Millat Umidi International School - a private high school where students can get not only the basic school knowledge, but also be prepared for AP and IELTS exams – fundamental requirements to enter top international universities abroad.",
-      "ru": "Millat Umidi International School — частная средняя школа, где ученики могут получить не только базовые школьные знания, но и подготовиться к экзаменам AP и IELTS — основное требование для поступления в топовые международные университеты за рубежом.",
-      "uz": "Millat Umidi xalqaro maktabi - xususiy o'rta maktab bo'lib, unda o'quvchilar nafaqat tayanch maktab bilimlarini olishlari, balki AT va IELTS imtihonlariga ham tayyorlanishlari mumkin – xorijdagi yetakchi xalqaro universitetlarga kirish uchun asosiy talablar."
+      "eng": "MISSION - Millat Umidi Schools are committed to providing a Stimulating learning environment with emphasis on Technology, Moral, Physical and Mental Orientation, for pupils / students from all socio-economic and cultural backgrounds of Golden Age.",
+      "ru": "МИССИЯ - Школы Миллата Умиди стремятся обеспечить стимулирующую учебную среду с акцентом на технологии, моральную, физическую и умственную ориентацию для учеников / студентов из всех социально-экономических и культурных слоев Золотого века.      ",
+      "uz": "MISSIYA - Millat Umidi maktablari Oltin davrning barcha ijtimoiy-iqtisodiy va madaniy kelib chiqishi o'quvchilari / talabalari uchun texnologiya, axloqiy, jismoniy va aqliy yo'nalishga e'tibor qaratgan holda rag'batlantiruvchi ta'lim muhitini ta'minlashga intiladi."
     },
     "content2": {
-      "eng": "Easily accessible location and most advanced technologies make Millat Umidi International School unlike other schools, and allow young students to study in interactive learning atmosphere. We offer 11 year education with in-depth of English learning environment.",
-      "ru": " Удобное расположение и самые передовые технологии делают международную школу Millat Umidi непохожей на другие школы и позволяют юным ученикам учиться в интерактивной учебной атмосфере. Мы предлагаем 11-летнее обучение с углубленным изучением английского языка.",
-      "uz": "Qulay joylashuv va eng ilg‘or texnologiyalar Millat Umidi xalqaro maktabini boshqa maktablardan ajratib turadi va yosh o‘quvchilarga interaktiv ta’lim muhitida bilim olish imkonini beradi. Biz ingliz tilini chuqur o'rganish bilan 11 yillik o'qishni taklif qilamiz."
+      "eng": "VISION - Millat Umidi Schools  shall become an Institution of Learning where an enabling environment is created for global Academic Excellence programs, Discipline and Unearthing of Talents especially in Extra Curricular Activities for students to contribute their best to the world without limitations as from where they belongs too.",
+      "ru": "ВЗГЛЯД - Школы Миллата Умиди должны стать учебным заведением, в котором создаются благоприятные условия для глобальных программ академического превосходства, дисциплины и раскрытия талантов, особенно во внеклассных мероприятиях, чтобы учащиеся могли вносить свой вклад в мир без ограничений, где бы они ни находились.",
+      "uz": "NIGOH - Millat Umidi maktablari Ta'lim Institutiga aylanadi, unda global akademik mukammallik dasturlari, intizom va iqtidorlarni kashf qilish, ayniqsa o'quvdan tashqari mashg'ulotlarda talabalar dunyoga o'zlarining eng yaxshi hissalarini qo'shishlari uchun qulay muhit yaratilgan."
+    },
+    "content3": {
+      "eng": "CORE VALUES - To Reiteration the Golden Age, Commitment to quality Service, Fairness to all.",
+      "ru": "ГЛАВНАЯ ЦЕЛЬ - Повторение Золотого Века, \nПриверженность качественному сервису, \nСправедливость ко всем",
+      "uz": "OLIY MAQSAD -  Oltin davrni takrorlash, \nSifatli Xizmatga sodiqlik, \nHammaga adolat."
     }
   },
   "school_program": {

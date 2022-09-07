@@ -69,12 +69,12 @@
   },
   "scholarships": {
     "title": {
-      "eng": "CIC School GRANT TERMS for the 2022-2023 academic year:",
+      "eng": "Millat Umidi School GRANT TERMS for the 2022-2023 academic year:",
       "ru": "УСЛОВИЯ ГРАНТА школы Миллат Умиди на 2022-2023 учебный год:",
       "uz": "Millat Umidi maktabi 2022-2023 o'quv yili uchun GRANT SHARTLARI:"
     },
     "item1": {
-      "eng": "CIC School has special grant places according to which a student can receive 40%, 60% and 100% of the grant.",
+      "eng": "Millat Umidi School has special grant places according to which a student can receive 40%, 60% and 100% of the grant.",
       "ru": "В школе Миллат Умиди есть специальные грантовые места, по которым студент может получить 40%, 60% и 100% гранта",
       "uz": "Millat Umidi maktabida maxsus grant o‘rinlari mavjud bo‘lib, unga ko‘ra talaba 40%, 60% va 100% grant olishi mumkin."
     },
@@ -184,9 +184,9 @@
       "uz": "Kirish formasi"
     },
     "subtitle": {
-      "eng": "CIC School Application ENG",
-      "ru": "CIC School Application ENG",
-      "uz": "CIC School Application ENG"
+      "eng": "Millat Umidi School Application ENG",
+      "ru": "Millat Umidi School Application ENG",
+      "uz": "Millat Umidi School Application ENG"
     },
     "form": {
       "branch": {

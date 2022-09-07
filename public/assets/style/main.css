@@ -5687,6 +5687,15 @@ footer .footer__menus__item .quesion__form button span {
 .form__applications h1 {
   font-size: 40px;
 }
+.form__applications input::-webkit-outer-spin-button,
+.form__applications input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+.form__applications input[type=number] {
+  -moz-appearance: textfield; /* Firefox */
+}
 .form__applications .input__applications .input {
   display: flex;
   flex-direction: column-reverse;
@@ -5694,7 +5703,8 @@ footer .footer__menus__item .quesion__form button span {
   margin: 20px 0;
 }
 .form__applications .input__applications .input input {
-  padding: 10px 0 0 2px;
+  padding: 5px 0 0 4px;
+  margin-top: 8px;
 }
 .form__applications .input__applications .input-label {
   color: #8d8d8d;
@@ -5728,6 +5738,7 @@ footer .footer__menus__item .quesion__form button span {
 .form__applications .input__applications .input-field:focus + .input-label, .form__applications .input__applications .input-field:valid + .input-label {
   color: #ff9838;
   transform: translateY(-1.5rem);
+  font-size: 13px;
 }
 .form__applications .applying_school {
   margin-top: 2px;
@@ -5741,7 +5752,7 @@ footer .footer__menus__item .quesion__form button span {
   border-bottom: 0.7px solid #8d8d8d;
   font-size: 16px;
   padding: 10px 0 0 0;
-  margin: 15px 0;
+  margin: 8px 0;
 }
 .form__applications select:valid {
   outline: 0;
@@ -5867,6 +5878,7 @@ select {
   border-radius: 8px;
   border: none;
   cursor: pointer;
+  font-size: 17px;
 }
 .buttons .button_one {
   color: #ffffff;
@@ -5909,7 +5921,7 @@ select {
     margin: 20px 0;
   }
   .form__applications .input__applications .input input {
-    padding: 10px 0 0 2px;
+    padding: 5px 0 0 2px;
   }
   .form__applications .input__applications select {
     font-size: 15px;
@@ -5951,7 +5963,7 @@ select {
     border-bottom: 0.7px solid #8d8d8d;
     font-size: 16px;
     padding: 10px 0 0 0;
-    margin: 15px 0;
+    margin: 10px 0;
   }
   .form__applications select:valid {
     outline: 0;

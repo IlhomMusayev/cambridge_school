@@ -31,7 +31,6 @@ orderFormElement.addEventListener("submit", async (event) => {
     }),
   });
   res = await res.json();
-  console.log(res);
   if (res.ok) {
     if (payment_type === "card") {
       successAlert.style.display = "block";
@@ -43,7 +42,6 @@ orderFormElement.addEventListener("submit", async (event) => {
         method: "POST",
       });
       resPayment = await resPayment.json();
-      console.log(resPayment);
       if (resPayment.ok) {
         setTimeout(() => {
           window.location.href = "/order/thanks/" + res.data.order.order_id;

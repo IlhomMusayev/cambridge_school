@@ -20,7 +20,16 @@ $globalfont: "Poppins", sans-serif;
   h1 {
     font-size: 40px;
   }
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+  }
 
+  input[type="number"] {
+    -moz-appearance: textfield; /* Firefox */
+  }
   border: 1px solid #cecece;
   padding-top: 34px;
   margin-left: 220px;
@@ -34,7 +43,8 @@ $globalfont: "Poppins", sans-serif;
       & + .input {
       }
       input {
-        padding: 10px 0 0 2px;
+        padding: 5px 0 0 4px;
+        margin-top: 8px;
       }
     }
 
@@ -73,6 +83,7 @@ $globalfont: "Poppins", sans-serif;
         & + .input-label {
           color: #ff9838;
           transform: translateY(-1.5rem);
+          font-size: 13px;
         }
       }
     }
@@ -91,7 +102,7 @@ $globalfont: "Poppins", sans-serif;
     border-bottom: 0.7px solid #8d8d8d;
     font-size: 16px;
     padding: 10px 0 0 0;
-    margin: 15px 0;
+    margin: 8px 0;
     &:valid {
       outline: 0;
       color: #000;
@@ -238,6 +249,7 @@ select {
     border-radius: 8px;
     border: none;
     cursor: pointer;
+    font-size: 17px;
   }
 
   .button_one {
@@ -296,7 +308,7 @@ select {
         & + .input {
         }
         input {
-          padding: 10px 0 0 2px;
+          padding: 5px 0 0 2px;
         }
       }
       select {
@@ -346,7 +358,7 @@ select {
       border-bottom: 0.7px solid #8d8d8d;
       font-size: 16px;
       padding: 10px 0 0 0;
-      margin: 15px 0;
+      margin: 10px 0;
       &:valid {
         outline: 0;
         color: #000;

@@ -25,7 +25,6 @@ module.exports = async function AdminMiddleware(req, res, next) {
       throw new res.error(401, "Session isn't found");
     }
 
-    // console.log(user);
     req.admin = await admin;
 
     next();

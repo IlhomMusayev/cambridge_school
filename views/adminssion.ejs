@@ -5,13 +5,25 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cambridge School</title>
+  <title>Muschool – Millat Umidi xalqaro maktabi</title>
   <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./assets/style/bootstrap-grid.min.css" />
   <link rel="stylesheet" href="./assets/style/main.css" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+  <meta name="title" content="Muschool - Millat Umidi xalqaro maktabi">
+  <meta name="description" content="Muschool - Millat Umidi xalqaro maktabi">
+  <meta name="keywords" content="Millat umidi, Millat umidi school, xalqaro maktab, xususiy maktab, Umidjon Ishmuhammedov, o'zbekiston xalqaro maktab, o'zbekiston xususiy maktab, eng yaxshi maktab, kollej, maktab,  международная школа, международная школа Узбекистана, Частная школа Узбекистана, лучшая школа, школа, частная школа">
+  <meta name="twitter:title" content="Muschool – Millat Umidi xalqaro maktabi">
+  <meta name="twitter:description" content="Muschool – Millat Umidi xalqaro maktabi">
+  <meta property="og:url" content="https://muschool.uz/">
+  <meta property="og:site_name" content="Muschool">
+  <meta property="og:locale" content="uz_Uz">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Muschool – Millat Umidi xalqaro maktabi. ">
+  <meta property="og:description" content="Muschool – Millat Umidi xalqaro maktabi">
+  <meta name="twitter:card" content="summary">
 </head>
 
 <body>
@@ -374,9 +386,9 @@
     <div class="admission-form" id="admission" data-aos="fade-up">
       <div class="form__applications container">
         <div>
-          <h1>
+          <h2>
             <%= admissionLanguage.admission_form.title[lan] %>
-          </h1>
+          </h2>
         </div>
         <div class="alert alert-success"></div>
         <div class="alert alert-warn"></div>
@@ -420,7 +432,7 @@
                 </div>
              
                 <div class="input">
-                  <input name="adminssion_user_phone" type="telephone" class="input-field" required autocomplete="off"/>
+                  <input name="adminssion_user_phone" type="number" class="input-field" required autocomplete="off"/>
                   <label class="input-label">
                     <%= admissionLanguage.admission_form.form.mobil[lan] %>
                   </label>
@@ -490,7 +502,7 @@
                   </label>
                 </div>
                 <div class="input">
-                  <input type="telephone" class="input-field" name="adminssion_user_partents_phone" required autocomplete="off"/>
+                  <input type="number" class="input-field" name="adminssion_user_partents_phone" required autocomplete="off"/>
                   <label class="input-label">
                     <%= admissionLanguage.admission_form.form.parents_mobile[lan] %>
                   </label>
@@ -499,9 +511,9 @@
             </div>
             <div>
               <div class="upload__applications">
-                <h1>
+                <h2>
                   <%= admissionLanguage.admission_form.form.files_title[lan] %>
-                </h1>
+                </h2>
                 <h2>1. <%= admissionLanguage.admission_form.form.grades_certificate.label[lan] %></h2>
                 <p><%= admissionLanguage.admission_form.form.grades_certificate.content[lan] %></p>
                 <div class="upload__inputs">

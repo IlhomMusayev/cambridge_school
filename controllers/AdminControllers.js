@@ -80,7 +80,6 @@ module.exports = class AdminController {
     const news = await req.db.news.count({});
     const events = await req.db.events.count({});
 
-    console.log(admissions);
     res.render("admin", {
       admissions,
       news,
@@ -124,7 +123,6 @@ module.exports = class AdminController {
       let offset = req.query.offset - 1 || 0;
 
       const newsCount = await req.db.news.findAll({});
-      console.log(newsCount);
       const count = Math.ceil(newsCount.length / limit);
       if (offset < 0) {
         offset = 0;
@@ -568,7 +566,6 @@ module.exports = class AdminController {
           },
         ],
       });
-      console.log(adminssion.dataValues.branch.dataValues.branch_name);
       res.render("adminApplicationSingle", {
         adminssion,
       });

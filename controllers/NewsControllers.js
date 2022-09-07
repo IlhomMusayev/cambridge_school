@@ -37,7 +37,6 @@ module.exports = class NewsController {
       lan = "uz";
     }
 
-    console.log(newItem);
     res.render("news", {
       newsLanguage,
       lan,
